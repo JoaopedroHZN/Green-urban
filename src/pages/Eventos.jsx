@@ -53,6 +53,40 @@ const Eventos = () => {
   return (
     <section className="eventos-section" id="eventos">
       <div className="eventos-container">
+        {/* ===== Painel do Voluntário (Hero/Banner) ===== */}
+        <div className="painel-voluntario">
+          <div className="painel-voluntario-content">
+            <div className="painel-voluntario-texto">
+              <span className="painel-voluntario-badge">🤝 Voluntariado</span>
+              <h2 className="painel-voluntario-title">Faça Parte da Mudança!</h2>
+              <p className="painel-voluntario-descricao">
+                O voluntariado é a força que transforma cidades cinzentas em florestas urbanas.
+                Cada muda plantada combate as <strong>ilhas de calor</strong>, reduz o
+                <strong> desmatamento urbano</strong> e devolve qualidade de vida à nossa
+                comunidade. Sua mão na terra é o primeiro passo para um futuro mais verde e justo.
+              </p>
+            </div>
+
+            <div className="painel-estatisticas">
+              <div className="stat-card">
+                <span className="stat-icone">🌳</span>
+                <strong className="stat-valor">+500</strong>
+                <span className="stat-rotulo">Árvores Plantadas</span>
+              </div>
+              <div className="stat-card">
+                <span className="stat-icone">👥</span>
+                <strong className="stat-valor">120</strong>
+                <span className="stat-rotulo">Voluntários Ativos</span>
+              </div>
+              <div className="stat-card">
+                <span className="stat-icone">📍</span>
+                <strong className="stat-valor">5</strong>
+                <span className="stat-rotulo">Bairros Atendidos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Cabeçalho */}
         <div className="eventos-header">
           <span className="eventos-badge">🌳 Ações Coletivas</span>
