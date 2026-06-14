@@ -29,33 +29,45 @@ const Navbar = () => {
           <span className="bar"></span>
         </button>
 
-          <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
-            <li className="nav-item">
-              <a href="#home" className="nav-link" onClick={closeMenu}>
-                Início
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#assistente" className="nav-link" onClick={closeMenu}>
-                Assistente 🌱
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#dicionario" className="nav-link" onClick={closeMenu}>
-                Dicionário Verde
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#eventos" className="nav-link" onClick={closeMenu}>
-                Eventos
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#rede" className="nav-link" onClick={closeMenu}>
-                Rede Social
-              </a>
-            </li>
-          </ul>
+        <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
+          <li className="nav-item">
+            <Link
+              to="/"
+              className={`nav-link ${isActive('/') ? 'nav-link--active' : ''}`}
+              onClick={closeMenu}
+            >
+              Início
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/assistente"
+              className={`nav-link ${isActive('/assistente') ? 'nav-link--active' : ''}`}
+              onClick={closeMenu}
+            >
+              Assistente 🌱
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/dicionario"
+              className={`nav-link ${isActive('/dicionario') ? 'nav-link--active' : ''}`}
+              onClick={closeMenu}
+            >
+              Dicionario
+              </Link>
+          </li>
+          <li className="nav-item">
+            <a href="#eventos" className="nav-link" onClick={closeMenu}>
+              Eventos
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#rede" className="nav-link" onClick={closeMenu}>
+              Rede Social
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   );

@@ -1,45 +1,24 @@
-import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import RecomendacaoInteligente from './pages/RecomendacaoInteligente';
+import DicionarioVerde from './pages/DicionarioVerde';
 
 /**
  * App — Componente raiz
  *
- * Gerencia a navegação por hash (#) para alternar entre as páginas
- * sem a necessidade de um roteador externo.
+ * Gerencia as rotas da aplicação usando react-router-dom.
+ * Cada página é mapeada para uma rota específica.
  */
-
-// Páginas disponíveis
-const PAGINAS = {
-  home: Home,
-  assistente: RecomendacaoInteligente,
-};
-
 function App() {
-  const [paginaAtual, setPaginaAtual] = useState('home');
-
-  useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash.replace('#', '') || 'home';
-      if (PAGINAS[hash]) {
-        setPaginaAtual(hash);
-      }
-    };
-
-    // Estado inicial
-    handleHashChange();
-
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
-  }, []);
-
-  const PaginaComponent = PAGINAS[paginaAtual] || Home;
-
   return (
     <>
       <Navbar />
-      <PaginaComponent />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/assistente" element={<RecomendacaoInteligente />} />
+        <Route path="/dicionario" element={<DicionarioVerde />} />
+      </Routes>
     </>
   );
 }

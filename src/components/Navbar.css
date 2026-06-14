@@ -88,16 +88,15 @@
   background: rgba(46, 125, 50, 0.06);
 }
 
-.nav-link.active {
+.nav-link:hover::after,
+.nav-link--active::after {
+  width: 60%;
+}
+
+.nav-link--active {
   color: #1b5e20;
-}
-
-.nav-link.active::after {
-  width: 60%;
-}
-
-.nav-link:hover::after {
-  width: 60%;
+  background: rgba(46, 125, 50, 0.08);
+  font-weight: 600;
 }
 
 /* ===== Hamburger (hidden on desktop) ===== */
