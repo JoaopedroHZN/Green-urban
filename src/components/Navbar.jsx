@@ -75,6 +75,15 @@ const Navbar = () => {
               Rede Social
             </Link>
           </li>
+          <li className="nav-item nav-item-auth">
+            <Link
+              to="/auth"
+              className={`nav-link nav-link-entrar ${isActive('/auth') ? 'active' : ''}`}
+              onClick={closeMenu}
+            >
+              ✦ Entrar
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
