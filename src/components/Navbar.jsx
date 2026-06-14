@@ -33,7 +33,7 @@ const Navbar = () => {
           <li className="nav-item">
             <Link
               to="/"
-              className={`nav-link ${isActive('/') ? 'nav-link--active' : ''}`}
+              className={`nav-link ${isActive('/') ? 'active' : ''}`}
               onClick={closeMenu}
             >
               Início
@@ -41,26 +41,30 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link
-              to="/assistente"
-              className={`nav-link ${isActive('/assistente') ? 'nav-link--active' : ''}`}
+              to="/dicionario"
+              className={`nav-link ${isActive('/dicionario') ? 'active' : ''}`}
               onClick={closeMenu}
             >
-              Assistente 🌱
+              Dicionário Verde
             </Link>
           </li>
           <li className="nav-item">
             <Link
-              to="/dicionario"
-              className={`nav-link ${isActive('/dicionario') ? 'nav-link--active' : ''}`}
+              to="/assistente"
+              className={`nav-link ${isActive('/assistente') ? 'active' : ''}`}
               onClick={closeMenu}
             >
-              Dicionario
-              </Link>
+              Assistente
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#eventos" className="nav-link" onClick={closeMenu}>
+            <Link
+              to="/eventos"
+              className={`nav-link ${isActive('/eventos') ? 'active' : ''}`}
+              onClick={closeMenu}
+            >
               Eventos
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <a href="#rede" className="nav-link" onClick={closeMenu}>

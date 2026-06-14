@@ -1,0 +1,151 @@
+import { useState } from 'react';
+import './Eventos.css';
+
+const eventos = [
+  {
+    id: 1,
+    titulo: 'Mutirão de Plantio — Parque Linear',
+    data: '15 de Julho de 2026',
+    horario: '08h00 — 12h00',
+    local: 'Parque Linear do Córrego, Setor Sul',
+    imagem: 'https://placehold.co/600x300/1b5e20/a5d6a7?text=Mutir%C3%A3o+Parque+Linear',
+    descricao:
+      'Vamos plantar 150 mudas de árvores nativas ao longo do parque linear. O evento conta com educação ambiental, distribuição de mudas e um piquenique comunitário ao final.',
+    voluntariosInscritos: 34,
+    vagas: 60,
+  },
+  {
+    id: 2,
+    titulo: 'Reflorestamento Urbano — Escola Municipal',
+    data: '22 de Julho de 2026',
+    horario: '09h00 — 13h00',
+    local: 'Escola Estadual Setor Sul',
+    imagem: 'https://placehold.co/600x300/2e7d32/c8e6c9?text=Reflorestamento+Escola',
+    descricao:
+      'Mutirão para revitalizar o quintal da escola com horta comunitária, jardim de espécies nativas e árvores frutíferas. Alunos e moradores são todos bem-vindos!',
+    voluntariosInscritos: 22,
+    vagas: 50,
+  },
+  {
+    id: 3,
+    titulo: 'Plantio de Nascentes — APA Municipal',
+    data: '29 de Julho de 2026',
+    horario: '07h30 — 12h30',
+    local: 'APA do Ribeirão Verde, Zona Rural',
+    imagem: 'https://placehold.co/600x300/388e3c/a5d6a7?text=Plantio+Nascentes',
+    descricao:
+      'Ação de recuperação de nascentes com plantio de 200 mudas de espécies ciliares. Inclui trilha guiada e oficina de compostagem doméstica.',
+    voluntariosInscritos: 45,
+    vagas: 80,
+  },
+];
+
+const Eventos = () => {
+  const [voluntarioStatus, setVoluntarioStatus] = useState({});
+
+  const handleVoluntariar = (id) => {
+    setVoluntarioStatus((prev) => ({
+      ...prev,
+      [id]: true,
+    }));
+  };
+
+  return (
+    <section className="eventos-section" id="eventos">
+      <div className="eventos-container">
+        {/* Cabeçalho */}
+        <div className="eventos-header">
+          <span className="eventos-badge">🌳 Ações Coletivas</span>
+          <h1 className="eventos-title">Eventos Comunitários</h1>
+          <p className="eventos-subtitle">
+            Participe dos mutirões de plantio e reflorestamento urbano. Junte-se a
+            voluntários, ONGs e escolas para transformar a cidade com mais verde.
+          </p>
+        </div>
+
+        {/* Grid de eventos */}
+        <div className="eventos-grid">
+          {eventos.map((evento) => (
+            <article className="evento-card" key={evento.id}>
+              <div className="evento-img-wrapper">
+                <img
+                  className="evento-img"
+                  src={evento.imagem}
+                  alt={evento.titulo}
+                  loading="lazy"
+                />
+                <div className="evento-data-badge">
+                  <span className="evento-data-dia">
+                    {evento.data.split(' ')[0]}
+                  </span>
+                  <span className="evento-data-mes">
+                    {evento.data.split(' ')[2]?.replace(',', '') || ''} {evento.data.split(' ')[1]}
+                  </span>
+                </div>
+              </div>
+
+              <div className="evento-body">
+                <h2 className="evento-titulo">{evento.titulo}</h2>
+
+                <div className="evento-info">
+                  <div className="evento-info-item">
+                    <span className="evento-info-icon">📅</span>
+                    <div>
+                      <strong>Data e Horário</strong>
+                      <p>
+                        {evento.data} • {evento.horario}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="evento-info-item">
+                    <span className="evento-info-icon">📍</span>
+                    <div>
+                      <strong>Local</strong>
+                      <p>{evento.local}</p>
+                    </div>
+                  </div>
+                </div>
+
+                <p className="evento-descricao">{evento.descricao}</p>
+
+                <div className="evento-footer">
+                  <div className="evento-vagas">
+                    <div className="vagas-bar">
+                      <div
+                        className="vagas-bar-fill"
+                        style={{
+                          width: `${Math.min(
+                            (evento.voluntariosInscritos / evento.vagas) * 100,
+                            100
+                          )}%`,
+                        }}
+                      />
+                    </div>
+                    <span className="vagas-text">
+                      {evento.voluntariosInscritos} de {evento.vagas} vagas preenchidas
+                    </span>
+                  </div>
+
+                  {voluntarioStatus[evento.id] ? (
+                    <button className="btn-voluntario btn-inscrito" disabled>
+                      ✅ Você está inscrito!
+                    </button>
+                  ) : (
+                    <button
+                      className="btn-voluntario"
+                      onClick={() => handleVoluntariar(evento.id)}
+                    >
+                      🌿 Quero ser Voluntário
+                    </button>
+                  )}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Eventos;
