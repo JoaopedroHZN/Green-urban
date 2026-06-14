@@ -379,6 +379,209 @@
   line-height: 1.3;
 }
 
+/* ===== Layout duas colunas (Sidebar + Conteúdo) ===== */
+.eventos-layout-duas-colunas {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* ===== Sidebar — Perfil & Conquistas ===== */
+.sidebar-conquistas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 100px;
+}
+
+/* ===== Card de Perfil ===== */
+.perfil-voluntario-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e8f5e9;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.perfil-avatar {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2e7d32, #43a047);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.perfil-avatar-inicial {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.perfil-level-badge {
+  position: absolute;
+  bottom: -2px;
+  right: -4px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ffb300;
+  color: #1b5e20;
+  font-size: 0.82rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #ffffff;
+  line-height: 1;
+}
+
+.perfil-nome {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1b5e20;
+  margin: 0 0 12px;
+}
+
+.perfil-nivel {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 16px;
+}
+
+.perfil-nivel-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #78909c;
+  font-weight: 600;
+}
+
+.perfil-nivel-valor {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.perfil-xp-bar {
+  width: 100%;
+  height: 6px;
+  background: #e8f5e9;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.perfil-xp-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ffb300, #ffc107);
+  border-radius: 4px;
+  transition: width 0.6s ease;
+}
+
+.perfil-xp-text {
+  font-size: 0.75rem;
+  color: #78909c;
+  font-weight: 500;
+}
+
+/* ===== Card de Conquistas ===== */
+.conquistas-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e8f5e9;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  padding: 24px;
+}
+
+.conquistas-titulo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1b5e20;
+  margin: 0 0 16px;
+}
+
+.conquistas-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.conquista-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(232, 245, 233, 0.5);
+  transition: all 0.25s ease;
+}
+
+.conquista-item:hover {
+  background: rgba(232, 245, 233, 0.9);
+  transform: translateX(4px);
+}
+
+.conquista-bloqueada {
+  opacity: 0.5;
+  background: transparent;
+}
+
+.conquista-bloqueada:hover {
+  background: rgba(200, 200, 200, 0.1);
+  transform: none;
+  opacity: 0.6;
+}
+
+.conquista-icone {
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.conquista-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.conquista-nome {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1b5e20;
+}
+
+.conquista-desc {
+  font-size: 0.75rem;
+  color: #78909c;
+  line-height: 1.3;
+}
+
+.conquista-status {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* ===== Conteúdo principal ===== */
+.eventos-conteudo-principal {
+  min-width: 0;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
   .painel-voluntario-content {
@@ -394,6 +597,12 @@
   .painel-estatisticas {
     width: 100%;
     justify-content: center;
+  }
+
+  /* Sidebar responsiva 1024px */
+  .eventos-layout-duas-colunas {
+    grid-template-columns: 260px 1fr;
+    gap: 24px;
   }
 }
 
@@ -431,6 +640,30 @@
   .btn-voluntario {
     width: 100%;
     justify-content: center;
+  }
+
+  /* Layout duas colunas → single column 768px */
+  .eventos-layout-duas-colunas {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-conquistas {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .perfil-voluntario-card {
+    padding: 24px 20px;
+  }
+
+  .perfil-nivel-valor {
+    font-size: 0.85rem;
+  }
+
+  .conquistas-card {
+    padding: 20px;
   }
 
   /* Painel responsivo 768px */
@@ -512,5 +745,10 @@
 
   .stat-rotulo {
     font-size: 0.82rem;
+  }
+
+  /* Sidebar 480px */
+  .sidebar-conquistas {
+    grid-template-columns: 1fr;
   }
 }
