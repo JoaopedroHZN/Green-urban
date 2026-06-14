@@ -34,6 +34,9 @@ app.use(express.urlencoded({ extended: true })); // Permite dados de formulário
 //  Rotas
 // ------------------------------------------------------------
 
+// Importar rotas da aplicação
+const usuariosRouter = require('./routes/usuarios');
+
 // Rota inicial — verificação de saúde da API
 app.get('/', (req, res) => {
   res.json({
@@ -51,6 +54,9 @@ app.get('/api/health', (req, res) => {
     timestamp: new Date().toISOString(),
   });
 });
+
+// Rotas da aplicação — prefixo /api/usuarios
+app.use('/api/usuarios', usuariosRouter);
 
 // ------------------------------------------------------------
 //  Conexão com MongoDB
