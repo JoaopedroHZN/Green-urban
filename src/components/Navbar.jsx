@@ -67,9 +67,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <a href="#rede" className="nav-link" onClick={closeMenu}>
+            <Link
+              to="/rede"
+              className={`nav-link ${isActive('/rede') ? 'active' : ''}`}
+              onClick={closeMenu}
+            >
               Rede Social
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

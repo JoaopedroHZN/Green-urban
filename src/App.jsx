@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import DicionarioVerde from './pages/DicionarioVerde';
 import Eventos from './pages/Eventos';
 import RecomendacaoInteligente from './pages/RecomendacaoInteligente';
+import RedeSocial from './pages/RedeSocial';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/dicionario" element={<DicionarioVerde />} />
         <Route path="/eventos" element={<Eventos />} />
         <Route path="/assistente" element={<RecomendacaoInteligente />} />
+        <Route path="/rede" element={<RedeSocial />} />
       </Routes>
     </>
   );
