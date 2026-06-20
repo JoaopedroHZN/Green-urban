@@ -577,6 +577,66 @@
   flex-shrink: 0;
 }
 
+/* ===== Botão Criar Evento ===== */
+.eventos-criar-area {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.btn-criar-evento {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  color: #ffffff;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  letter-spacing: 0.3px;
+}
+
+.btn-criar-evento:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(46, 125, 50, 0.35);
+}
+
+.eventos-bloqueio-msg {
+  font-size: 0.9rem;
+  color: #78909c;
+  background: rgba(232, 245, 233, 0.6);
+  padding: 14px 20px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+/* ===== Porte Badge no Card ===== */
+.evento-header-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.evento-porte-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  padding: 3px 10px;
+  border-radius: 100px;
+  background: rgba(46, 125, 50, 0.08);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.15);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 /* ===== Conteúdo principal ===== */
 .eventos-conteudo-principal {
   min-width: 0;

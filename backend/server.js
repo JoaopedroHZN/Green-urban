@@ -29,7 +29,30 @@ const app = express();
 
 // Middlewares
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
+  origin: function (origin, callback) {
+    // Em desenvolvimento, permite qualquer origem local (Vite pode mudar de porta)
+    const permitidas = [
+      'http://localhost:5173',
+      'http://127.0.0.1:5173',
+      'http://localhost:5174',
+      'http://127.0.0.1:5174',
+      'http://localhost:5175',
+      'http://127.0.0.1:5175',
+      'http://localhost:3000',
+      'http://127.0.0.1:3000',
+    ];
+    // Se não houver origin (ex: Postman) ou estiver na lista, permite
+    if (!origin || permitidas.includes(origin)) {
+      callback(null, true);
+    } else {
+      // Em dev, para qualquer outra porta local, também permite
+      if (origin.startsWith('http://localhost:') || origin.startsWith('http://127.0.0.1:')) {
+        callback(null, true);
+      } else {
+        callback(new Error('Origem não permitida pelo CORS'));
+      }
+    }
+  },
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization'],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
@@ -44,6 +67,7 @@ app.use(express.urlencoded({ extended: true })); // Permite dados de formulário
 // Importar rotas da aplicação
 const usuariosRouter = require('./routes/usuarios');
 const authRoutes = require('./routes/authRoutes');
+const postagensRouter = require('./routes/postagens');
 const authMiddleware = require('./middleware/authMiddleware');
 
 // ------------------------------------------------------------
@@ -101,6 +125,7 @@ app.get('/api/health', (req, res) => {
 // Rotas da aplicação
 app.use('/api/usuarios', usuariosRouter);
 app.use('/api/auth', authRoutes);
+app.use('/api/postagens', postagensRouter);
 
 // ------------------------------------------------------------
 //  Conexão com MongoDB

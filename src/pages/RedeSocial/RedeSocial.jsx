@@ -1,106 +1,112 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+import { useUser } from '../../contexts/UserContext';
 import './RedeSocial.css';
 
-const mockPosts = [
-  {
-    id: 1,
-    usuario: 'Ana Oliveira',
-    fotoPerfil: 'https://placehold.co/100x100/1b5e20/a5d6a7?text=AO',
-    fotoPlanta: 'https://placehold.co/600x400/2e7d32/c8e6c9?text=Meu+Ip%C3%AA+Amarelo',
-    legenda:
-      'Acabei de plantar meu primeiro Ipê Amarelo aqui na praça do bairro! 🌳💚 #GreenUrban #Reflorestamento',
-    curtidas: 24,
-    comentarios: [
-      { id: 101, usuario: 'Carlos Lima', texto: 'Que lindo! Vou plantar um também 🌱' },
-      { id: 102, usuario: 'Juliana Castro', texto: 'Parabéns pela iniciativa!' },
-    ],
-  },
-  {
-    id: 2,
-    usuario: 'Rafael Martins',
-    fotoPerfil: 'https://placehold.co/100x100/2e7d32/c8e6c9?text=RM',
-    fotoPlanta: 'https://placehold.co/600x400/388e3c/a5d6a7?text=Mutir%C3%A3o+Escola',
-    legenda:
-      'Mutirão de plantio na Escola Municipal foi um sucesso! 50 mudas plantadas em uma manhã. 🌿📚 #EducaçãoAmbiental',
-    curtidas: 42,
-    comentarios: [
-      { id: 201, usuario: 'Ana Oliveira', texto: 'Que demais! Estou ansiosa para o próximo 🙌' },
-    ],
-  },
-  {
-    id: 3,
-    usuario: 'Luciana Souza',
-    fotoPerfil: 'https://placehold.co/100x100/388e3c/a5d6a7?text=LS',
-    fotoPlanta: 'https://placehold.co/600x400/43a047/a5d6a7?text=Jabuticabeira',
-    legenda:
-      'Minha jabuticabeira já está dando frutos! 2 anos de cuidado e agora colhendo os resultados 🍇💚 #PlanteUmaÁrvore',
-    curtidas: 56,
-    comentarios: [
-      { id: 301, usuario: 'Rafael Martins', texto: 'Que maravilha! Jabuticaba é vida ❤️' },
-      { id: 302, usuario: 'Pedro Alves', texto: 'Qual o segredo para crescer tão rápido?' },
-    ],
-  },
-  {
-    id: 4,
-    usuario: 'Pedro Alves',
-    fotoPerfil: 'https://placehold.co/100x100/1b5e20/a5d6a7?text=PA',
-    fotoPlanta: 'https://placehold.co/600x400/2e7d32/c8e6c9?text=Horta+Comunit%C3%A1ria',
-    legenda:
-      'Horta comunitária do bairro está linda! Alfaces, tomates e ervas frescas para toda a vizinhança 🌿🥬 #Sustentabilidade',
-    curtidas: 31,
-    comentarios: [],
-  },
-];
+const API_BASE = 'http://localhost:4000';
 
 const RedeSocial = () => {
-  const [posts, setPosts] = useState(mockPosts);
+  const { usuario, userId } = useUser();
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [erro, setErro] = useState(null);
   const [novoPostTexto, setNovoPostTexto] = useState('');
+  const [postando, setPostando] = useState(false);
   const [comentarioInput, setComentarioInput] = useState({});
   const [showComentarios, setShowComentarios] = useState({});
 
-  const handlePostar = () => {
+  const nomeUsuario = usuario?.nome || 'Voluntário(a)';
+
+  // Carrega postagens da API
+  const carregarPosts = useCallback(async () => {
+    try {
+      setErro(null);
+      const res = await fetch(`${API_BASE}/api/postagens?userId=${userId}`);
+      if (!res.ok) throw new Error('Erro ao carregar');
+      const data = await res.json();
+      setPosts(data.posts || []);
+    } catch (err) {
+      console.error('❌ Erro ao carregar posts:', err.message);
+      setErro('Não foi possível carregar o feed. O backend está rodando?');
+    } finally {
+      setLoading(false);
+    }
+  }, [userId]);
+
+  useEffect(() => {
+    carregarPosts();
+  }, [carregarPosts]);
+
+  // Criar postagem
+  const handlePostar = async () => {
     if (!novoPostTexto.trim()) return;
+    setPostando(true);
 
-    const novoPost = {
-      id: Date.now(),
-      usuario: 'Você',
-      fotoPerfil: 'https://placehold.co/100x100/43a047/a5d6a7?text=EU',
-      fotoPlanta: 'https://placehold.co/600x400/1b5e20/a5d6a7?text=Meu+Plantio',
-      legenda: novoPostTexto.trim(),
-      curtidas: 0,
-      comentarios: [],
-    };
+    try {
+      const res = await fetch(`${API_BASE}/api/postagens`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          autorId: userId,
+          legenda: novoPostTexto.trim(),
+          imagemUrl: '',
+        }),
+      });
 
-    setPosts([novoPost, ...posts]);
-    setNovoPostTexto('');
+      if (!res.ok) throw new Error('Erro ao postar');
+      const data = await res.json();
+
+      setPosts((prev) => [data.post, ...prev]);
+      setNovoPostTexto('');
+    } catch (err) {
+      console.error('❌ Erro ao postar:', err.message);
+    } finally {
+      setPostando(false);
+    }
   };
 
-  const handleCurtir = (postId) => {
-    setPosts((prev) =>
-      prev.map((p) =>
-        p.id === postId ? { ...p, curtidas: p.curtidas + 1, curtido: true } : p
-      )
-    );
+  // Curtir
+  const handleCurtir = async (postId) => {
+    try {
+      const res = await fetch(`${API_BASE}/api/postagens/${postId}/curtir`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId }),
+      });
+      if (!res.ok) throw new Error('Erro ao curtir');
+      const data = await res.json();
+
+      setPosts((prev) =>
+        prev.map((p) =>
+          p._id === postId ? { ...p, curtidas: data.curtidas, curtido: data.curtido } : p
+        )
+      );
+    } catch (err) {
+      console.error('❌ Erro ao curtir:', err.message);
+    }
   };
 
-  const handleComentar = (postId) => {
+  // Comentar
+  const handleComentar = async (postId) => {
     const texto = comentarioInput[postId]?.trim();
     if (!texto) return;
 
-    setPosts((prev) =>
-      prev.map((p) =>
-        p.id === postId
-          ? {
-              ...p,
-              comentarios: [
-                ...p.comentarios,
-                { id: Date.now(), usuario: 'Você', texto },
-              ],
-            }
-          : p
-      )
-    );
-    setComentarioInput((prev) => ({ ...prev, [postId]: '' }));
+    try {
+      const res = await fetch(`${API_BASE}/api/postagens/${postId}/comentar`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ usuario: nomeUsuario, texto }),
+      });
+
+      if (!res.ok) throw new Error('Erro ao comentar');
+      const data = await res.json();
+
+      setPosts((prev) =>
+        prev.map((p) => (p._id === postId ? { ...p, comentarios: data.comentarios } : p))
+      );
+      setComentarioInput((prev) => ({ ...prev, [postId]: '' }));
+    } catch (err) {
+      console.error('❌ Erro ao comentar:', err.message);
+    }
   };
 
   const toggleComentarios = (postId) => {
@@ -113,11 +119,20 @@ const RedeSocial = () => {
         {/* Cabeçalho */}
         <div className="rede-header">
           <span className="rede-badge">🌐 Conecte-se</span>
-          <h1 className="rede-title">Rede Social</h1>
+          <h1 className="rede-title">Rede Social Verde</h1>
           <p className="rede-subtitle">
             Compartilhe suas experiências, fotos de plantios e conquistas
             ambientais. Inspire e seja inspirado pela comunidade Green Urban.
           </p>
+
+          {/* Card rápido do perfil */}
+          <div className="rede-perfil-mini">
+            <span className="rede-perfil-emoji">🌿</span>
+            <div>
+              <strong>{nomeUsuario}</strong>
+              <span>⭐ {usuario?.pontuacaoTotal ?? 0} pontos</span>
+            </div>
+          </div>
         </div>
 
         {/* Nova publicação */}
@@ -128,7 +143,7 @@ const RedeSocial = () => {
           </div>
           <textarea
             className="novo-post-textarea"
-            placeholder="O que você plantou hoje? Compartilhe com a comunidade..."
+            placeholder={`O que você plantou hoje, ${nomeUsuario.split(' ')[0]}? Compartilhe com a comunidade...`}
             value={novoPostTexto}
             onChange={(e) => setNovoPostTexto(e.target.value)}
             rows={3}
@@ -140,114 +155,131 @@ const RedeSocial = () => {
             <button
               className="btn-postar"
               onClick={handlePostar}
-              disabled={!novoPostTexto.trim()}
+              disabled={!novoPostTexto.trim() || postando}
             >
-              📢 Postar
+              {postando ? '⏳ Postando...' : '📢 Postar'}
             </button>
           </div>
         </div>
 
         {/* Feed de posts */}
-        <div className="feed">
-          {posts.map((post) => (
-            <article className="feed-post" key={post.id}>
-              {/* Cabeçalho do post */}
-              <div className="post-header">
-                <img
-                  className="post-avatar"
-                  src={post.fotoPerfil}
-                  alt={post.usuario}
-                />
-                <div>
-                  <strong className="post-usuario">{post.usuario}</strong>
-                  <span className="post-tempo">Agora mesmo</span>
+        {loading && (
+          <div className="feed-loading">
+            <p>⏳ Carregando publicações...</p>
+          </div>
+        )}
+
+        {erro && !loading && (
+          <div className="feed-erro">
+            <p>⚠️ {erro}</p>
+          </div>
+        )}
+
+        {!loading && !erro && posts.length === 0 && (
+          <div className="feed-vazio">
+            <p>🌱 Nenhuma publicação ainda. Seja o primeiro a postar!</p>
+          </div>
+        )}
+
+        {!loading && !erro && (
+          <div className="feed">
+            {posts.map((post) => (
+              <article className="feed-post" key={post._id}>
+                <div className="post-header">
+                  <div className="post-avatar-placeholder">🌱</div>
+                  <div>
+                    <strong className="post-usuario">{post.autor}</strong>
+                    <span className="post-tempo">
+                      {post.criadoEm
+                        ? new Date(post.criadoEm).toLocaleDateString('pt-BR')
+                        : 'Agora mesmo'}
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              {/* Imagem da planta */}
-              <div className="post-img-wrapper">
-                <img
-                  className="post-img"
-                  src={post.fotoPlanta}
-                  alt="Planta do usuário"
-                  loading="lazy"
-                />
-              </div>
-
-              {/* Legenda */}
-              <p className="post-legenda">{post.legenda}</p>
-
-              {/* Ações: Curtir e Comentar */}
-              <div className="post-actions">
-                <button
-                  className={`post-btn ${post.curtido ? 'curtido' : ''}`}
-                  onClick={() => handleCurtir(post.id)}
-                >
-                  {post.curtido ? '❤️' : '🤍'} {post.curtidas}
-                </button>
-                <button
-                  className="post-btn"
-                  onClick={() => toggleComentarios(post.id)}
-                >
-                  💬{' '}
-                  {post.comentarios.length > 0
-                    ? `${post.comentarios.length}`
-                    : 'Comentar'}
-                </button>
-              </div>
-
-              {/* Seção de comentários */}
-              <div
-                className={`post-comentarios ${
-                  showComentarios[post.id] || post.comentarios.length > 0
-                    ? 'visible'
-                    : ''
-                }`}
-              >
-                {post.comentarios.length > 0 && (
-                  <div className="comentarios-lista">
-                    <h4 className="comentarios-titulo">
-                      Comentários ({post.comentarios.length})
-                    </h4>
-                    {post.comentarios.map((c) => (
-                      <div className="comentario" key={c.id}>
-                        <strong>{c.usuario}</strong>
-                        <p>{c.texto}</p>
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                {showComentarios[post.id] && (
-                  <div className="comentar-form">
-                    <input
-                      type="text"
-                      className="comentar-input"
-                      placeholder="Escreva um comentário..."
-                      value={comentarioInput[post.id] || ''}
-                      onChange={(e) =>
-                        setComentarioInput((prev) => ({
-                          ...prev,
-                          [post.id]: e.target.value,
-                        }))
-                      }
-                      onKeyDown={(e) => {
-                        if (e.key === 'Enter') handleComentar(post.id);
-                      }}
+                {post.imagemUrl && (
+                  <div className="post-img-wrapper">
+                    <img
+                      className="post-img"
+                      src={post.imagemUrl}
+                      alt="Planta do usuário"
+                      loading="lazy"
                     />
-                    <button
-                      className="comentar-btn"
-                      onClick={() => handleComentar(post.id)}
-                      disabled={!comentarioInput[post.id]?.trim()}
-                    >
-                      Enviar
-                    </button>
                   </div>
                 )}
-              </div>
-            </article>
-          ))}
-        </div>
+
+                <p className="post-legenda">{post.legenda}</p>
+
+                <div className="post-actions">
+                  <button
+                    className={`post-btn ${post.curtido ? 'curtido' : ''}`}
+                    onClick={() => handleCurtir(post._id)}
+                  >
+                    {post.curtido ? '❤️' : '🤍'} {post.curtidas}
+                  </button>
+                  <button
+                    className="post-btn"
+                    onClick={() => toggleComentarios(post._id)}
+                  >
+                    💬{' '}
+                    {post.comentarios?.length > 0
+                      ? `${post.comentarios.length}`
+                      : 'Comentar'}
+                  </button>
+                </div>
+
+                <div
+                  className={`post-comentarios ${
+                    showComentarios[post._id] || post.comentarios?.length > 0
+                      ? 'visible'
+                      : ''
+                  }`}
+                >
+                  {post.comentarios?.length > 0 && (
+                    <div className="comentarios-lista">
+                      <h4 className="comentarios-titulo">
+                        Comentários ({post.comentarios.length})
+                      </h4>
+                      {post.comentarios.map((c, i) => (
+                        <div className="comentario" key={c._id || i}>
+                          <strong>{c.usuario}</strong>
+                          <p>{c.texto}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {showComentarios[post._id] && (
+                    <div className="comentar-form">
+                      <input
+                        type="text"
+                        className="comentar-input"
+                        placeholder="Escreva um comentário..."
+                        value={comentarioInput[post._id] || ''}
+                        onChange={(e) =>
+                          setComentarioInput((prev) => ({
+                            ...prev,
+                            [post._id]: e.target.value,
+                          }))
+                        }
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter') handleComentar(post._id);
+                        }}
+                      />
+                      <button
+                        className="comentar-btn"
+                        onClick={() => handleComentar(post._id)}
+                        disabled={!comentarioInput[post._id]?.trim()}
+                      >
+                        Enviar
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

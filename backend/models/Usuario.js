@@ -39,6 +39,11 @@ const usuarioSchema = new mongoose.Schema(
       type: [String],
       default: [],
     },
+    role: {
+      type: String,
+      enum: ['user', 'admin'],
+      default: 'user',
+    },
   },
   {
     // Adiciona automaticamente createdAt e updatedAt

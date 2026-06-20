@@ -7,6 +7,8 @@ import RecomendacaoInteligente from './pages/RecomendacaoInteligente/Recomendaca
 import RedeSocial from './pages/RedeSocial/RedeSocial';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
+import Perfil from './pages/Perfil/Perfil';
+import { UserProvider } from './contexts/UserContext';
 
 // Componente de proteção de rota — trava rígida por localStorage
 const PrivateRoute = ({ children }) => {
@@ -19,7 +21,7 @@ const PrivateRoute = ({ children }) => {
 
 function App() {
   return (
-    <>
+    <UserProvider>
       <Navbar />
       <Routes>
         {/* Rotas públicas */}
@@ -61,10 +63,19 @@ function App() {
           }
         />
 
+        <Route
+          path="/perfil"
+          element={
+            <PrivateRoute>
+              <Perfil />
+            </PrivateRoute>
+          }
+        />
+
         {/* Rota antiga /auth redireciona para /login */}
         <Route path="/auth" element={<Navigate to="/login" replace />} />
       </Routes>
-    </>
+    </UserProvider>
   );
 }
 

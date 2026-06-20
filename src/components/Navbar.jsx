@@ -149,6 +149,15 @@ const Navbar = () => {
                   🌐 Rede Social
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  to="/perfil"
+                  className={`nav-link ${isActive('/perfil') ? 'active' : ''}`}
+                  onClick={closeMenu}
+                >
+                  👤 Meu Perfil
+                </Link>
+              </li>
               <li className="nav-item nav-item-user">
                 <span className="nav-user-greeting">
                   👋 Olá, <strong>{userName}</strong>

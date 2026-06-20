@@ -22,7 +22,7 @@ const Home = () => {
             <a href="#problema" className="btn btn-primary">
               Quero saber mais
             </a>
-            <a href="#eventos" className="btn btn-secondary">
+            <a href="/eventos" className="btn btn-secondary">
               Próximos eventos
             </a>
           </div>
