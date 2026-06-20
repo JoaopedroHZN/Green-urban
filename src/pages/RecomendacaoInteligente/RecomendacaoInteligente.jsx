@@ -60,8 +60,22 @@ const RecomendacaoInteligente = () => {
     }
 
     try {
+      const token = localStorage.getItem('auth_token');
+      const headers = token ? { Authorization: `Bearer ${token}` } : {};
+
       const params = new URLSearchParams({ sol, espaco, rega });
-      const resposta = await fetch(`${API_BASE}/api/plantas?${params.toString()}`);
+      const resposta = await fetch(`${API_BASE}/api/plantas?${params.toString()}`, { headers });
+
+      if (!resposta.ok) {
+        if (resposta.status === 401) {
+          console.error('Acesso negado: faça login para usar o Assistente de Recomendação.');
+          setResultados([]);
+          setTotal(0);
+          return;
+        }
+        throw new Error('Erro ao buscar plantas');
+      }
+
       const data = await resposta.json();
       setResultados(data.plantas);
       setTotal(data.total);
@@ -294,10 +308,10 @@ const RecomendacaoInteligente = () => {
                 <div className="resultados-grid">
                   {resultados.map((planta, index) => (
                     <article key={index} className="planta-card">
-                      {planta.imagemUrl && (
+                      {planta.imagem && (
                         <div className="planta-card-imagem">
                           <img
-                            src={planta.imagemUrl}
+                            src={planta.imagem}
                             alt={planta.nomePopular}
                             className="planta-imagem"
                             loading="lazy"

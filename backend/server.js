@@ -3,6 +3,8 @@
 //  Servidor Express com Mongoose para conexão com MongoDB
 // ============================================================
 
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -26,7 +28,12 @@ const MONGO_URI =
 const app = express();
 
 // Middlewares
-app.use(cors());              // Libera requisições de origens diferentes
+app.use(cors({
+  origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
+  credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+}));
 app.use(express.json());      // Permite receber JSON no body das requisições
 app.use(express.urlencoded({ extended: true })); // Permite dados de formulários
 
@@ -36,16 +43,25 @@ app.use(express.urlencoded({ extended: true })); // Permite dados de formulário
 
 // Importar rotas da aplicação
 const usuariosRouter = require('./routes/usuarios');
+const authRoutes = require('./routes/authRoutes');
+const authMiddleware = require('./middleware/authMiddleware');
 
 // ------------------------------------------------------------
 //  Rota de Plantas do Cerrado — busca do dataset plantas_tropical.json
+//  PROTEGIDA: Requer token JWT válido (Authorization: Bearer <TOKEN>)
 // ------------------------------------------------------------
-const plantasTropical = require('./plantas_tropical.json');
+const plantasBase = require('./plantasBase.json');
 
-app.get('/api/plantas', (req, res) => {
+// Log de todas as requisições para debug
+app.use((req, res, next) => {
+  console.log(`📥 ${req.method} ${req.url} — Origin: ${req.get('origin') || 'sem origin'} — Auth: ${req.get('authorization') ? 'SIM' : 'NÃO'}`);
+  next();
+});
+
+app.get('/api/plantas', authMiddleware, (req, res) => {
   const { sol, espaco, rega } = req.query;
 
-  let resultado = plantasTropical;
+  let resultado = plantasBase;
 
   // Filtros opcionais via query string
   if (sol) {
@@ -82,8 +98,9 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Rotas da aplicação — prefixo /api/usuarios
+// Rotas da aplicação
 app.use('/api/usuarios', usuariosRouter);
+app.use('/api/auth', authRoutes);
 
 // ------------------------------------------------------------
 //  Conexão com MongoDB

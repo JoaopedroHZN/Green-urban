@@ -144,12 +144,30 @@
   transform: translateY(-7.5px) rotate(-45deg);
 }
 
-/* ===== Botão Entrar ===== */
-.nav-item-auth {
-  margin-left: 12px;
+/* ===== Botões Login / Cadastre-se (não logado) ===== */
+.nav-link-login {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 22px;
+  border-radius: 50px;
+  background: transparent;
+  color: #1b5e20 !important;
+  font-weight: 600;
+  border: 2px solid #2e7d32;
+  transition: all 0.3s ease;
 }
 
-.nav-link-entrar {
+.nav-link-login::after {
+  display: none;
+}
+
+.nav-link-login:hover {
+  background: rgba(46, 125, 50, 0.08);
+  transform: translateY(-1px);
+}
+
+.nav-link-cadastro {
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -162,41 +180,82 @@
   transition: all 0.3s ease;
 }
 
-.nav-link-entrar::after {
+.nav-link-cadastro::after {
   display: none;
 }
 
-.nav-link-entrar:hover {
+.nav-link-cadastro:hover {
   background: #1b5e20;
   border-color: #1b5e20;
   transform: translateY(-1px);
   box-shadow: 0 4px 14px rgba(46, 125, 50, 0.35);
 }
 
-.nav-link-entrar.active {
-  background: #1b5e20;
-  border-color: #1b5e20;
-  box-shadow: 0 4px 14px rgba(46, 125, 50, 0.35);
+/* ===== Saudação usuário logado ===== */
+.nav-item-user {
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
 }
 
-@media (max-width: 768px) {
-  .nav-item-auth {
-    margin-left: 0;
-    margin-top: 8px;
-    width: 100%;
-  }
+.nav-user-greeting {
+  font-size: 0.95rem;
+  color: #37474f;
+  padding: 8px 14px;
+  font-weight: 500;
+}
 
-  .nav-link-entrar {
+.nav-user-greeting strong {
+  color: #1b5e20;
+  font-weight: 700;
+}
+
+/* ===== Botão Sair (Logout) ===== */
+.nav-link-logout {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 22px;
+  border-radius: 50px;
+  background: transparent;
+  color: #c62828 !important;
+  font-weight: 600;
+  border: 2px solid #ef9a9a;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link-logout::after {
+  display: none;
+}
+
+.nav-link-logout:hover {
+  background: rgba(198, 40, 40, 0.08);
+  border-color: #c62828;
+  transform: translateY(-1px);
+}
+
+/* ===== Responsive: Mobile ===== */
+@media (max-width: 768px) {
+  .nav-link-login,
+  .nav-link-cadastro,
+  .nav-link-logout {
     width: 100%;
     justify-content: center;
     padding: 12px 18px;
-    background: #2e7d32;
-    color: #ffffff !important;
-    border: 2px solid #2e7d32;
   }
 
-  .nav-link-entrar::after {
-    display: none;
+  .nav-item-user {
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-user-greeting {
+    text-align: center;
+    width: 100%;
+    padding: 12px 18px;
   }
 }
 

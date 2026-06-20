@@ -1,8 +1,11 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Auth.css';
 
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:4000';
+
 const Auth = () => {
+  const navigate = useNavigate();
   const [isCadastro, setIsCadastro] = useState(true);
   const [formData, setFormData] = useState({ nome: '', email: '', senha: '' });
   const [mensagem, setMensagem] = useState({ tipo: '', texto: '' });
@@ -24,7 +27,8 @@ const Auth = () => {
     setLoading(true);
 
     try {
-      const url = 'http://localhost:4000/api/usuarios/cadastrar';
+      const endpoint = isCadastro ? '/api/auth/registrar' : '/api/auth/login';
+      const url = `${API_BASE}${endpoint}`;
       const payload = isCadastro
         ? { nome: formData.nome, email: formData.email, senha: formData.senha }
         : { email: formData.email, senha: formData.senha };
@@ -45,14 +49,24 @@ const Auth = () => {
         return;
       }
 
+      // Armazena o token JWT no localStorage para usar nas demais requisições
+      if (data.token) {
+        localStorage.setItem('token', data.token);
+      }
+
       setMensagem({
         tipo: 'sucesso',
         texto: isCadastro
-          ? 'Cadastro realizado com sucesso!'
-          : 'Login realizado com sucesso!',
+          ? 'Cadastro realizado com sucesso! Redirecionando...'
+          : 'Login realizado com sucesso! Redirecionando...',
       });
 
       setFormData({ nome: '', email: '', senha: '' });
+
+      // Redireciona para a Home após 1.5s
+      setTimeout(() => {
+        navigate('/');
+      }, 1500);
     } catch (err) {
       setMensagem({
         tipo: 'erro',

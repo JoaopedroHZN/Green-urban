@@ -7,8 +7,8 @@ import './DicionarioVerde.css';
  * =============================================================================
  *
  *  Funcionalidade:
- *    1. Busca todas as 200 plantas nativas do Cerrado via API /api/plantas.
- *    2. Permite busca por nome popular ou científico.
+ *    1. Busca todas as plantas nativas do Cerrado via API /api/plantas.
+ *    2. Permite busca local instantânea por nome popular ou científico.
  *    3. Permite filtrar por tipo (Árvore, Frutífera, Ornamental, Arbusto, Palmeira).
  *    4. Paginação com no máximo 21 plantas por página.
  *    5. Renderiza cards com imagem, nome, sinopse, condições ideais e dica.
@@ -33,6 +33,17 @@ const TIPOS_DISPONIVEIS = [
   'Palmeira',
 ];
 
+const corTipoBadge = (tipo) => {
+  const mapa = {
+    'Árvore': '#2e7d32',
+    'Frutífera': '#e65100',
+    'Ornamental': '#6a1b9a',
+    'Arbusto': '#1565c0',
+    'Palmeira': '#00695c',
+  };
+  return mapa[tipo] || '#546e7a';
+};
+
 const iconeCondicao = (categoria, valor) => {
   if (categoria === 'sol') {
     return valor === 'Muito Sol' ? '☀️' : '🌥️';
@@ -50,11 +61,11 @@ const PlantaCard = ({ planta }) => {
   return (
     <article className="planta-card">
       <div className="planta-img-wrapper">
-        {planta.imagemUrl ? (
+        {planta.imagem ? (
           <img
-            className="planta-img"
-            src={planta.imagemUrl}
+            src={planta.imagem}
             alt={planta.nomePopular}
+            className="w-full h-48 object-cover rounded-t-md"
             loading="lazy"
           />
         ) : (
@@ -63,10 +74,11 @@ const PlantaCard = ({ planta }) => {
             <span>{planta.nomePopular}</span>
           </div>
         )}
-        <span className="planta-selo">🌱</span>
       </div>
       <div className="planta-body">
-        <span className="planta-tipo-badge">{planta.tipo}</span>
+        <span className="planta-tipo-badge" style={{ background: `${corTipoBadge(planta.tipo)}18`, color: corTipoBadge(planta.tipo) }}>
+          {planta.tipo}
+        </span>
         <h2 className="planta-nome">{planta.nomePopular}</h2>
         <p className="planta-cientifico">
           <em>{planta.nomeCientifico}</em>
@@ -116,30 +128,41 @@ const PlantaCard = ({ planta }) => {
 
 const DicionarioVerde = () => {
   const [plantas, setPlantas] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
   const [tipoSelecionado, setTipoSelecionado] = useState('Todos');
-  const [carregando, setCarregando] = useState(true);
   const [erro, setErro] = useState(null);
   const [pagina, setPagina] = useState(1);
 
   useEffect(() => {
     const buscarPlantas = async () => {
       try {
-        const resposta = await fetch(`${API_BASE}/api/plantas`);
-        if (!resposta.ok) throw new Error('Erro ao buscar plantas');
+        const token = localStorage.getItem('auth_token');
+        const headers = token ? { Authorization: `Bearer ${token}` } : {};
+
+        const resposta = await fetch(`${API_BASE}/api/plantas`, { headers });
+
+        if (!resposta.ok) {
+          if (resposta.status === 401) {
+            throw new Error('Faça login para acessar o Dicionário Verde.');
+          }
+          throw new Error('Erro ao buscar plantas');
+        }
+
         const data = await resposta.json();
         setPlantas(data.plantas);
       } catch (err) {
         console.error('Erro ao carregar dicionário:', err);
         setErro(err.message);
       } finally {
-        setCarregando(false);
+        setLoading(false);
       }
     };
 
     buscarPlantas();
   }, []);
 
+  /* ---- Filtro local (não dispara novo fetch) ---- */
   const filtered = useMemo(() => {
     return plantas.filter((p) => {
       const matchSearch =
@@ -175,7 +198,6 @@ const DicionarioVerde = () => {
 
   const handlePaginaMudar = (novaPagina) => {
     setPagina(novaPagina);
-    // Scroll suave para o topo da seção
     document.getElementById('dicionario')?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -230,11 +252,10 @@ const DicionarioVerde = () => {
         </div>
 
         {/* Estado de carregamento */}
-        {carregando && (
+        {loading && (
           <div className="loading-state">
             <span className="loading-icon">⏳</span>
-            <h3>Carregando o acervo...</h3>
-            <p>Buscando as 200 plantas nativas do Cerrado</p>
+            <h3>Carregando plantas...</h3>
           </div>
         )}
 
@@ -249,7 +270,7 @@ const DicionarioVerde = () => {
         )}
 
         {/* Contador de resultados */}
-        {!carregando && !erro && (
+        {!loading && !erro && (
           <p className="result-count">
             {filtered.length === 1
               ? '1 planta encontrada'
@@ -261,7 +282,7 @@ const DicionarioVerde = () => {
         )}
 
         {/* Grid de cards */}
-        {!carregando && !erro && (
+        {!loading && !erro && (
           <div className="plantas-grid">
             {plantasPaginadas.map((planta, index) => (
               <PlantaCard key={`${planta.nomePopular}-${paginaAtual}-${index}`} planta={planta} />
@@ -270,7 +291,7 @@ const DicionarioVerde = () => {
         )}
 
         {/* Paginação */}
-        {!carregando && !erro && totalPaginas > 1 && (
+        {!loading && !erro && totalPaginas > 1 && (
           <nav className="paginacao" aria-label="Paginação de plantas">
             <button
               className="pagina-btn"
@@ -307,7 +328,7 @@ const DicionarioVerde = () => {
         )}
 
         {/* Estado vazio */}
-        {!carregando && !erro && filtered.length === 0 && (
+        {!loading && !erro && filtered.length === 0 && (
           <div className="empty-state">
             <span className="empty-icon">🌿</span>
             <h3>Nenhuma planta encontrada</h3>
