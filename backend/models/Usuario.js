@@ -30,6 +30,16 @@ const usuarioSchema = new mongoose.Schema(
       required: [true, 'A senha é obrigatória'],
       minlength: [6, 'A senha deve ter pelo menos 6 caracteres'],
     },
+    xp: {
+      type: Number,
+      default: 0,
+      min: 0,
+    },
+    nivel: {
+      type: String,
+      enum: ['usuario', 'criador', 'admin'],
+      default: 'usuario',
+    },
     pontuacaoTotal: {
       type: Number,
       default: 0,
@@ -38,6 +48,11 @@ const usuarioSchema = new mongoose.Schema(
     listaConquistas: {
       type: [String],
       default: [],
+    },
+    role: {
+      type: String,
+      enum: ['user', 'admin'],
+      default: 'user',
     },
   },
   {

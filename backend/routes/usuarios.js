@@ -67,6 +67,30 @@ router.post('/cadastrar', async (req, res) => {
 });
 
 // ------------------------------------------------------------
+//  GET /perfil/:id
+//  Retorna perfil completo do usuário (nome, pontuação, conquistas)
+// ------------------------------------------------------------
+router.get('/perfil/:id', async (req, res) => {
+  try {
+    const usuario = await Usuario.findById(req.params.id, '-senha -__v').lean();
+
+    if (!usuario) {
+      return res.status(404).json({ erro: 'Usuário não encontrado.' });
+    }
+
+    res.json({ sucesso: true, usuario });
+  } catch (erro) {
+    console.error('❌ Erro ao buscar perfil:', erro.message);
+
+    if (erro.name === 'CastError') {
+      return res.status(400).json({ erro: 'ID de usuário inválido.' });
+    }
+
+    res.status(500).json({ erro: 'Erro interno ao buscar perfil.' });
+  }
+});
+
+// ------------------------------------------------------------
 //  GET /listar (rota auxiliar para testes)
 //  Retorna todos os usuários cadastrados
 // ------------------------------------------------------------
