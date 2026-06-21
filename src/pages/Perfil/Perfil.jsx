@@ -52,7 +52,7 @@ const Perfil = () => {
   }
 
   const nome = usuario.nome;
-  const pontuacao = usuario.pontuacaoTotal ?? 0;
+  const pontuacao = usuario.xp ?? usuario.pontuacaoTotal ?? 0;
   const conquistasUsuario = usuario.listaConquistas || [];
   const role = usuario.role || 'user';
   const { nivel, titulo, xp, xpMax } = calcularNivel(pontuacao);

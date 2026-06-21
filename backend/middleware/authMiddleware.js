@@ -46,7 +46,8 @@ const authMiddleware = async (req, res, next) => {
     }
 
     // Injeta os dados do usuário na requisição para uso nas rotas
-    req.usuario = { id: usuario._id, nome: usuario.nome, email: usuario.email };
+    // Garante que id seja sempre uma string pura para evitar problemas de comparação com ObjectId
+    req.usuario = { id: usuario._id.toString(), nome: usuario.nome, email: usuario.email };
     next();
   } catch (erro) {
     console.error('Erro no authMiddleware:', erro);

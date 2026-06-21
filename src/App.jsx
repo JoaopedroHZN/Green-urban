@@ -3,6 +3,9 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home/Home';
 import DicionarioVerde from './pages/DicionarioVerde/DicionarioVerde';
 import Eventos from './pages/Eventos/Eventos';
+import CriarEvento from './pages/Eventos/CriarEvento';
+import GerenciarEvento from './pages/Eventos/GerenciarEvento';
+import DetalhesEvento from './pages/Eventos/DetalhesEvento';
 import RecomendacaoInteligente from './pages/RecomendacaoInteligente/RecomendacaoInteligente';
 import RedeSocial from './pages/RedeSocial/RedeSocial';
 import Login from './pages/Login';
@@ -43,6 +46,30 @@ function App() {
           element={
             <PrivateRoute>
               <Eventos />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/eventos/criar"
+          element={
+            <PrivateRoute>
+              <CriarEvento />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/eventos/gerenciar/:id"
+          element={
+            <PrivateRoute>
+              <GerenciarEvento />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/eventos/:id"
+          element={
+            <PrivateRoute>
+              <DetalhesEvento />
             </PrivateRoute>
           }
         />

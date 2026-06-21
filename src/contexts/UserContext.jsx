@@ -63,6 +63,7 @@ export function UserProvider({ children }) {
       setUsuario({
         _id: id,
         nome: localUser?.nome || 'Voluntário(a)',
+        xp: localUser?.xp ?? 0,
         pontuacaoTotal: localUser?.pontuacaoTotal ?? 0,
         listaConquistas: localUser?.listaConquistas || [],
         role: 'user',

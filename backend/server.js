@@ -60,6 +60,9 @@ app.use(cors({
 app.use(express.json());      // Permite receber JSON no body das requisições
 app.use(express.urlencoded({ extended: true })); // Permite dados de formulários
 
+// Servir arquivos estáticos da pasta de uploads (fotos de check-in)
+const path = require('path');
+app.use('/uploads', express.static(path.resolve(__dirname, '../frontend/public/uploads')));
 // ------------------------------------------------------------
 //  Rotas
 // ------------------------------------------------------------
@@ -68,6 +71,7 @@ app.use(express.urlencoded({ extended: true })); // Permite dados de formulário
 const usuariosRouter = require('./routes/usuarios');
 const authRoutes = require('./routes/authRoutes');
 const postagensRouter = require('./routes/postagens');
+const eventosRouter = require('./routes/eventos');
 const authMiddleware = require('./middleware/authMiddleware');
 
 // ------------------------------------------------------------
@@ -126,6 +130,7 @@ app.get('/api/health', (req, res) => {
 app.use('/api/usuarios', usuariosRouter);
 app.use('/api/auth', authRoutes);
 app.use('/api/postagens', postagensRouter);
+app.use('/api/eventos', eventosRouter);
 
 // ------------------------------------------------------------
 //  Conexão com MongoDB
