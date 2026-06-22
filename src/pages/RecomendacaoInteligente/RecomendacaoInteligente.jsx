@@ -1,53 +1,78 @@
-import { useState, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import './RecomendacaoInteligente.css';
-
-/**
- * =============================================================================
- *  🌿 Assistente de Recomendação Inteligente — Green Urban
- * =============================================================================
- *
- *  Funcionalidade:
- *    1. Exibe um formulário visual com três perguntas (luminosidade, espaço e rega).
- *    2. Ao clicar em "Buscar", consulta a API /api/plantas com os filtros selecionados.
- *    3. Renderiza cards com os resultados (nome, sinopse, condições ideais) e
- *       uma mensagem amigável caso nenhuma planta corresponda.
- *
- *  Acessibilidade:
- *    - Botões grandes com ícones e labels visíveis.
- *    - Atributos `aria-*` para leitores de tela.
- *    - Contraste adequado e foco visível.
- * =============================================================================
- */
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:4000';
 
+const iconeCondicao = (categoria, valor) => {
+  if (categoria === 'sol') return valor === 'Muito Sol' ? '☀️' : '🌥️';
+  if (categoria === 'espaco') return valor === 'Pouco Espaço' ? '🏠' : '🌳';
+  if (categoria === 'rega') return valor === 'Regamento Frequente' ? '💧' : '🌵';
+  return '🌿';
+};
+
+const PlantaCard = ({ planta }) => {
+  return (
+    <article className="planta-card-carrossel">
+      {planta.imagem ? (
+        <div className="planta-card-img-wrap">
+          <img
+            src={planta.imagem}
+            alt={planta.nomePopular}
+            className="planta-card-img"
+            loading="lazy"
+          />
+        </div>
+      ) : (
+        <div className="planta-card-img-placeholder">🌿</div>
+      )}
+      <div className="planta-card-body">
+        <span className="planta-card-tipo">{planta.tipo}</span>
+        <h3 className="planta-card-nome">{planta.nomePopular}</h3>
+        <p className="planta-card-cientifico"><em>{planta.nomeCientifico}</em></p>
+        <p className="planta-card-sinopse">{planta.sinopse}</p>
+        <div className="planta-card-tags">
+          <span className="planta-card-tag">
+            {iconeCondicao('sol', planta.condicoesIdeais.sol)} {planta.condicoesIdeais.sol}
+          </span>
+          <span className="planta-card-tag">
+            {iconeCondicao('espaco', planta.condicoesIdeais.espaco)} {planta.condicoesIdeais.espaco}
+          </span>
+          <span className="planta-card-tag">
+            {iconeCondicao('rega', planta.condicoesIdeais.rega)} {planta.condicoesIdeais.rega}
+          </span>
+        </div>
+        <p className="planta-card-dica">
+          <strong>💡 Dica:</strong> {planta.dicasCuidado}
+        </p>
+      </div>
+    </article>
+  );
+};
+
 const RecomendacaoInteligente = () => {
-  /* ---- Estado do formulário ---- */
-  const [sol, setSol] = useState(null);       // "Muito Sol" | "Sombra"
-  const [espaco, setEspaco] = useState(null);  // "Pouco Espaço" | "Mais Espaço"
-  const [rega, setRega] = useState(null);      // "Regamento Frequente" | "Baixo Regamento"
+  const [sol, setSol] = useState(null);
+  const [espaco, setEspaco] = useState(null);
+  const [rega, setRega] = useState(null);
   const [resultados, setResultados] = useState([]);
   const [total, setTotal] = useState(0);
   const [buscou, setBuscou] = useState(false);
   const [carregando, setCarregando] = useState(false);
 
-  /* ---- Opções para os botões ---- */
   const opcoesSol = [
-    { valor: 'Muito Sol', label: 'Muito Sol',    icone: '☀️', descricao: 'Pleno sol / luz direta' },
-    { valor: 'Sombra',    label: 'Sombra',        icone: '🌥️', descricao: 'Pouca luz / ambiente interno' },
+    { valor: 'Muito Sol', label: 'Muito Sol', icone: '☀️', descricao: 'Pleno sol / luz direta' },
+    { valor: 'Sombra', label: 'Sombra', icone: '🌥️', descricao: 'Pouca luz / ambiente interno' },
   ];
 
   const opcoesEspaco = [
-    { valor: 'Pouco Espaço', label: 'Pouco Espaço',  icone: '🏠', descricao: 'Vasos / Apartamento' },
-    { valor: 'Mais Espaço',  label: 'Mais Espaço',   icone: '🌳', descricao: 'Quintal / Calçada' },
+    { valor: 'Pouco Espaço', label: 'Pouco Espaço', icone: '🏠', descricao: 'Vasos / Apartamento' },
+    { valor: 'Mais Espaço', label: 'Mais Espaço', icone: '🌳', descricao: 'Quintal / Calçada' },
   ];
 
   const opcoesRega = [
     { valor: 'Regamento Frequente', label: 'Rega Frequente', icone: '💧', descricao: 'Solo sempre úmido' },
-    { valor: 'Baixo Regamento',     label: 'Pouca Rega',     icone: '🌵', descricao: 'Solo seco / esporádico' },
+    { valor: 'Baixo Regamento', label: 'Pouca Rega', icone: '🌵', descricao: 'Solo seco / esporádico' },
   ];
 
-  /* ---- Lógica de filtragem via API ---- */
   const handleBuscar = async () => {
     setBuscou(true);
     setCarregando(true);
@@ -62,25 +87,23 @@ const RecomendacaoInteligente = () => {
     try {
       const token = localStorage.getItem('auth_token');
       const headers = token ? { Authorization: `Bearer ${token}` } : {};
-
       const params = new URLSearchParams({ sol, espaco, rega });
       const resposta = await fetch(`${API_BASE}/api/plantas?${params.toString()}`, { headers });
 
       if (!resposta.ok) {
         if (resposta.status === 401) {
-          console.error('Acesso negado: faça login para usar o Assistente de Recomendação.');
-          setResultados([]);
-          setTotal(0);
-          return;
+          console.error('Acesso negado: faça login para usar o Assistente.');
         }
-        throw new Error('Erro ao buscar plantas');
+        setResultados([]);
+        setTotal(0);
+        setCarregando(false);
+        return;
       }
 
       const data = await resposta.json();
       setResultados(data.plantas);
       setTotal(data.total);
-    } catch (erro) {
-      console.error('Erro ao buscar plantas:', erro);
+    } catch {
       setResultados([]);
       setTotal(0);
     } finally {
@@ -88,7 +111,18 @@ const RecomendacaoInteligente = () => {
     }
   };
 
-  /* ---- Reset ---- */
+  const carrosselRef = useRef(null);
+
+  const scrollCarrossel = (direcao) => {
+    if (carrosselRef.current) {
+      const scrollAmount = 340; // largura do card + gap
+      carrosselRef.current.scrollBy({
+        left: direcao === 'direita' ? scrollAmount : -scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   const handleReset = () => {
     setSol(null);
     setEspaco(null);
@@ -98,29 +132,13 @@ const RecomendacaoInteligente = () => {
     setBuscou(false);
   };
 
-  /* ---- Helper para label do filtro ---- */
   const labelSol = sol || '—';
   const labelEspaco = espaco || '—';
   const labelRega = rega || '—';
 
-  /* ---- Helper para ícone dos ícones de condição nos cards ---- */
-  const iconeCondicao = (categoria, valor) => {
-    if (categoria === 'sol') {
-      return valor === 'Muito Sol' ? '☀️' : '🌥️';
-    }
-    if (categoria === 'espaco') {
-      return valor === 'Pouco Espaço' ? '🏠' : '🌳';
-    }
-    if (categoria === 'rega') {
-      return valor === 'Regamento Frequente' ? '💧' : '🌵';
-    }
-    return '🌿';
-  };
-
   return (
     <main className="recomendacao-page">
       <div className="recomendacao-container">
-        {/* ===== Cabeçalho ===== */}
         <header className="recomendacao-header">
           <span className="recomendacao-badge">🌱 Assistente Inteligente</span>
           <h1 className="recomendacao-title">
@@ -133,22 +151,13 @@ const RecomendacaoInteligente = () => {
           </p>
         </header>
 
-        {/* ===== Formulário ===== */}
-        <form
-          className="recomendacao-form"
-          onSubmit={(e) => {
-            e.preventDefault();
-            handleBuscar();
-          }}
-          aria-label="Formulário de recomendação de plantas"
-        >
-          {/* --- Pergunta 1: Luminosidade --- */}
+        <form className="recomendacao-form" onSubmit={(e) => { e.preventDefault(); handleBuscar(); }}>
           <fieldset className="form-fieldset">
             <legend className="form-legend">
               <span className="legend-number">1</span>
               Qual a luminosidade do ambiente?
             </legend>
-            <div className="opcoes-grid" role="radiogroup" aria-label="Opções de luminosidade">
+            <div className="opcoes-grid">
               {opcoesSol.map((opcao) => (
                 <button
                   key={opcao.valor}
@@ -156,9 +165,8 @@ const RecomendacaoInteligente = () => {
                   className={`opcao-btn ${sol === opcao.valor ? 'opcao-btn--active' : ''}`}
                   onClick={() => setSol(opcao.valor)}
                   aria-pressed={sol === opcao.valor}
-                  aria-label={`${opcao.label} — ${opcao.descricao}`}
                 >
-                  <span className="opcao-icone" aria-hidden="true">{opcao.icone}</span>
+                  <span className="opcao-icone">{opcao.icone}</span>
                   <span className="opcao-label">{opcao.label}</span>
                   <span className="opcao-desc">{opcao.descricao}</span>
                 </button>
@@ -166,13 +174,12 @@ const RecomendacaoInteligente = () => {
             </div>
           </fieldset>
 
-          {/* --- Pergunta 2: Espaço --- */}
           <fieldset className="form-fieldset">
             <legend className="form-legend">
               <span className="legend-number">2</span>
               Quanto espaço você tem disponível?
             </legend>
-            <div className="opcoes-grid" role="radiogroup" aria-label="Opções de espaço">
+            <div className="opcoes-grid">
               {opcoesEspaco.map((opcao) => (
                 <button
                   key={opcao.valor}
@@ -180,9 +187,8 @@ const RecomendacaoInteligente = () => {
                   className={`opcao-btn ${espaco === opcao.valor ? 'opcao-btn--active' : ''}`}
                   onClick={() => setEspaco(opcao.valor)}
                   aria-pressed={espaco === opcao.valor}
-                  aria-label={`${opcao.label} — ${opcao.descricao}`}
                 >
-                  <span className="opcao-icone" aria-hidden="true">{opcao.icone}</span>
+                  <span className="opcao-icone">{opcao.icone}</span>
                   <span className="opcao-label">{opcao.label}</span>
                   <span className="opcao-desc">{opcao.descricao}</span>
                 </button>
@@ -190,13 +196,12 @@ const RecomendacaoInteligente = () => {
             </div>
           </fieldset>
 
-          {/* --- Pergunta 3: Rega --- */}
           <fieldset className="form-fieldset">
             <legend className="form-legend">
               <span className="legend-number">3</span>
               Com que frequência você pode regar?
             </legend>
-            <div className="opcoes-grid" role="radiogroup" aria-label="Opções de rega">
+            <div className="opcoes-grid">
               {opcoesRega.map((opcao) => (
                 <button
                   key={opcao.valor}
@@ -204,9 +209,8 @@ const RecomendacaoInteligente = () => {
                   className={`opcao-btn ${rega === opcao.valor ? 'opcao-btn--active' : ''}`}
                   onClick={() => setRega(opcao.valor)}
                   aria-pressed={rega === opcao.valor}
-                  aria-label={`${opcao.label} — ${opcao.descricao}`}
                 >
-                  <span className="opcao-icone" aria-hidden="true">{opcao.icone}</span>
+                  <span className="opcao-icone">{opcao.icone}</span>
                   <span className="opcao-label">{opcao.label}</span>
                   <span className="opcao-desc">{opcao.descricao}</span>
                 </button>
@@ -214,139 +218,81 @@ const RecomendacaoInteligente = () => {
             </div>
           </fieldset>
 
-          {/* --- Ações --- */}
           <div className="form-actions">
             <button
               type="submit"
               className="btn btn-primary btn-buscar"
               disabled={!sol || !espaco || !rega}
-              aria-label="Buscar plantas recomendadas"
             >
               {carregando ? '🔍 Buscando...' : '🌿 Buscar Recomendações'}
             </button>
             {(buscou || sol || espaco || rega) && (
-              <button
-                type="button"
-                className="btn btn-reset"
-                onClick={handleReset}
-                aria-label="Limpar seleções e recomeçar"
-              >
+              <button type="button" className="btn btn-reset" onClick={handleReset}>
                 ↻ Recomeçar
               </button>
             )}
           </div>
         </form>
 
-        {/* ===== Seção de Resultados ===== */}
         {buscou && (
-          <section className="resultados-section" aria-live="polite">
+          <section className="resultados-section">
             <div className="resultados-divider" />
 
             {carregando ? (
               <div className="resultado-vazio">
-                <span className="resultado-vazio-icone" aria-hidden="true">⏳</span>
-                <p className="resultado-vazio-texto">
-                  Buscando as melhores plantas do Cerrado para você...
-                </p>
+                <span className="resultado-vazio-icone">⏳</span>
+                <p className="resultado-vazio-texto">Buscando as melhores plantas do Cerrado para você...</p>
               </div>
             ) : !sol || !espaco || !rega ? (
-              /* --- Faltou selecionar alguma opção --- */
               <div className="resultado-vazio">
-                <span className="resultado-vazio-icone" aria-hidden="true">👆</span>
+                <span className="resultado-vazio-icone">👆</span>
                 <p className="resultado-vazio-texto">
-                  Selecione as três opções acima e clique em{' '}
-                  <strong>Buscar Recomendações</strong> para ver as plantas
-                  ideais para você!
+                  Selecione as três opções e clique em <strong>Buscar Recomendações</strong>.
                 </p>
               </div>
             ) : resultados.length === 0 ? (
-              /* --- Nenhuma correspondência --- */
               <div className="resultado-vazio">
-                <span className="resultado-vazio-icone" aria-hidden="true">🔍</span>
-                <h2 className="resultado-vazio-titulo">
-                  Nenhuma planta encontrada
-                </h2>
+                <span className="resultado-vazio-icone">🔍</span>
+                <h2 className="resultado-vazio-titulo">Nenhuma planta encontrada</h2>
                 <p className="resultado-vazio-texto">
-                  Não encontramos plantas que correspondam exatamente a{' '}
-                  <strong>{labelSol}</strong> +{' '}
-                  <strong>{labelEspaco}</strong> +{' '}
-                  <strong>{labelRega}</strong>.
+                  Não encontramos plantas para <strong>{labelSol}</strong> + <strong>{labelEspaco}</strong> + <strong>{labelRega}</strong>.
                 </p>
-                <p className="resultado-vazio-texto">
-                  Que tal tentar outra combinação ou explorar o{' '}
-                  <a href="/dicionario" className="link-dicionario">
-                    Dicionário Verde 🌿
-                  </a>{' '}
-                  completo?
-                </p>
-                <button
-                  type="button"
-                  className="btn btn-secondary btn-tentar"
-                  onClick={handleReset}
-                >
+                <button type="button" className="btn btn-secondary btn-tentar" onClick={handleReset}>
                   ↻ Tentar outra combinação
                 </button>
               </div>
             ) : (
-              /* --- Plantas compatíveis --- */
               <>
                 <div className="resultados-header">
                   <h2 className="resultados-titulo">
-                    🌱 {total}{' '}
-                    {total === 1
-                      ? 'planta recomendada'
-                      : 'plantas recomendadas'}{' '}
-                    para você
+                    🌱 {total} {total === 1 ? 'planta recomendada' : 'plantas recomendadas'} para você
                   </h2>
                   <p className="resultados-filtro">
-                    Filtros: <strong>{labelSol}</strong> +{' '}
-                    <strong>{labelEspaco}</strong> +{' '}
-                    <strong>{labelRega}</strong>
+                    Filtros: <strong>{labelSol}</strong> + <strong>{labelEspaco}</strong> + <strong>{labelRega}</strong>
                   </p>
                 </div>
 
-                <div className="resultados-grid">
-                  {resultados.map((planta, index) => (
-                    <article key={index} className="planta-card">
-                      {planta.imagem && (
-                        <div className="planta-card-imagem">
-                          <img
-                            src={planta.imagem}
-                            alt={planta.nomePopular}
-                            className="planta-imagem"
-                            loading="lazy"
-                          />
-                        </div>
-                      )}
-                      <div className="planta-card-header">
-                        <span className="planta-tipo-badge">{planta.tipo}</span>
-                      </div>
-                      <h3 className="planta-nome">{planta.nomePopular}</h3>
-                      <p className="planta-cientifico">
-                        <em>{planta.nomeCientifico}</em>
-                      </p>
-                      <p className="planta-sinopse">
-                        {planta.sinopse}
-                      </p>
-                      <div className="planta-condicoes">
-                        <span className="condicao-tag">
-                          {iconeCondicao('sol', planta.condicoesIdeais.sol)}{' '}
-                          {planta.condicoesIdeais.sol}
-                        </span>
-                        <span className="condicao-tag">
-                          {iconeCondicao('espaco', planta.condicoesIdeais.espaco)}{' '}
-                          {planta.condicoesIdeais.espaco}
-                        </span>
-                        <span className="condicao-tag">
-                          {iconeCondicao('rega', planta.condicoesIdeais.rega)}{' '}
-                          {planta.condicoesIdeais.rega}
-                        </span>
-                      </div>
-                      <p className="planta-dica">
-                        <strong>💡 Dica:</strong> {planta.dicasCuidado}
-                      </p>
-                    </article>
-                  ))}
+                {/* CARROSSEL HORIZONTAL */}
+                <div className="carrossel-container">
+                  <button
+                    className="carrossel-btn carrossel-btn--esquerda"
+                    onClick={() => scrollCarrossel('esquerda')}
+                    aria-label="Rolar para esquerda"
+                  >
+                    ‹
+                  </button>
+                  <div className="carrossel-wrapper" ref={carrosselRef}>
+                    {resultados.map((planta, index) => (
+                      <PlantaCard key={`${planta.nomePopular}-${index}`} planta={planta} />
+                    ))}
+                  </div>
+                  <button
+                    className="carrossel-btn carrossel-btn--direita"
+                    onClick={() => scrollCarrossel('direita')}
+                    aria-label="Rolar para direita"
+                  >
+                    ›
+                  </button>
                 </div>
               </>
             )}

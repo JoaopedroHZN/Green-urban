@@ -75,7 +75,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link
           to="/"
-          className="flex items-center gap-2.5 text-white font-bold text-xl whitespace-nowrap hover:opacity-90 transition-opacity"
+          className="flex items-center gap-2.5 !text-white font-bold text-xl whitespace-nowrap hover:opacity-90 transition-opacity"
           onClick={closeMenu}
         >
           <img
