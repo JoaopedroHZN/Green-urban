@@ -114,7 +114,9 @@
 }
 
 .hero-badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -126,6 +128,13 @@
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   margin-bottom: 24px;
+}
+
+.hero-badge-logo {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .hero-title {

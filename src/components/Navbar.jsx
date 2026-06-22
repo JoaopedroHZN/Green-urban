@@ -75,10 +75,14 @@ const Navbar = () => {
         {/* Logo */}
         <Link
           to="/"
-          className="flex items-center gap-2 text-white font-bold text-xl whitespace-nowrap hover:opacity-90 transition-opacity"
+          className="flex items-center gap-2.5 text-white font-bold text-xl whitespace-nowrap hover:opacity-90 transition-opacity"
           onClick={closeMenu}
         >
-          <Leaf className="w-5 h-5" />
+          <img
+            src="/Logo2.png"
+            alt="Green Urban"
+            className="navbar-logo-img"
+          />
           Green Urban
         </Link>
 

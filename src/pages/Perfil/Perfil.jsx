@@ -9,11 +9,10 @@ import './Perfil.css';
 // ============================================================
 
 const conquistasDisponiveis = [
-  { icone: '🌱', titulo: 'Primeiro Plantio', descricao: 'Inscreva-se no seu 1º mutirão' },
-  { icone: '🌳', titulo: 'Eco-Herói', descricao: 'Participe de 3 mutirões' },
-  { icone: '📅', titulo: 'Presença em Mutirão', descricao: 'Compareça a 1 evento' },
-  { icone: '💚', titulo: 'Coração Verde', descricao: 'Convide 2 amigos' },
-  { icone: '🏆', titulo: 'Guardião da Natureza', descricao: 'Plante 50 mudas' },
+  { icone: '🌱', titulo: 'Primeiro Broto', descricao: 'Faça sua primeira postagem na Rede Social Verde' },
+  { icone: '🌾', titulo: 'Protetor do Cerrado', descricao: 'Participe do seu 1º evento de plantio' },
+  { icone: '📚', titulo: 'Especialista em Biomas', descricao: 'Use o Assistente de Recomendação Inteligente' },
+  { icone: '🛡️', titulo: 'Guardião Veterano', descricao: 'Alcance o Nível 5 (500+ XP)' },
 ];
 
 function calcularNivel(pontuacao) {
@@ -76,63 +75,66 @@ const Perfil = () => {
         </header>
 
         <div className="perfil-grid">
-          {/* ===== Card de Identidade ===== */}
-          <div className="perfil-card perfil-card--principal">
-            <div className="perfil-avatar">
-              <span className="perfil-avatar-inicial">
-                {nome.charAt(0).toUpperCase()}
+          {/* ===== Linha 1: Identidade + Estatísticas ===== */}
+          <div className="perfil-topo">
+            {/* Card de Identidade */}
+            <div className="perfil-card perfil-card--identidade">
+              <div className="perfil-avatar">
+                <span className="perfil-avatar-inicial">
+                  {nome.charAt(0).toUpperCase()}
+                </span>
+                <span className="perfil-level-badge">{nivel}</span>
+              </div>
+              <h2 className="perfil-nome">{nome}</h2>
+
+              {role === 'admin' && (
+                <span className="perfil-admin-tag">🛡️ Admin</span>
+              )}
+
+              <div className="perfil-nivel">
+                <span className="perfil-nivel-label">Nível</span>
+                <strong className="perfil-nivel-valor">
+                  {nivel} — {titulo}
+                </strong>
+              </div>
+
+              <div className="perfil-xp-bar">
+                <div className="perfil-xp-fill" style={{ width: `${xpPercent}%` }} />
+              </div>
+              <span className="perfil-xp-text">
+                ⭐ {pontuacao} XP total • {xp} / {xpMax} XP
               </span>
-              <span className="perfil-level-badge">{nivel}</span>
-            </div>
-            <h2 className="perfil-nome">{nome}</h2>
-
-            {role === 'admin' && (
-              <span className="perfil-admin-tag">🛡️ Admin</span>
-            )}
-
-            <div className="perfil-nivel">
-              <span className="perfil-nivel-label">Nível</span>
-              <strong className="perfil-nivel-valor">
-                {nivel} — {titulo}
-              </strong>
             </div>
 
-            <div className="perfil-xp-bar">
-              <div className="perfil-xp-fill" style={{ width: `${xpPercent}%` }} />
-            </div>
-            <span className="perfil-xp-text">
-              ⭐ {pontuacao} XP total • {xp} / {xpMax} XP para o nível {nivel + 1}
-            </span>
-          </div>
-
-          {/* ===== Card de Estatísticas ===== */}
-          <div className="perfil-card perfil-card--stats">
-            <h3 className="perfil-stats-title">📊 Minhas Estatísticas</h3>
-            <div className="perfil-stats-grid">
-              <div className="stat-item">
-                <span className="stat-icone">⭐</span>
-                <strong>{pontuacao}</strong>
-                <span>XP Total</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-icone">🌳</span>
-                <strong>{conquistasUsuario.length}</strong>
-                <span>Conquistas</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-icone">📅</span>
-                <strong>0</strong>
-                <span>Eventos</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-icone">📢</span>
-                <strong>0</strong>
-                <span>Postagens</span>
+            {/* Card de Estatísticas */}
+            <div className="perfil-card perfil-card--stats">
+              <h3 className="perfil-stats-title">📊 Minhas Estatísticas</h3>
+              <div className="perfil-stats-grid">
+                <div className="stat-item">
+                  <span className="stat-icone">⭐</span>
+                  <strong>{pontuacao}</strong>
+                  <span>XP Total</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-icone">🏅</span>
+                  <strong>{conquistasUsuario.length}</strong>
+                  <span>Conquistas</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-icone">📅</span>
+                  <strong>0</strong>
+                  <span>Eventos</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-icone">📢</span>
+                  <strong>0</strong>
+                  <span>Postagens</span>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* ===== Card de Conquistas ===== */}
+          {/* ===== Linha 2: Conquistas ===== */}
           <div className="perfil-card perfil-card--conquistas">
             <h3 className="conquistas-titulo">🏅 Conquistas</h3>
             <ul className="conquistas-lista">
@@ -154,7 +156,7 @@ const Perfil = () => {
             </ul>
           </div>
 
-          {/* ===== Links Rápidos ===== */}
+          {/* ===== Linha 3: Links Rápidos ===== */}
           <div className="perfil-card perfil-card--links">
             <h3 className="perfil-links-title">🔗 Links Rápidos</h3>
             <div className="perfil-links-grid">

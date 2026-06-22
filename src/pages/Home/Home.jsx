@@ -7,7 +7,10 @@ const Home = () => {
       <section className="hero-section" id="home">
         <div className="hero-overlay" />
         <div className="hero-content">
-          <span className="hero-badge">🌱 Movimento Green Urban</span>
+          <span className="hero-badge">
+            <img src="/Logo2.png" alt="Green Urban" className="hero-badge-logo" />
+            Movimento Green Urban
+          </span>
           <h1 className="hero-title">
             Transformando{' '}
             <span className="highlight">concreto</span> em{' '}
@@ -129,8 +132,8 @@ const Home = () => {
             participe de um evento ou simplesmente compartilhe a ideia. Cada
             ação conta.
           </p>
-          <a href="#rede" className="btn btn-primary btn-large">
-            🌿 Quero fazer parte
+          <a href="/rede" className="btn btn-primary btn-large">
+            Quero fazer parte
           </a>
         </div>
       </section>

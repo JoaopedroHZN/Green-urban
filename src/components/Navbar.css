@@ -24,6 +24,13 @@
   color: #ffffff;
 }
 
+.navbar-logo-img {
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 /* ===== Navigation Menu ===== */
 .nav-menu {
   display: flex;
