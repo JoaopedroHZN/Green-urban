@@ -79,7 +79,7 @@ const Navbar = () => {
           onClick={closeMenu}
         >
           <img
-            src="/Logo2.png"
+            src="/LogoBranca.png"
             alt="Green Urban"
             className="navbar-logo-img"
           />
