@@ -9,6 +9,7 @@ const Evento = require('../models/Evento');
 const Usuario = require('../models/Usuario');
 const authMiddleware = require('../middleware/authMiddleware');
 const upload = require('../config/multer');
+const { verificarEAtualizarConquistas } = require('../services/conquistas');
 
 // Todas as rotas são protegidas
 router.use(authMiddleware);
@@ -143,16 +144,17 @@ router.post('/:id/inscrever', async (req, res) => {
     evento.inscritos.push({ usuarioId, status: 'inscrito' });
     await evento.save();
 
-    // Soma 20% do xpTotal ao usuário
+    // --- Gamificação: XP + Conquistas (centralizado) ---
     const xpGanho = Math.round(evento.xpTotal * 0.2);
-    if (xpGanho > 0) {
-      await Usuario.findByIdAndUpdate(usuarioId, { $inc: { xp: xpGanho } });
-    }
+    console.log(`🎯 [DEBUG] POST /api/eventos/:id/inscrever — gatilho conquistas usuario ${usuarioId}`);
+    const ri = await verificarEAtualizarConquistas(usuarioId, 'inscricao_evento', { xpGanho });
+    console.log(`✅ [DEBUG] OK — xpGanho=${xpGanho} conquistas=${ri.conquistasConcedidas.length}`);
 
     res.json({
       mensagem: 'Inscrição realizada com sucesso!',
-      xpGanho: xpGanho,
+      xpGanho,
       xpTotalEvento: evento.xpTotal,
+      conquistasConcedidas: ri.conquistasConcedidas,
     });
   } catch (erro) {
     console.error('Erro ao inscrever:', erro);
@@ -371,16 +373,17 @@ router.post('/:id/aprovar/:idInscrito', async (req, res) => {
     inscricaoApr.status = 'aprovado';
     await evento.save();
 
-    // Soma 80% restantes do xpTotal ao usuário
+    // --- Gamificação: XP + Conquistas (centralizado) ---
     const xpRestante = Math.round(evento.xpTotal * 0.8);
-    if (xpRestante > 0) {
-      await Usuario.findByIdAndUpdate(idInscrito, { $inc: { xp: xpRestante } });
-    }
+    console.log(`🎯 [DEBUG] POST /api/eventos/:id/aprovar — gatilho conquistas usuario ${idInscrito}`);
+    const ra = await verificarEAtualizarConquistas(idInscrito, 'aprovacao_evento', { xpGanho: xpRestante });
+    console.log(`✅ [DEBUG] OK — xpGanho=${xpRestante} conquistas=${ra.conquistasConcedidas.length}`);
 
     res.json({
       mensagem: 'Check-in aprovado com sucesso!',
       xpConcedido: xpRestante,
       status: 'aprovado',
+      conquistasConcedidas: ra.conquistasConcedidas,
     });
   } catch (erro) {
     console.error('Erro ao aprovar check-in:', erro);

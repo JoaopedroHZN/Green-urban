@@ -5,6 +5,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const Postagem = require('../models/Postagem');
+const Usuario = require('../models/Usuario');
+const { verificarEAtualizarConquistas } = require('../services/conquistas');
 const { upload, processImages } = require('../config/multerPosts');
 
 const router = express.Router();
@@ -19,7 +21,7 @@ router.get('/', async (req, res) => {
     const { userId } = req.query;
 
     const postagens = await Postagem.find()
-      .populate('autorId', 'nome')
+      .populate('autorId', 'nome fotoPerfil')
       .sort({ createdAt: -1 })
       .lean();
 
@@ -36,6 +38,7 @@ router.get('/', async (req, res) => {
       return {
         _id: p._id,
         autor: p.autorId?.nome || 'Usuário anônimo',
+        fotoPerfil: p.autorId?.fotoPerfil || '',
         legenda: p.legenda,
         imagens: p.imagens || [],
         curtidas: curtidasCount,
@@ -97,6 +100,13 @@ router.post(
         imagens,
       });
 
+      // --- Gamificação: XP + Conquistas (após criar o post) ---
+      console.log(`🎯 [DEBUG] POST /api/postagens — gatilho conquistas para usuario ${autorId}`);
+      const { xpGanho, xpTotal, conquistasConcedidas } = await verificarEAtualizarConquistas(
+        autorId, 'postagem', { xpGanho: 50 }
+      );
+      console.log(`✅ [DEBUG] verificarEAtualizarConquistas OK → xpGanho=${xpGanho} xpTotal=${xpTotal} conquistas=${conquistasConcedidas.length}`);
+
       const populada = await Postagem.findById(novaPostagem._id)
         .populate('autorId', 'nome')
         .lean();
@@ -113,6 +123,9 @@ router.post(
           comentarios: populada.comentarios || [],
           criadoEm: populada.createdAt,
         },
+        xpGanho,
+        xpTotal,
+        conquistasConcedidas,
       });
     } catch (erro) {
       console.error('❌ Erro ao criar postagem:', erro.message);

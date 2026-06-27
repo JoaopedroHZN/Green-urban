@@ -3,10 +3,44 @@
 // ============================================================
 
 const express = require('express');
+const multer = require('multer');
+const path = require('path');
+const fs = require('fs');
 const Usuario = require('../models/Usuario');
+const Postagem = require('../models/Postagem');
+const Evento = require('../models/Evento');
 
 const router = express.Router();
 
+
+// ------------------------------------------------------------
+//  Configuracao do Multer (upload de foto de perfil)
+// ------------------------------------------------------------
+const uploadDir = path.join(__dirname, '..', 'uploads', 'perfil');
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
+}
+
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => cb(null, uploadDir),
+  filename: (req, file, cb) => {
+    const ext = path.extname(file.originalname);
+    const nome = 'perfil-' + Date.now() + '-' + Math.round(Math.random() * 1e9) + ext;
+    cb(null, nome);
+  },
+});
+
+const upload = multer({
+  storage,
+  limits: { fileSize: 5 * 1024 * 1024 },
+  fileFilter: (req, file, cb) => {
+    const permitidos = /jpeg|jpg|png|gif|webp/;
+    const extOk = permitidos.test(path.extname(file.originalname).toLowerCase());
+    const mimeOk = permitidos.test(file.mimetype.split('/')[1]);
+    if (extOk && mimeOk) return cb(null, true);
+    cb(new Error('Apenas imagens (JPG, PNG, GIF, WEBP) sao permitidas.'));
+  },
+});
 // ------------------------------------------------------------
 //  POST /cadastrar
 //  Cria um novo usuário no banco de dados
@@ -78,7 +112,20 @@ router.get('/perfil/:id', async (req, res) => {
       return res.status(404).json({ erro: 'Usuário não encontrado.' });
     }
 
-    res.json({ sucesso: true, usuario });
+    // Conta postagens e eventos do usuario para estatisticas
+    const [totalPostagens, totalEventos] = await Promise.all([
+      Postagem.countDocuments({ autorId: req.params.id }),
+      Evento.countDocuments({ criadoPor: req.params.id }),
+    ]);
+
+    res.json({
+      sucesso: true,
+      usuario,
+      estatisticas: {
+        postagens: totalPostagens,
+        eventos: totalEventos,
+      },
+    });
   } catch (erro) {
     console.error('❌ Erro ao buscar perfil:', erro.message);
 
@@ -105,4 +152,39 @@ router.get('/listar', async (req, res) => {
   }
 });
 
+
+// ------------------------------------------------------------
+//  PUT /perfil/foto
+//  Faz upload da foto de perfil via multer e salva no usuario
+// ------------------------------------------------------------
+router.put('/perfil/foto', upload.single('fotoPerfil'), async (req, res) => {
+  try {
+    const { userId } = req.body;
+
+    if (!userId) {
+      return res.status(400).json({ erro: 'userId e obrigatorio.' });
+    }
+
+    if (!req.file) {
+      return res.status(400).json({ erro: 'Nenhum arquivo enviado.' });
+    }
+
+    const fotoPerfil = '/uploads/perfil/' + req.file.filename;
+
+    const usuario = await Usuario.findByIdAndUpdate(
+      userId,
+      { fotoPerfil },
+      { new: true, select: '-senha -__v' }
+    );
+
+    if (!usuario) {
+      return res.status(404).json({ erro: 'Usuario nao encontrado.' });
+    }
+
+    res.json({ sucesso: true, fotoPerfil: usuario.fotoPerfil, usuario });
+  } catch (erro) {
+    console.error('Erro ao fazer upload:', erro.message);
+    res.status(500).json({ erro: 'Erro interno ao fazer upload.' });
+  }
+});
 module.exports = router;

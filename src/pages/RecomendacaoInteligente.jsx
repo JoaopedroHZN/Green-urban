@@ -212,7 +212,7 @@ const RecomendacaoInteligente = () => {
               <>
                 <div className="resultados-header">
                   <h2 className="resultados-titulo">
-                    🌱 {resultados.length}{' '}
+                    {resultados.length}{' '}
                     {resultados.length === 1
                       ? 'planta recomendada'
                       : 'plantas recomendadas'}{' '}

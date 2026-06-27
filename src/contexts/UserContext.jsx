@@ -48,7 +48,7 @@ export function UserProvider({ children }) {
         throw new Error(data.erro || 'Perfil não encontrado');
       }
 
-      setUsuario(data.usuario);
+      setUsuario({ ...data.usuario, _estatisticas: data.estatisticas });
     } catch (err) {
       console.warn('⚠️ Erro ao buscar perfil:', err.message);
       setErro(err.message);

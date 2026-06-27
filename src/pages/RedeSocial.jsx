@@ -117,7 +117,6 @@ const NovoPostForm = ({ onPostCreated, userId }) => {
   return (
     <div className="novo-post-card">
       <div className="novo-post-header">
-        <span className="novo-post-avatar">🌱</span>
         <h3 className="novo-post-titulo">Nova publicação</h3>
       </div>
       <textarea className="novo-post-textarea"

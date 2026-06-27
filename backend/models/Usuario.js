@@ -54,6 +54,10 @@ const usuarioSchema = new mongoose.Schema(
       enum: ['user', 'admin'],
       default: 'user',
     },
+    fotoPerfil: {
+      type: String,
+      default: '',
+    },
   },
   {
     // Adiciona automaticamente createdAt e updatedAt

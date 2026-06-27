@@ -100,6 +100,62 @@
   text-align: center;
 }
 
+/* Wrapper para posicionar câmera sobre avatar */
+.perfil-avatar-wrapper {
+  position: relative;
+  display: inline-flex;
+  margin-bottom: 16px;
+}
+
+/* Input oculto */
+.perfil-file-input {
+  display: none;
+}
+
+/* Botão de câmera posicionado sobre o avatar */
+.perfil-camera-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #e8f5e9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+
+.perfil-camera-btn:hover {
+  background: #e8f5e9;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+}
+
+.perfil-camera-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.perfil-upload-msg {
+  font-size: 0.8rem;
+  color: #78909c;
+  margin: 0 0 10px;
+  animation: perfil-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes perfil-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
 .perfil-avatar {
   position: relative;
   width: 80px;

@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useUser } from '../../contexts/UserContext';
+import Avatar from '../../components/Avatar/Avatar';
 import './RedeSocial.css';
 
 const API_BASE = 'http://localhost:4000';
@@ -145,7 +146,6 @@ const NovoPostForm = ({ onPostCreated, userId }) => {
   return (
     <div className="novo-post-card">
       <div className="novo-post-header">
-        <span className="novo-post-avatar">🌱</span>
         <h3 className="novo-post-titulo">Nova publicação</h3>
       </div>
       <textarea className="novo-post-textarea"
@@ -184,7 +184,7 @@ const NovoPostForm = ({ onPostCreated, userId }) => {
 };
 
 const RedeSocial = () => {
-  const { usuario, userId } = useUser();
+  const { usuario, userId, recarregar } = useUser();
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [erro, setErro] = useState(null);
@@ -214,6 +214,7 @@ const RedeSocial = () => {
   }, [carregarPosts]);
 
   const handlePostCreated = (novoPost) => {
+    recarregar();
     setPosts((prev) => [novoPost, ...prev]);
   };
 
@@ -306,7 +307,7 @@ const RedeSocial = () => {
 
         {!loading && !erro && posts.length === 0 && (
           <div className="feed-vazio">
-            <p>🌱 Nenhuma publicação ainda. Seja o primeiro a postar!</p>
+            <p>Nenhuma publicação ainda. Seja o primeiro a postar!</p>
           </div>
         )}
 
@@ -315,9 +316,11 @@ const RedeSocial = () => {
             {posts.map((post) => (
               <article className="feed-post" key={post._id}>
                 <div className="post-header">
-                  <div className="post-avatar-placeholder">
-                    {getIniciais(post.autor)}
-                  </div>
+                  <Avatar
+                    fotoUrl={post.fotoPerfil}
+                    nome={post.autor}
+                    tamanho="sm"
+                  />
                   <div>
                     <strong className="post-usuario">{post.autor}</strong>
                     <span className="post-tempo">

@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import { useUser } from '../../contexts/UserContext';
 import './RecomendacaoInteligente.css';
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:4000';
@@ -50,6 +51,7 @@ const PlantaCard = ({ planta }) => {
 };
 
 const RecomendacaoInteligente = () => {
+  const { recarregar } = useUser();
   const [sol, setSol] = useState(null);
   const [espaco, setEspaco] = useState(null);
   const [rega, setRega] = useState(null);
@@ -103,6 +105,7 @@ const RecomendacaoInteligente = () => {
       const data = await resposta.json();
       setResultados(data.plantas);
       setTotal(data.total);
+      recarregar();
     } catch {
       setResultados([]);
       setTotal(0);
