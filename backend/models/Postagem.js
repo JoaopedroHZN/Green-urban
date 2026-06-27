@@ -17,9 +17,10 @@ const postagemSchema = new mongoose.Schema(
       trim: true,
       maxlength: [500, 'Máximo 500 caracteres'],
     },
-    imagemUrl: {
-      type: String,
-      default: '',
+    // Array de caminhos das imagens (até 5 fotos por post)
+    imagens: {
+      type: [String],
+      default: [],
     },
     // Array de referências — cada entrada = 1 like de um usuário
     curtidas: [{

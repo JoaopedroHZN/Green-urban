@@ -5,6 +5,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const Postagem = require('../models/Postagem');
+const { upload, processImages } = require('../config/multerPosts');
 
 const router = express.Router();
 
@@ -36,10 +37,10 @@ router.get('/', async (req, res) => {
         _id: p._id,
         autor: p.autorId?.nome || 'Usuário anônimo',
         legenda: p.legenda,
-        imagemUrl: p.imagemUrl,
+        imagens: p.imagens || [],
         curtidas: curtidasCount,
         curtido,
-        comentarios: p.comentarios,
+        comentarios: p.comentarios || [],
         criadoEm: p.createdAt,
       };
     });
@@ -53,48 +54,76 @@ router.get('/', async (req, res) => {
 
 // ------------------------------------------------------------
 //  POST /api/postagens
-//  Body: { autorId, legenda, imagemUrl (opcional) }
+//  Aceita multipart/form-data:
+//    - autorId (string)
+//    - legenda  (string)
+//    - imagens  (arquivos, até 5, opcional)
+//  As imagens são redimensionadas para 1080x1080 e convertidas
+//  para .webp com qualidade 80 antes de salvar.
 // ------------------------------------------------------------
-router.post('/', async (req, res) => {
-  try {
-    const { autorId, legenda, imagemUrl } = req.body;
-
-    if (!autorId || !legenda) {
-      return res.status(400).json({ erro: 'autorId e legenda são obrigatórios.' });
-    }
-
-    const novaPostagem = await Postagem.create({
-      autorId,
-      legenda: legenda.trim(),
-      imagemUrl: imagemUrl || '',
+router.post(
+  '/',
+  (req, res, next) => {
+    upload.array('imagens', 5)(req, res, (err) => {
+      if (err) {
+        console.error('❌ Erro no Multer:', err.message);
+        if (err.code === 'LIMIT_FILE_SIZE') {
+          return res.status(400).json({ erro: 'Cada imagem deve ter no máximo 10 MB.' });
+        }
+        if (err.code === 'LIMIT_FILE_COUNT') {
+          return res.status(400).json({ erro: 'Máximo de 5 imagens por postagem.' });
+        }
+        if (err.message && err.message.includes('Formato de imagem')) {
+          return res.status(400).json({ erro: err.message });
+        }
+        return res.status(500).json({ erro: 'Erro ao receber os arquivos.' });
+      }
+      next();
     });
+  },
+  processImages,
+  async (req, res) => {
+    try {
+      const { autorId, legenda } = req.body;
+      if (!autorId || !legenda) {
+        return res.status(400).json({ erro: 'autorId e legenda são obrigatórios.' });
+      }
 
-    const populada = await Postagem.findById(novaPostagem._id)
-      .populate('autorId', 'nome')
-      .lean();
+      const imagens = req.processedImages || [];
 
-    res.status(201).json({
-      sucesso: true,
-      post: {
-        _id: populada._id,
-        autor: populada.autorId?.nome || 'Usuário anônimo',
-        legenda: populada.legenda,
-        imagemUrl: populada.imagemUrl,
-        curtidas: 0,
-        curtido: false,
-        comentarios: populada.comentarios,
-        criadoEm: populada.createdAt,
-      },
-    });
-  } catch (erro) {
-    console.error('❌ Erro ao criar postagem:', erro.message);
-    if (erro.name === 'ValidationError') {
-      const mensagens = Object.values(erro.errors).map((e) => e.message);
-      return res.status(400).json({ erro: mensagens.join('. ') });
+      const novaPostagem = await Postagem.create({
+        autorId,
+        legenda: legenda.trim(),
+        imagens,
+      });
+
+      const populada = await Postagem.findById(novaPostagem._id)
+        .populate('autorId', 'nome')
+        .lean();
+
+      res.status(201).json({
+        sucesso: true,
+        post: {
+          _id: populada._id,
+          autor: populada.autorId?.nome || 'Usuário anônimo',
+          legenda: populada.legenda,
+          imagens: populada.imagens || [],
+          curtidas: 0,
+          curtido: false,
+          comentarios: populada.comentarios || [],
+          criadoEm: populada.createdAt,
+        },
+      });
+    } catch (erro) {
+      console.error('❌ Erro ao criar postagem:', erro.message);
+      if (erro.name === 'ValidationError') {
+        const mensagens = Object.values(erro.errors).map((e) => e.message);
+        return res.status(400).json({ erro: mensagens.join('. ') });
+      }
+      res.status(500).json({ erro: 'Erro interno ao criar postagem.' });
     }
-    res.status(500).json({ erro: 'Erro interno ao criar postagem.' });
   }
-});
+);
 
 // ------------------------------------------------------------
 //  PATCH /api/postagens/:id/curtir
