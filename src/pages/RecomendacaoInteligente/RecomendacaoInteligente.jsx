@@ -13,37 +13,51 @@ const iconeCondicao = (categoria, valor) => {
 
 const PlantaCard = ({ planta }) => {
   return (
-    <article className="planta-card-carrossel">
+    <article
+      className="planta-card-carrossel flex flex-col h-full bg-white rounded-2xl shadow-sm border border-stone-100 overflow-hidden hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+    >
       {planta.imagem ? (
-        <div className="planta-card-img-wrap">
-          <img
-            src={planta.imagem}
-            alt={planta.nomePopular}
-            className="planta-card-img"
-            loading="lazy"
-          />
-        </div>
+        <img
+          src={planta.imagem}
+          alt={planta.nomePopular}
+          className="w-full h-48 object-cover shrink-0"
+          loading="lazy"
+        />
       ) : (
-        <div className="planta-card-img-placeholder">🌿</div>
+        <div className="w-full h-48 flex items-center justify-center bg-stone-100 text-5xl text-stone-300 shrink-0">
+          🌿
+        </div>
       )}
-      <div className="planta-card-body">
-        <span className="planta-card-tipo">{planta.tipo}</span>
-        <h3 className="planta-card-nome">{planta.nomePopular}</h3>
-        <p className="planta-card-cientifico"><em>{planta.nomeCientifico}</em></p>
-        <p className="planta-card-sinopse">{planta.sinopse}</p>
-        <div className="planta-card-tags">
-          <span className="planta-card-tag">
+
+      <div className="p-5 flex flex-col flex-1 gap-2.5">
+        <span className="inline-block self-start text-[0.72rem] font-bold uppercase tracking-wide px-3 py-1 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200">
+          {planta.tipo}
+        </span>
+
+        <h3 className="text-lg font-bold text-slate-800 leading-tight">
+          {planta.nomePopular}
+        </h3>
+        <p className="text-sm italic text-slate-400">
+          {planta.nomeCientifico}
+        </p>
+        <p className="text-sm text-slate-500 leading-relaxed flex-1">
+          {planta.sinopse}
+        </p>
+
+        <div className="flex flex-wrap gap-1.5">
+          <span className="inline-flex items-center gap-1 text-xs font-medium text-slate-600 bg-stone-100 px-2.5 py-1 rounded-lg">
             {iconeCondicao('sol', planta.condicoesIdeais.sol)} {planta.condicoesIdeais.sol}
           </span>
-          <span className="planta-card-tag">
+          <span className="inline-flex items-center gap-1 text-xs font-medium text-slate-600 bg-stone-100 px-2.5 py-1 rounded-lg">
             {iconeCondicao('espaco', planta.condicoesIdeais.espaco)} {planta.condicoesIdeais.espaco}
           </span>
-          <span className="planta-card-tag">
+          <span className="inline-flex items-center gap-1 text-xs font-medium text-slate-600 bg-stone-100 px-2.5 py-1 rounded-lg">
             {iconeCondicao('rega', planta.condicoesIdeais.rega)} {planta.condicoesIdeais.rega}
           </span>
         </div>
-        <p className="planta-card-dica">
-          <strong>💡 Dica:</strong> {planta.dicasCuidado}
+
+        <p className="text-xs text-slate-400 leading-relaxed pt-2.5 border-t border-stone-100 mt-auto">
+          <strong className="text-slate-600">💡 Dica:</strong> {planta.dicasCuidado}
         </p>
       </div>
     </article>

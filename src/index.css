@@ -26,8 +26,8 @@ body {
   font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #ffffff;
-  color: #37474f;
+  background: #ecfdf5;
+  color: #334155;
   line-height: 1.6;
 }
 

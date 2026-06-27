@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   padding: 120px 24px 60px;
-  background: linear-gradient(180deg, #e8f5e9 0%, #ffffff 50%);
+  background: #ecfdf5;
 }
 
 .auth-container {
@@ -17,7 +17,7 @@
 .auth-card {
   background: #ffffff;
   border-radius: 20px;
-  border: 1px solid #e8f5e9;
+  border: 1px solid #ecfdf5;
   box-shadow: 0 8px 32px rgba(27, 94, 32, 0.08);
   padding: 40px 36px;
 }
@@ -32,7 +32,7 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  background: linear-gradient(135deg, #059669, #059669);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,14 +47,14 @@
 .auth-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #1b5e20;
+  color: #059669;
   margin: 0 0 8px;
   letter-spacing: -0.5px;
 }
 
 .auth-subtitle {
   font-size: 0.95rem;
-  color: #78909c;
+  color: #94a3b8;
   margin: 0;
   line-height: 1.5;
 }
@@ -75,7 +75,7 @@
 .auth-label {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #37474f;
+  color: #334155;
   letter-spacing: 0.3px;
 }
 
@@ -85,13 +85,13 @@
   gap: 10px;
   padding: 0 14px;
   border-radius: 12px;
-  border: 2px solid #e8f5e9;
+  border: 2px solid #ecfdf5;
   background: #fafffa;
   transition: all 0.25s ease;
 }
 
 .auth-input-wrapper:focus-within {
-  border-color: #2e7d32;
+  border-color: #059669;
   background: #ffffff;
   box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.08);
 }
@@ -109,7 +109,7 @@
   border: none;
   background: transparent;
   font-size: 0.95rem;
-  color: #37474f;
+  color: #334155;
   outline: none;
   font-family: inherit;
 }
@@ -132,8 +132,8 @@
 
 .auth-mensagem--sucesso {
   background: rgba(232, 245, 233, 0.9);
-  color: #1b5e20;
-  border: 1px solid #a5d6a7;
+  color: #059669;
+  border: 1px solid #a7f3d0;
 }
 
 .auth-mensagem--erro {
@@ -153,7 +153,7 @@
   padding: 16px;
   border-radius: 14px;
   border: none;
-  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  background: linear-gradient(135deg, #059669, #059669);
   color: #ffffff;
   font-size: 1rem;
   font-weight: 700;
@@ -212,13 +212,13 @@
 
 .auth-toggle-text {
   font-size: 0.88rem;
-  color: #78909c;
+  color: #94a3b8;
 }
 
 .auth-toggle-btn {
   background: none;
   border: none;
-  color: #2e7d32;
+  color: #059669;
   font-weight: 700;
   font-size: 0.95rem;
   cursor: pointer;
@@ -227,7 +227,7 @@
 }
 
 .auth-toggle-btn:hover {
-  color: #1b5e20;
+  color: #059669;
   text-decoration: underline;
 }
 

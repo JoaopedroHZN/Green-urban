@@ -70,7 +70,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar bg-gradient-to-r from-green-700 via-green-600 to-emerald-600 shadow-lg shadow-green-900/20">
+    <nav className="navbar bg-emerald-700/80 backdrop-blur-md border-b border-emerald-600/20 sticky top-0 z-50">
       <div className="navbar-container flex items-center justify-between w-full">
         {/* Logo */}
         <Link
@@ -103,7 +103,7 @@ const Navbar = () => {
           <li className="nav-item">
             <Link
               to="/"
-              className={`nav-link flex items-center gap-1.5 text-sm whitespace-nowrap ${isActive('/') ? 'active' : ''}`}
+              className={`nav-link flex items-center gap-1.5 text-sm whitespace-nowrap ${isActive('/') ? 'active' : 'text-white/85 hover:text-white hover:bg-white/10'}`}
               onClick={closeMenu}
             >
               <Home className="w-4 h-4" />
@@ -143,7 +143,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   to="/dicionario"
-                  className={`nav-link flex items-center gap-1.5 text-sm whitespace-nowrap ${isActive('/dicionario') ? 'active' : ''}`}
+                  className={`nav-link flex items-center gap-1.5 text-sm whitespace-nowrap ${isActive('/dicionario') ? 'active' : 'text-white/85 hover:text-white hover:bg-white/10'}`}
                   onClick={closeMenu}
                 >
                   <BookOpen className="w-4 h-4" />
@@ -153,7 +153,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   to="/assistente"
-                  className={`nav-link flex items-center gap-1.5 text-sm whitespace-nowrap ${isActive('/assistente') ? 'active' : ''}`}
+                  className={`nav-link flex items-center gap-1.5 text-sm whitespace-nowrap ${isActive('/assistente') ? 'active' : 'text-white/85 hover:text-white hover:bg-white/10'}`}
                   onClick={closeMenu}
                 >
                   <Sparkles className="w-4 h-4" />
@@ -163,7 +163,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   to="/eventos"
-                  className={`nav-link flex items-center gap-1.5 text-sm whitespace-nowrap ${isActive('/eventos') ? 'active' : ''}`}
+                  className={`nav-link flex items-center gap-1.5 text-sm whitespace-nowrap ${isActive('/eventos') ? 'active' : 'text-white/85 hover:text-white hover:bg-white/10'}`}
                   onClick={closeMenu}
                 >
                   <Calendar className="w-4 h-4" />
@@ -173,7 +173,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   to="/rede"
-                  className={`nav-link flex items-center gap-1.5 text-sm whitespace-nowrap ${isActive('/rede') ? 'active' : ''}`}
+                  className={`nav-link flex items-center gap-1.5 text-sm whitespace-nowrap ${isActive('/rede') ? 'active' : 'text-white/85 hover:text-white hover:bg-white/10'}`}
                   onClick={closeMenu}
                 >
                   <Users className="w-4 h-4" />
@@ -183,7 +183,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   to="/perfil"
-                  className={`nav-link flex items-center gap-1.5 text-sm whitespace-nowrap ${isActive('/perfil') ? 'active' : ''}`}
+                  className={`nav-link flex items-center gap-1.5 text-sm whitespace-nowrap ${isActive('/perfil') ? 'active' : 'text-white/85 hover:text-white hover:bg-white/10'}`}
                   onClick={closeMenu}
                 >
                   <User className="w-4 h-4" />

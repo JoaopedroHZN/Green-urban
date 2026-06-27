@@ -1,7 +1,7 @@
 /* ===== Dicionário Verde Section ===== */
 .dicionario-section {
   padding: 120px 24px 80px;
-  background: linear-gradient(180deg, #f1f8e9 0%, #ffffff 40%);
+  background: #ecfdf5;
   min-height: 100vh;
 }
 
@@ -25,21 +25,21 @@
   padding: 6px 18px;
   border-radius: 100px;
   background: rgba(46, 125, 50, 0.1);
-  color: #2e7d32;
+  color: #059669;
   margin-bottom: 16px;
 }
 
 .dicionario-title {
   font-size: 2.6rem;
   font-weight: 700;
-  color: #1b5e20;
+  color: #059669;
   margin: 0 0 12px;
   letter-spacing: -0.5px;
 }
 
 .dicionario-subtitle {
   font-size: 1.1rem;
-  color: #546e7a;
+  color: #64748b;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.7;
@@ -65,10 +65,10 @@
   width: 100%;
   padding: 14px 48px 14px 44px;
   font-size: 1rem;
-  border: 2px solid #c8e6c9;
+  border: 2px solid #e2e8f0;
   border-radius: 50px;
   background: #ffffff;
-  color: #37474f;
+  color: #334155;
   outline: none;
   transition: all 0.3s ease;
   font-family: inherit;
@@ -79,7 +79,7 @@
 }
 
 .search-input:focus {
-  border-color: #2e7d32;
+  border-color: #059669;
   box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.1);
 }
 
@@ -99,7 +99,7 @@
 }
 
 .search-clear:hover {
-  color: #37474f;
+  color: #334155;
   background: rgba(0, 0, 0, 0.05);
 }
 
@@ -107,7 +107,7 @@
 .result-count {
   text-align: center;
   font-size: 0.9rem;
-  color: #78909c;
+  color: #94a3b8;
   margin-bottom: 32px;
 }
 
@@ -123,7 +123,7 @@
   background: #ffffff;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid #e8f5e9;
+  border: 1px solid #ecfdf5;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   transition: all 0.3s ease;
   display: flex;
@@ -133,7 +133,7 @@
 .planta-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 40px rgba(46, 125, 50, 0.1);
-  border-color: #a5d6a7;
+  border-color: #a7f3d0;
 }
 
 /* ===== Plant Image ===== */
@@ -142,7 +142,7 @@
   width: 100%;
   height: 200px;
   overflow: hidden;
-  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  background: linear-gradient(135deg, #ecfdf5, #e2e8f0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,8 +164,8 @@
   justify-content: center;
   gap: 8px;
   font-size: 3rem;
-  color: #2e7d32;
-  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  color: #059669;
+  background: linear-gradient(135deg, #ecfdf5, #e2e8f0);
 }
 
 .planta-img-placeholder span {
@@ -198,19 +198,19 @@
 .planta-nome {
   font-size: 1.35rem;
   font-weight: 700;
-  color: #1b5e20;
+  color: #059669;
   margin: 0 0 4px;
 }
 
 .planta-cientifico {
   font-size: 0.95rem;
-  color: #78909c;
+  color: #94a3b8;
   margin: 0 0 12px;
 }
 
 .planta-descricao {
   font-size: 0.9rem;
-  color: #546e7a;
+  color: #64748b;
   line-height: 1.6;
   margin: 0 0 16px;
   flex: 1;
@@ -218,16 +218,16 @@
 
 /* ===== Conditions ===== */
 .planta-condicoes {
-  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+  background: linear-gradient(135deg, #ecfdf5 0%, #f5f5f4 100%);
   border-radius: 12px;
   padding: 16px 18px;
-  border: 1px solid #c8e6c9;
+  border: 1px solid #e2e8f0;
 }
 
 .condicoes-title {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #2e7d32;
+  color: #059669;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 0 0 12px;
@@ -254,13 +254,13 @@
 .condicao-item strong {
   display: block;
   font-size: 0.82rem;
-  color: #1b5e20;
+  color: #059669;
   margin-bottom: 2px;
 }
 
 .condicao-item p {
   font-size: 0.85rem;
-  color: #546e7a;
+  color: #64748b;
   margin: 0;
   line-height: 1.4;
 }
@@ -275,7 +275,7 @@
   padding: 4px 10px;
   border-radius: 8px;
   background: rgba(46, 125, 50, 0.08);
-  color: #2e7d32;
+  color: #059669;
   margin-bottom: 8px;
 }
 
@@ -299,10 +299,10 @@
   padding: 8px 18px;
   font-size: 0.85rem;
   font-weight: 600;
-  border: 2px solid #c8e6c9;
+  border: 2px solid #e2e8f0;
   border-radius: 50px;
   background: #ffffff;
-  color: #546e7a;
+  color: #64748b;
   cursor: pointer;
   transition: all 0.25s ease;
   font-family: inherit;
@@ -310,15 +310,15 @@
 }
 
 .tipo-btn:hover {
-  border-color: #81c784;
-  color: #2e7d32;
-  background: #f1f8e9;
+  border-color: #6ee7b7;
+  color: #059669;
+  background: #ecfdf5;
 }
 
 .tipo-btn--active {
-  background: #2e7d32;
+  background: #059669;
   color: #ffffff;
-  border-color: #2e7d32;
+  border-color: #059669;
   box-shadow: 0 4px 12px rgba(46, 125, 50, 0.25);
 }
 
@@ -354,12 +354,12 @@
 
 .loading-state h3 {
   font-size: 1.3rem;
-  color: #37474f;
+  color: #334155;
   margin: 0 0 8px;
 }
 
 .loading-state p {
-  color: #78909c;
+  color: #94a3b8;
   font-size: 0.95rem;
   margin: 0;
 }
@@ -378,18 +378,18 @@
   padding: 10px 20px;
   font-size: 0.9rem;
   font-weight: 600;
-  border: 2px solid #c8e6c9;
+  border: 2px solid #e2e8f0;
   border-radius: 10px;
   background: #ffffff;
-  color: #2e7d32;
+  color: #059669;
   cursor: pointer;
   transition: all 0.25s ease;
   font-family: inherit;
 }
 
 .pagina-btn:hover:not(:disabled) {
-  background: #f1f8e9;
-  border-color: #81c784;
+  background: #ecfdf5;
+  border-color: #6ee7b7;
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(46, 125, 50, 0.15);
 }
@@ -416,25 +416,25 @@
   justify-content: center;
   font-size: 0.9rem;
   font-weight: 600;
-  border: 2px solid #c8e6c9;
+  border: 2px solid #e2e8f0;
   border-radius: 10px;
   background: #ffffff;
-  color: #546e7a;
+  color: #64748b;
   cursor: pointer;
   transition: all 0.25s ease;
   font-family: inherit;
 }
 
 .pagina-numero:hover {
-  background: #f1f8e9;
-  border-color: #81c784;
-  color: #2e7d32;
+  background: #ecfdf5;
+  border-color: #6ee7b7;
+  color: #059669;
 }
 
 .pagina-numero--active {
-  background: #2e7d32;
+  background: #059669;
   color: #ffffff;
-  border-color: #2e7d32;
+  border-color: #059669;
   box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
   pointer-events: none;
 }
@@ -453,12 +453,12 @@
 
 .empty-state h3 {
   font-size: 1.3rem;
-  color: #37474f;
+  color: #334155;
   margin: 0 0 8px;
 }
 
 .empty-state p {
-  color: #78909c;
+  color: #94a3b8;
   font-size: 0.95rem;
   margin: 0;
 }

@@ -1,277 +1,30 @@
-/* ===== Navbar Base ===== */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
+/* Navbar Glass Escuro */
+.navbar{position:fixed;top:0;left:0;width:100%;z-index:1000}
+.navbar-container{max-width:1280px;margin:0 auto;padding:0 20px;height:64px}
+.navbar-logo-img{height:34px;width:auto;object-fit:contain;flex-shrink:0}
+.nav-menu{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}
+.nav-item{margin:0}
+.nav-link{text-decoration:none;font-size:.875rem;font-weight:500;padding:6px 14px;border-radius:12px;transition:all .2s ease}
+.nav-link::after{display:none}
+.nav-link.active{background:rgba(255,255,255,.15);font-weight:700;color:#fff}
+.hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:40px;height:40px;background:transparent;border:none;border-radius:8px;cursor:pointer;padding:8px;transition:background .2s}
+.hamburger:hover{background:rgba(255,255,255,.12)}
+.bar{display:block;width:22px;height:2.5px;background:#fff;border-radius:2px;transition:all .3s ease}
+.hamburger.active .bar:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.hamburger.active .bar:nth-child(2){opacity:0;transform:translateX(-8px)}
 
-.navbar-container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 20px;
-  height: 64px;
-}
+.nav-link-login{color:#fff!important;font-weight:600;border:2px solid rgba(255,255,255,.5);border-radius:50px;padding:6px 18px;background:transparent}
+.nav-link-login:hover{background:rgba(255,255,255,.15);border-color:#fff;color:#fff!important;transform:translateY(-1px)}
+.nav-link-login.active{background:rgba(255,255,255,.2);border-color:#fff}
+.nav-link-cadastro{color:#047857!important;font-weight:600;border:2px solid #fff;border-radius:50px;padding:6px 18px;background:#fff}
+.nav-link-cadastro:hover{background:#ecfdf5;border-color:#ecfdf5;transform:translateY(-1px);box-shadow:0 4px 14px rgba(0,0,0,.15)}
+.nav-link-cadastro.active{background:#ecfdf5;border-color:#ecfdf5}
+.nav-item-user{display:flex;align-items:center}
+.nav-user-greeting{font-size:.875rem;color:rgba(255,255,255,.9);padding:6px 12px;font-weight:500}
+.nav-user-greeting strong{color:#fff;font-weight:700}
+.nav-link-logout{color:rgba(255,255,255,.75)!important;font-weight:600;border:2px solid rgba(255,255,255,.25);border-radius:50px;padding:6px 18px;background:transparent;cursor:pointer;font-size:.875rem}
+.nav-link-logout:hover{background:rgba(239,68,68,.25);border-color:#fca5a5;color:#fecaca!important;transform:translateY(-1px)}
 
-/* ===== Logo ===== */
-.navbar-logo {
-  color: #ffffff;
-}
-
-.navbar-logo:hover {
-  color: #ffffff;
-}
-
-.navbar-logo-img {
-  height: 34px;
-  width: auto;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-/* ===== Navigation Menu ===== */
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-item {
-  margin: 0;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding: 6px 14px;
-  border-radius: 8px;
-  transition: all 0.2s ease;
-  position: relative;
-}
-
-.nav-link:hover {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.12);
-}
-
-.nav-link.active {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.16);
-  font-weight: 600;
-}
-
-/* Remove underline effect for clean look on green bg */
-.nav-link::after {
-  display: none;
-}
-
-/* ===== Hamburger (hidden on desktop) ===== */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  padding: 8px;
-  transition: background 0.2s;
-}
-
-.hamburger:hover {
-  background: rgba(255, 255, 255, 0.12);
-}
-
-.bar {
-  display: block;
-  width: 22px;
-  height: 2.5px;
-  background: #ffffff;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-/* Hamburger animation when active */
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(7.5px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-  transform: translateX(-8px);
-}
-
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-7.5px) rotate(-45deg);
-}
-
-/* ===== Botão Login (não logado) ===== */
-.nav-link-login {
-  color: #ffffff !important;
-  font-weight: 600;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50px;
-  padding: 6px 18px;
-  background: transparent;
-}
-
-.nav-link-login:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: #ffffff;
-  color: #ffffff !important;
-  transform: translateY(-1px);
-}
-
-.nav-link-login.active {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: #ffffff;
-}
-
-/* ===== Botão Cadastre-se (não logado) ===== */
-.nav-link-cadastro {
-  color: #1b5e20 !important;
-  font-weight: 600;
-  border: 2px solid #ffffff;
-  border-radius: 50px;
-  padding: 6px 18px;
-  background: #ffffff;
-}
-
-.nav-link-cadastro:hover {
-  background: #f0fdf4;
-  border-color: #f0fdf4;
-  color: #15803d !important;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
-}
-
-.nav-link-cadastro.active {
-  background: #f0fdf4;
-  border-color: #f0fdf4;
-}
-
-/* ===== Saudação usuário logado ===== */
-.nav-item-user {
-  display: flex;
-  align-items: center;
-}
-
-.nav-user-greeting {
-  font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.9);
-  padding: 6px 12px;
-  font-weight: 500;
-}
-
-.nav-user-greeting strong {
-  color: #ffffff;
-  font-weight: 700;
-}
-
-/* ===== Botão Sair (Logout) ===== */
-.nav-link-logout {
-  color: rgba(255, 255, 255, 0.8) !important;
-  font-weight: 600;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50px;
-  padding: 6px 18px;
-  background: transparent;
-  cursor: pointer;
-  font-size: 0.875rem;
-}
-
-.nav-link-logout:hover {
-  background: rgba(239, 68, 68, 0.2);
-  border-color: #fca5a5;
-  color: #fecaca !important;
-  transform: translateY(-1px);
-}
-
-/* ===== Responsive: Mobile ===== */
-@media (max-width: 1024px) {
-  .nav-link {
-    padding: 6px 10px;
-    font-size: 0.8rem;
-  }
-
-  .nav-link-login,
-  .nav-link-cadastro,
-  .nav-link-logout {
-    padding: 6px 14px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-menu {
-    position: fixed;
-    top: 64px;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(180deg, #15803d 0%, #166534 100%);
-    flex-direction: column;
-    gap: 2px;
-    padding: 16px 20px 24px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-    transform: translateY(-120%);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 999;
-  }
-
-  .nav-menu.active {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  .nav-link {
-    display: flex;
-    width: 100%;
-    padding: 12px 18px;
-    font-size: 1rem;
-    text-align: left;
-    justify-content: flex-start;
-  }
-
-  .nav-link:hover {
-    background: rgba(255, 255, 255, 0.1);
-  }
-
-  .nav-link-login,
-  .nav-link-cadastro,
-  .nav-link-logout {
-    justify-content: center;
-    width: 100%;
-    padding: 10px 18px;
-    font-size: 0.95rem;
-  }
-
-  .nav-item-user {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .nav-user-greeting {
-    text-align: center;
-    width: 100%;
-    padding: 10px 18px;
-    justify-content: center;
-  }
-}
+.hamburger.active .bar:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+@media(max-width:1024px){.nav-link{padding:6px 10px;font-size:.8rem}.nav-link-login,.nav-link-cadastro,.nav-link-logout{padding:6px 14px}}
+@media(max-width:768px){.hamburger{display:flex}.nav-menu{position:fixed;top:64px;left:0;width:100%;background:linear-gradient(180deg,#047857,#065f46);flex-direction:column;gap:2px;padding:16px 20px 24px;border-bottom:1px solid rgba(255,255,255,.1);box-shadow:0 12px 40px rgba(0,0,0,.3);transform:translateY(-120%);opacity:0;pointer-events:none;transition:all .35s cubic-bezier(.4,0,.2,1);z-index:999}.nav-menu.active{transform:translateY(0);opacity:1;pointer-events:all}.nav-link{display:flex;width:100%;padding:12px 18px;font-size:1rem;text-align:left;justify-content:flex-start}.nav-link:hover{background:rgba(255,255,255,.1)}.nav-link-login,.nav-link-cadastro,.nav-link-logout{justify-content:center;width:100%;padding:10px 18px;font-size:.95rem}.nav-item-user{justify-content:center;width:100%}.nav-user-greeting{text-align:center;width:100%;padding:10px 18px;justify-content:center}}
