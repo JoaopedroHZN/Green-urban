@@ -1,0 +1,45 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Uploads de usuários (backup e perfil) — NÃO sobem para o GitHub
+backend/uploads/perfil/*
+backend/uploads/checkins/*
+backend/uploads/posts/*
+!backend/uploads/perfil/.gitkeep
+!backend/uploads/checkins/.gitkeep
+!backend/uploads/posts/.gitkeep
+
+# Uploads do frontend (espelho) — também não sobem
+frontend/public/uploads/perfil/*
+frontend/public/uploads/checkins/*
+frontend/public/uploads/posts/*
+!frontend/public/uploads/perfil/.gitkeep
+!frontend/public/uploads/checkins/.gitkeep
+!frontend/public/uploads/posts/.gitkeep

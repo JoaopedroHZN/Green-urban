@@ -1,0 +1,2602 @@
+[
+  {
+    "nomePopular": "Pequi",
+    "nomeCientifico": "Caryocar brasiliense",
+    "tipo": "Árvore",
+    "sinopse": "O Pequi é o símbolo do Cerrado, com fruto de aroma marcante e polpa amarela muito apreciada na culinária goiana. Suas flores brancas atraem morcegos polinizadores e sua madeira é resistente.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Plante em áreas abertas com bastante sol direto. O Pequi é resistente à seca e não tolera encharcamento, ideal para praças e parques amplos.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Baru",
+    "nomeCientifico": "Dipteryx alata",
+    "tipo": "Árvore",
+    "sinopse": "O Baru produz uma castanha rica em proteínas e minerais, sendo um superalimento do Cerrado. Sua madeira é nobre e a árvore contribui para a recuperação de áreas degradadas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Perfeito para arborização urbana em calçadas largas e parques. Suas raízes profundas não danificam calçadas, mas precisa de espaço para crescer.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Cagaita",
+    "nomeCientifico": "Eugenia dysenterica",
+    "tipo": "Árvore",
+    "sinopse": "A Cagaita é uma árvore frutífera nativa que produz frutos ácidos e refrescantes, ótimos para sucos e sorvetes. Suas folhas jovens têm tom avermelhado ornamental.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Aprecia regas regulares no período de frutificação. Ideal para pomares urbanos e quintais amplos com solo bem drenado.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Araticum",
+    "nomeCientifico": "Annona crassiflora",
+    "tipo": "Frutífera",
+    "sinopse": "O Araticum ou Marolo é uma fruta de polpa cremosa e adocicada, muito aromática. É considerado uma das frutas mais saborosas do Cerrado, rica em vitaminas e antioxidantes.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Plante em local com bastante luz solar direta e solo profundo. A frutificação ocorre na estação chuvosa, então mantenha a rega nesse período.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Ipê-Amarelo",
+    "nomeCientifico": "Handroanthus ochraceus",
+    "tipo": "Árvore",
+    "sinopse": "O Ipê-Amarelo é a árvore símbolo do Brasil, com floração dourada espetacular que colore o Cerrado entre julho e setembro. Sua madeira é de alta resistência e durabilidade.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Ideal para calçadas e avenidas, pois suas raízes são profundas. Plante a pleno sol para garantir a floração abundante na estação seca.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Ipê-Roxo",
+    "nomeCientifico": "Handroanthus impetiginosus",
+    "tipo": "Árvore",
+    "sinopse": "O Ipê-Roxo encanta com suas flores em tons de rosa a roxo intenso, florescendo no inverno quando perde as folhas. Possui propriedades medicinais na casca, usada como anti-inflamatório.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Perfeito para praças e jardins centrais de avenidas. Tolera bem a seca e a poluição urbana, sendo excelente para cidades.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Ipê-Branco",
+    "nomeCientifico": "Tabebuia roseoalba",
+    "tipo": "Árvore",
+    "sinopse": "O Ipê-Branco surpreende com sua floração alva e delicada, que ocorre entre agosto e outubro. Suas flores brancas com centro amarelado criam um espetáculo visual único.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Prefere solos mais úmidos que outros ipês. Plante próximo a cursos d'água ou em áreas com irrigação complementar para melhor desenvolvimento.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Caliandra",
+    "nomeCientifico": "Calliandra dysantha",
+    "tipo": "Arbusto",
+    "sinopse": "A Caliandra é um arbusto ornamental com flores vermelhas em formato de pompom que atraem beija-flores. Floresce o ano todo em condições favoráveis, trazendo vida ao jardim.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Excelente para jardins pequenos e vasos grandes. Pode ser podada para manter formato compacto. Regue regularmente para floração contínua.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Chuveirinho",
+    "nomeCientifico": "Paepalanthus speciosus",
+    "tipo": "Ornamental",
+    "sinopse": "O Chuveirinho é uma planta herbácea icônica do Cerrado, com inflorescências esféricas que lembram um chuveiro. É uma sempre-viva que encanta em arranjos secos e jardins rochosos.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Ideal para jardins de pedra e vasos com solo arenoso. Tolera seca extrema e não precisa de regas frequentes após estabelecida.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Jatobá-do-Cerrado",
+    "nomeCientifico": "Hymenaea stigonocarpa",
+    "tipo": "Árvore",
+    "sinopse": "O Jatobá-do-Cerrado produz vagens com polpa farinácea adocicada e nutritiva. Sua casca exala resina aromática usada em incensos e medicina popular.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de crescimento lento mas muito longeva. Plante em áreas amplas como parques, pois atinge grande porte com o tempo.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Murici",
+    "nomeCientifico": "Byrsonima crassifolia",
+    "tipo": "Frutífera",
+    "sinopse": "O Murici é um arbusto ou pequena árvore com frutos amarelos de sabor único, entre doce e ácido. Rico em vitamina C, é usado em sucos, sorvetes e licores regionais.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Adapta-se bem a pequenos quintais e pode ser cultivado em vasos grandes. Gosta de sol pleno e regas regulares no período seco.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Guariroba",
+    "nomeCientifico": "Syagrus oleracea",
+    "tipo": "Palmeira",
+    "sinopse": "A Guariroba é uma palmeira elegante cujo palmito amargo é ingrediente essencial da tradicional empada goiana. Seus frutos atraem araras e tucanos.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ideal para compor alamedas e jardins tropicais. Plante em grupos espaçados para um visual exuberante e mantenha o solo úmido.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Buriti",
+    "nomeCientifico": "Mauritia flexuosa",
+    "tipo": "Palmeira",
+    "sinopse": "O Buriti é a palmeira majestosa das veredas, cujos frutos alaranjados são ricos em vitamina A. Suas folhas são usadas em artesanato e a polpa em doces e óleos cosméticos.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Precisa de solo constantemente úmido, ideal para margens de lagos e áreas alagáveis. Não tolera seca prolongada, então requer irrigação em jardins secos.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Macaúba",
+    "nomeCientifico": "Acrocomia aculeata",
+    "tipo": "Palmeira",
+    "sinopse": "A Macaúba é uma palmeira rústica e espinhosa que produz cocos de onde se extrai óleo de alta qualidade para biodiesel e cosméticos. Extremamente resistente à seca e ao fogo.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Plante longe de áreas de circulação devido aos espinhos. Excelente para recuperação de áreas degradadas, pois sobrevive em solos pobres.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Mangaba",
+    "nomeCientifico": "Hancornia speciosa",
+    "tipo": "Frutífera",
+    "sinopse": "A Mangaba é uma fruta láctea e adocicada, muito apreciada em sucos e sorvetes no Nordeste e Centro-Oeste. Sua árvore é adaptada a solos arenosos e pobres do Cerrado.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Perfeita para solos arenosos e bem drenados. Requer pouco cuidado após estabelecida e frutifica abundantemente no verão.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Imbaúba",
+    "nomeCientifico": "Cecropia pachystachya",
+    "tipo": "Árvore",
+    "sinopse": "A Imbaúba é uma árvore pioneira de crescimento rápido, com folhas grandes e prateadas. Seus frutos alimentam preguiças, tucanos e macacos, sendo essencial para a fauna.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ideal para recomposição florestal e áreas degradadas. Cresce rápido e prefere solos úmidos, sendo ótima para margens de rios.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Capitão-do-Campo",
+    "nomeCientifico": "Terminalia argentea",
+    "tipo": "Árvore",
+    "sinopse": "O Capitão-do-Campo é uma árvore elegante de casca ornamental que se desprende em placas. Suas folhas prateadas criam um belo contraste na paisagem do Cerrado.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Excelente para arborização de praças e jardins amplos. Sua copa proporciona sombra moderada e a casca decorativa agrega valor paisagístico.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Lobeira",
+    "nomeCientifico": "Solanum lycocarpum",
+    "tipo": "Frutífera",
+    "sinopse": "A Lobeira é famosa por seus frutos que lembram tomates verdes, alimento preferido do lobo-guará. Tem grande importância ecológica na dispersão de sementes pelo Cerrado.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Arbusto rústico que tolera solos pobres e seca. Plante em áreas abertas com bastante sol e evite regas excessivas.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Copaíba",
+    "nomeCientifico": "Copaifera langsdorffii",
+    "tipo": "Árvore",
+    "sinopse": "A Copaíba é conhecida como árvore milagrosa pelo óleo medicinal extraído do seu tronco, usado como anti-inflamatório e cicatrizante. Sua copa densa oferece ótima sombra.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de grande porte para parques e praças. Tolera bem a seca e vive por centenas de anos, tornando-se patrimônio natural da cidade.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Aroeira",
+    "nomeCientifico": "Myracrodruon urundeuva",
+    "tipo": "Árvore",
+    "sinopse": "A Aroeira é uma árvore nobre de madeira duríssima usada em construções e mourões. Suas folhas têm propriedades anti-inflamatórias e cicatrizantes na medicina popular.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de crescimento lento, ideal para projetos paisagísticos de longo prazo. Plante em áreas amplas, longe de construções, pois suas raízes se expandem bastante.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Jacarandá-do-Cerrado",
+    "nomeCientifico": "Dalbergia miscolobium",
+    "tipo": "Árvore",
+    "sinopse": "O Jacarandá-do-Cerrado encanta com suas flores roxas perfumadas que despontam na estação seca. Sua madeira escura é muito valorizada na marcenaria fina.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Plante como destaque em jardins e praças. Sua floração roxa na seca traz cor quando outras plantas estão sem flores.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Pau-Terra",
+    "nomeCientifico": "Qualea grandiflora",
+    "tipo": "Árvore",
+    "sinopse": "O Pau-Terra é uma árvore imponente do Cerrado com flores amarelas vistosas. Sua madeira é resistente e era usada na construção de carroças e embarcações.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Ideal para grandes áreas verdes e reservas urbanas. Tolera solos ácidos e pobres típicos do Cerrado, sem necessidade de adubação.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Angico",
+    "nomeCientifico": "Anadenanthera colubrina",
+    "tipo": "Árvore",
+    "sinopse": "O Angico é uma árvore majestosa de casca rugosa e flores brancas perfumadas. Sua casca é rica em tanino e usada na medicina tradicional e curtume.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de grande porte para parques urbanos. Suas flores atraem abelhas nativas e ajudam na polinização de plantas ao redor.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Pimenta-de-Macaco",
+    "nomeCientifico": "Xylopia aromatica",
+    "tipo": "Arbusto",
+    "sinopse": "A Pimenta-de-Macaco é um arbusto aromático cujas sementes têm sabor picante semelhante à pimenta-do-reino. Suas flores brancas exalam perfume adocicado à noite.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Perfeito para jardins sensoriais e hortas urbanas. Cultive em vasos grandes com solo arenoso e colha as sementes para tempero caseiro.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Candeia",
+    "nomeCientifico": "Eremanthus erythropappus",
+    "tipo": "Árvore",
+    "sinopse": "A Candeia produz madeira resistente e óleo essencial rico em alfa-bisabolol, usado na indústria cosmética. Suas flores brancas são melíferas e atraem abelhas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de pequeno porte ideal para calçadas e jardins residenciais. Extremamente resistente à seca e a solos pedregosos.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Barbatimão",
+    "nomeCientifico": "Stryphnodendron adstringens",
+    "tipo": "Arbusto",
+    "sinopse": "O Barbatimão é famoso por sua casca rica em tanino, com propriedades cicatrizantes e antimicrobianas. É amplamente usado na fitoterapia brasileira.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Arbusto rústico que cresce bem em solos pobres e arenosos. Ideal para jardins medicinais e áreas de preservação em condomínios.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Sucupira-Branca",
+    "nomeCientifico": "Pterodon emarginatus",
+    "tipo": "Árvore",
+    "sinopse": "A Sucupira-Branca é uma árvore ornamental com flores roxas e frutos alados. Suas sementes produzem óleo medicinal usado no tratamento de artrite e reumatismo.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de copa ampla, excelente para sombreamento em estacionamentos e praças. Suas raízes profundas não danificam pavimentos.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Tingui",
+    "nomeCientifico": "Magonia pubescens",
+    "tipo": "Árvore",
+    "sinopse": "O Tingui é uma árvore nativa com flores brancas perfumadas e frutos que já foram usados para pesca indígena. Suas sementes contêm saponinas naturais.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de porte médio adequada para jardins residenciais. Gosta de regas regulares e sol pleno para floração abundante.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Mama-Cadela",
+    "nomeCientifico": "Brosimum gaudichaudii",
+    "tipo": "Frutífera",
+    "sinopse": "A Mama-Cadela é uma árvore pequena cujos frutos amarelos e adocicados lembram goma de mascar. Sua raiz é usada no tratamento de vitiligo na medicina tradicional.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Perfeita para quintais pequenos e pomares urbanos. Frutifica melhor sob sol pleno e solo bem drenado, com pouca necessidade de água.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Canela-de-Ema",
+    "nomeCientifico": "Vellozia flavicans",
+    "tipo": "Ornamental",
+    "sinopse": "A Canela-de-Ema é uma planta escultural com flores roxas e folhas finas que se adapta a afloramentos rochosos. Sobrevive a queimadas e secas extremas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Ideal para jardins rochosos e xeropaisagismo. Quase não precisa de rega e se desenvolve bem em fendas de pedras.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Veludo-do-Cerrado",
+    "nomeCientifico": "Miconia albicans",
+    "tipo": "Arbusto",
+    "sinopse": "O Veludo-do-Cerrado é um arbusto com folhas aveludadas e flores brancas que se transformam em frutinhos roxos comestíveis. Suas folhas têm textura única e macia.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ótimo para bordaduras e maciços em jardins. As folhas aveludadas criam contraste interessante com plantas de folhas lisas.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Lixeira",
+    "nomeCientifico": "Curatella americana",
+    "tipo": "Árvore",
+    "sinopse": "A Lixeira é uma árvore de tronco retorcido típica do Cerrado, com folhas ásperas usadas como lixa natural. Suas flores brancas são melíferas e seus frutos atraem pássaros.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore escultural para jardins temáticos de Cerrado. Suas folhas ásperas e tronco tortuoso agregam personalidade à paisagem.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Gonçalo-Alves",
+    "nomeCientifico": "Astronium fraxinifolium",
+    "tipo": "Árvore",
+    "sinopse": "O Gonçalo-Alves é uma árvore de madeira nobre com veios escuros decorativos, muito usada em marcenaria de luxo. Suas flores atraem abelhas nativas sem ferrão.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Ideal para projetos de arborização de longo prazo. Sua madeira valiosa a torna um investimento paisagístico e econômico.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Pau-Santo",
+    "nomeCientifico": "Kielmeyera coriacea",
+    "tipo": "Árvore",
+    "sinopse": "O Pau-Santo é uma árvore ornamental com flores grandes, brancas e perfumadas que abrem ao amanhecer. Suas folhas coriáceas são adaptadas à seca do Cerrado.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de pequeno porte perfeita para jardins residenciais. Suas flores matinais perfumam o ar e atraem polinizadores.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Sempre-Viva",
+    "nomeCientifico": "Syngonanthus nitens",
+    "tipo": "Ornamental",
+    "sinopse": "A Sempre-Viva é uma planta herbácea de inflorescências douradas que mantêm a cor mesmo depois de secas. Muito usada em artesanato e arranjos florais permanentes.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Ideal para jardins secos e vasos decorativos. Corte as flores para arranjos secos e elas durarão anos mantendo a cor original.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Cipó-de-São-João",
+    "nomeCientifico": "Pyrostegia venusta",
+    "tipo": "Ornamental",
+    "sinopse": "O Cipó-de-São-João é uma trepadeira vigorosa com cachos de flores alaranjadas que colorem cercas e muros no inverno. Atrai beija-flores em abundância.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Perfeita para cobrir pérgolas, cercas e muros. Plante a pleno sol para floração intensa e faça podas anuais de contenção.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Flor-do-Cerrado",
+    "nomeCientifico": "Eriotheca pubescens",
+    "tipo": "Árvore",
+    "sinopse": "A Flor-do-Cerrado é uma árvore de tronco bojudo com flores brancas que se abrem à noite. Suas painas são usadas para encher travesseiros e almofadas artesanais.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore escultural que chama atenção pelo tronco intumescido. Plante como ponto focal em jardins amplos com bastante sol.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Bocaiúva",
+    "nomeCientifico": "Acrocomia aculeata",
+    "tipo": "Palmeira",
+    "sinopse": "A Bocaiúva é uma palmeira imponente de frutos saborosos e nutritivos. Seus cocos são usados para extração de óleo e farinha, e a polpa fresca é consumida in natura.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Palmeira de grande porte para áreas amplas. Atenção aos espinhos no tronco quando jovem, plante longe de áreas de circulação.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Indaiá",
+    "nomeCientifico": "Attalea dubia",
+    "tipo": "Palmeira",
+    "sinopse": "O Indaiá é uma palmeira nativa cujos frutos são apreciados pela fauna e cujas folhas enormes eram usadas para cobertura de casas rústicas. Imponente e ornamental.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ideal para compor maciços tropicais em grandes jardins. Necessita de solo úmido e bastante espaço para suas folhas gigantes.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Jatobá-Mirim",
+    "nomeCientifico": "Hymenaea courbaril",
+    "tipo": "Árvore",
+    "sinopse": "O Jatobá-Mirim é uma variedade menor do jatobá, com frutos adocicados e casca medicinal. Sua copa densa oferece sombra fresca mesmo nos dias mais quentes.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Versão compacta ideal para jardins residenciais médios. Produz frutos saborosos mesmo em espaços reduzidos.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Assa-Peixe",
+    "nomeCientifico": "Vernonanthura phosphorica",
+    "tipo": "Arbusto",
+    "sinopse": "O Assa-Peixe é um arbusto melífero importantíssimo para apicultores, produzindo néctar em abundância. Suas flores roxas atraem abelhas, borboletas e beija-flores.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Plantar próximo a hortas para atrair polinizadores. Cresce rápido e floresce o ano todo com regas regulares.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Quaresmeira",
+    "nomeCientifico": "Tibouchina granulosa",
+    "tipo": "Árvore",
+    "sinopse": "A Quaresmeira desabrocha em tons de roxo vibrante durante a quaresma, criando um espetáculo visual urbano. Suas flores cobrem toda a copa por semanas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Excelente para calçadas e jardins frontais. Pode ser controlada com podas e floresce abundantemente com rega e sol pleno.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Pata-de-Vaca",
+    "nomeCientifico": "Bauhinia forficata",
+    "tipo": "Árvore",
+    "sinopse": "A Pata-de-Vaca tem folhas em formato de casco bovino e flores brancas delicadas. Suas folhas são usadas como chá medicinal para diabetes na fitoterapia.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore ornamental de pequeno porte perfeita para calçadas. Prefere sol pleno e solo rico em matéria orgânica.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Flamboyanzinho",
+    "nomeCientifico": "Caesalpinia pulcherrima",
+    "tipo": "Arbusto",
+    "sinopse": "O Flamboyanzinho é um arbusto exuberante com flores vermelhas e alaranjadas que lembram o Flamboyant gigante. Floresce o ano todo e atrai beija-flores.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ideal para jardins tropicais e vasos grandes. Pode com podas de formação e mantenha rega regular para floração contínua.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Cambará",
+    "nomeCientifico": "Lantana camara",
+    "tipo": "Ornamental",
+    "sinopse": "O Cambará é um arbusto florífero com inflorescências multicoloridas que mudam de tom conforme envelhecem. Extremamente resistente e atrativo para borboletas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Planta rústica para bordaduras e maciços. Tolera seca, sol intenso e podas drásticas, ideal para jardineiros iniciantes.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Peroba-do-Campo",
+    "nomeCientifico": "Aspidosperma tomentosum",
+    "tipo": "Árvore",
+    "sinopse": "A Peroba-do-Campo é uma árvore ornamental com casca suberosa e flores brancas perfumadas. Sua madeira é resistente e sua copa é ideal para sombreamento.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de crescimento lento mas muito durável. Ideal para parques e grandes jardins, tolera solos ácidos e seca prolongada.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Canela-Batalha",
+    "nomeCientifico": "Cryptocarya aschersoniana",
+    "tipo": "Árvore",
+    "sinopse": "A Canela-Batalha é uma árvore aromática cujas folhas exalam perfume de canela quando maceradas. Seus frutos são dispersos por pássaros e sua copa é densa.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Prefere locais sombreados e úmidos, ideal para bosques urbanos e áreas sob outras árvores. Solo rico em matéria orgânica.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Pitomba-do-Cerrado",
+    "nomeCientifico": "Talisia esculenta",
+    "tipo": "Frutífera",
+    "sinopse": "A Pitomba-do-Cerrado produz frutos amarelos com polpa agridoce e suculenta. Muito consumida in natura e em sucos, é rica em vitamina C e antioxidantes.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Perfeita para pomares urbanos e quintais produtivos. Frutifica melhor com regas regulares e adubação orgânica anual.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Ingá-do-Cerrado",
+    "nomeCientifico": "Inga laurina",
+    "tipo": "Frutífera",
+    "sinopse": "O Ingá-do-Cerrado produz vagens com polpa branca e adocicada ao redor das sementes. Suas flores brancas em forma de pompom são muito perfumadas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de crescimento rápido ideal para pomares. Gosta de solo úmido e rico, produza frutos em abundância no verão.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Jacarandá-Mimoso",
+    "nomeCientifico": "Jacaranda mimosifolia",
+    "tipo": "Árvore",
+    "sinopse": "O Jacarandá-Mimoso é uma das árvores mais ornamentais do mundo, com flores azul-violeta que formam um tapete sob a copa. Sua folhagem fina e delicada lembra samambaias.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Plante como destaque em praças e jardins. A floração azul é um espetáculo que valoriza qualquer paisagem urbana.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Chapéu-de-Couro",
+    "nomeCientifico": "Echinodorus macrophyllus",
+    "tipo": "Ornamental",
+    "sinopse": "O Chapéu-de-Couro é uma planta aquática com folhas grandes em formato de coração. Muito usada na medicina popular como anti-inflamatório e diurético natural.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ideal para laguinhos, fontes e bordas de espelhos d'água. Precisa de solo constantemente úmido ou alagado para se desenvolver.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Macela-do-Campo",
+    "nomeCientifico": "Achyrocline satureioides",
+    "tipo": "Ornamental",
+    "sinopse": "A Macela-do-Campo é uma erva medicinal com flores amarelo-ouro usadas em chás digestivos e anti-inflamatórios. Muito tradicional na cultura popular brasileira.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Cultive em vasos ou canteiros de ervas medicinais. Colha as flores pela manhã e seque à sombra para conservar as propriedades.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Jurubeba",
+    "nomeCientifico": "Solanum paniculatum",
+    "tipo": "Arbusto",
+    "sinopse": "A Jurubeba é um arbusto medicinal cujos frutos amargos são usados em tinturas para problemas hepáticos. Suas flores roxas com centro amarelo são decorativas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Arbusto rústico para jardins medicinais. Tolera solos pobres e seca, mas o fruto é mais abundante com regas ocasionais.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Carobinha",
+    "nomeCientifico": "Jacaranda decurrens",
+    "tipo": "Arbusto",
+    "sinopse": "A Carobinha é um arbusto medicinal do Cerrado com flores azul-arroxeadas. Suas raízes e folhas são usadas em chás depurativos e no tratamento de doenças de pele.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Planta excelente para jardins de ervas medicinais. Adapta-se bem a vasos e pode ser podada para manter formato arbustivo baixo.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Pequizeiro-Anão",
+    "nomeCientifico": "Caryocar brasiliense var. nanum",
+    "tipo": "Frutífera",
+    "sinopse": "Variedade anã do Pequi tradicional, ideal para espaços reduzidos. Produz frutos menores mas igualmente saborosos, com o mesmo aroma marcante do Cerrado.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Seleção perfeita para quintais urbanos. Mantém todas as características do pequi tradicional em porte compacto, com frutificação precoce.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Gabiroba",
+    "nomeCientifico": "Campomanesia pubescens",
+    "tipo": "Frutífera",
+    "sinopse": "A Gabiroba é um arbusto frutífero com bagas amarelas de sabor doce-acidulado, lembrando uma mistura de goiaba com maracujá. Rica em vitamina C e antioxidantes.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Excelente para pomares domésticos e vasos grandes. Frutifica em abundância e seus frutos atraem pássaros para o jardim.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Araçá-do-Cerrado",
+    "nomeCientifico": "Psidium firmum",
+    "tipo": "Frutífera",
+    "sinopse": "O Araçá-do-Cerrado é parente silvestre da goiaba, com frutos amarelos aromáticos e polpa cremosa. Seus frutos são ricos em vitamina C e ótimos para geleias.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Arbusto frutífero ideal para jardins produtivos. Plante a pleno sol e mantenha rega regular para frutos mais doces e suculentos.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Marmelada-de-Cachorro",
+    "nomeCientifico": "Alibertia edulis",
+    "tipo": "Frutífera",
+    "sinopse": "A Marmelada-de-Cachorro é um arbusto com frutos negros adocicados quando maduros. Muito consumida pela fauna e apreciada em geleias e licores artesanais.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ótima para enriquecer a biodiversidade do jardim. Seus frutos escuros atraem sabiás, sanhaços e outras aves nativas.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Gravatá",
+    "nomeCientifico": "Bromelia balansae",
+    "tipo": "Ornamental",
+    "sinopse": "O Gravatá é uma bromélia terrestre nativa do Cerrado, com folhas espinhosas em roseta e inflorescências vermelhas vibrantes. Seus frutos são comestíveis e refrescantes.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Ideal para jardins tropicais sob árvores. Tolera sombra parcial e seca ocasional, formando touceiras ornamentais com o tempo.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Cacto-Cereus",
+    "nomeCientifico": "Cereus hildmannianus",
+    "tipo": "Ornamental",
+    "sinopse": "O Cacto-Cereus é um cacto colunar nativo que floresce à noite com enormes flores brancas perfumadas. Seus frutos rosa-choque são comestíveis e atraem pássaros.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Perfeito para jardins xerófitos e rochosos. Suas flores noturnas são um espetáculo efêmero que vale a pena esperar.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Samambaiaçu-do-Campo",
+    "nomeCientifico": "Pteridium arachnoideum",
+    "tipo": "Ornamental",
+    "sinopse": "A Samambaiaçu-do-Campo é uma samambaia gigante que coloniza áreas de Cerrado, formando extensos tapetes verdes. Suas frondes são usadas em arranjos florais tropicais.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ideal para áreas sombreadas amplas e bosques urbanos. Espalha-se rapidamente e cobre o solo, dispensando gramados em áreas de sombra.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Algodãozinho-do-Cerrado",
+    "nomeCientifico": "Cochlospermum regium",
+    "tipo": "Arbusto",
+    "sinopse": "O Algodãozinho-do-Cerrado é um arbusto ornamental com flores amarelas brilhantes que despontam na estação seca. Seus frutos liberam paina branca que flutua no vento.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Excelente para jardins de baixa manutenção. Floresce justamente quando outras plantas estão sem flores, na seca.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Paineira-do-Cerrado",
+    "nomeCientifico": "Eriotheca gracilipes",
+    "tipo": "Árvore",
+    "sinopse": "A Paineira-do-Cerrado é uma árvore de tronco bojudo coberto de espinhos quando jovem. Produz paina sedosa usada em artesanato e suas flores atraem morcegos polinizadores.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Ponto focal escultural para grandes jardins. Seu tronco intumescido armazena água, adaptação típica do Cerrado à seca.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Faveira",
+    "nomeCientifico": "Dimorphandra mollis",
+    "tipo": "Árvore",
+    "sinopse": "A Faveira é uma árvore leguminosa cujos frutos são ricos em rutina, flavonoide usado na indústria farmacêutica. Suas flores amarelas são melíferas e perfumadas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore importante para recuperação de solos, pois fixa nitrogênio. Ideal para projetos de restauração ecológica urbana.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Capitão-do-Mato",
+    "nomeCientifico": "Terminalia fagifolia",
+    "tipo": "Árvore",
+    "sinopse": "O Capitão-do-Mato é uma árvore ornamental com folhas que mudam de cor no outono, criando um espetáculo avermelhado. Sua madeira é resistente e sua copa é piramidal.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Excelente para alamedas e avenidas. O colorido outonal das folhas traz um toque europeu ao paisagismo tropical.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Pau-Pombo",
+    "nomeCientifico": "Tapirira guianensis",
+    "tipo": "Árvore",
+    "sinopse": "O Pau-Pombo é uma árvore de crescimento rápido cujos frutos são avidamente consumidos por pombas e outras aves. Excelente para reflorestamento e recuperação de nascentes.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ideal para margens de rios e lagos urbanos. Cresce rápido e atrai fauna, sendo perfeito para parques lineares.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Pitanga-do-Cerrado",
+    "nomeCientifico": "Eugenia calycina",
+    "tipo": "Frutífera",
+    "sinopse": "A Pitanga-do-Cerrado é um arbusto com frutos vermelhos alongados de sabor doce e levemente ácido. Muito consumida in natura e em sucos refrescantes no verão.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Arbusto frutífero ideal para vasos grandes e pequenos quintais. Pode ser podado e produz frutos várias vezes ao ano.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Cajuzinho-do-Cerrado",
+    "nomeCientifico": "Anacardium humile",
+    "tipo": "Frutífera",
+    "sinopse": "O Cajuzinho-do-Cerrado é um arbusto baixo que produz pequenos cajus verdadeiros, com castanha e pseudofruto suculento. Sabor intenso e muito apreciado regionalmente.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Parente anão do cajueiro, perfeito para jardins pequenos. Frutifica no solo e se espalha formando touceiras produtivas.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Cajuí",
+    "nomeCientifico": "Anacardium othonianum",
+    "tipo": "Frutífera",
+    "sinopse": "O Cajuí é uma árvore frutífera do Cerrado com pseudofrutos vermelhos pequenos mas muito saborosos. A castanha é comestível e o suco é rico em vitamina C.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de pequeno porte, ideal para pomares urbanos. Tolera solos arenosos e produz frutos mesmo com pouca água.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Coco-de-Espinho",
+    "nomeCientifico": "Acrocomia intumescens",
+    "tipo": "Palmeira",
+    "sinopse": "O Coco-de-Espinho é uma palmeira imponente do Cerrado com estipe intumescido característico. Seus frutos são oleaginosos e apreciados pela fauna silvestre.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Palmeira ornamental para grandes espaços. O tronco bojudo é uma característica única que chama atenção na paisagem.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Buritirana",
+    "nomeCientifico": "Mauritiella armata",
+    "tipo": "Palmeira",
+    "sinopse": "A Buritirana é uma palmeira elegante, versão menor do Buriti, formando touceiras em áreas úmidas. Seus frutos são comestíveis e suas folhas usadas em artesanato.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Perfeita para jardins tropicais sombreados e áreas úmidas. Forma touceiras ornamentais que lembram paisagens de veredas.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Pindoba",
+    "nomeCientifico": "Attalea eichleri",
+    "tipo": "Palmeira",
+    "sinopse": "A Pindoba é uma palmeira acaule com folhas que emergem diretamente do solo. Seus frutos são comestíveis e suas folhas são usadas em coberturas rústicas.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ideal para sub-bosque de jardins tropicais. Suas folhas no nível do solo criam textura interessante em maciços sombreados.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Coco-Cabeçudo",
+    "nomeCientifico": "Butia capitata",
+    "tipo": "Palmeira",
+    "sinopse": "O Coco-Cabeçudo é uma palmeira ornamental com folhas prateadas recurvadas. Seus frutos amarelos são doces e usados em geleias, licores e sucos.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Palmeira de porte médio perfeita para jardins residenciais. Muito resistente à seca e ao frio, adapta-se a várias regiões.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Jaracatiá",
+    "nomeCientifico": "Jacaratia spinosa",
+    "tipo": "Árvore",
+    "sinopse": "O Jaracatiá é uma árvore de tronco liso e copa reduzida, com frutos alaranjados que lembram mamão. Seus frutos são ricos em papaína e muito consumidos pela fauna.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de crescimento rápido, ideal para sombra temporária. Produz frutos em abundância que atraem tucanos e sabiás.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Tarumã",
+    "nomeCientifico": "Vitex polygama",
+    "tipo": "Frutífera",
+    "sinopse": "O Tarumã é uma árvore frutífera com frutos roxos adocicados, muito apreciados em sucos e licores. Suas flores azuladas são melíferas e atraem abelhas nativas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Excelente para pomares urbanos. Frutifica abundantemente e pode ser mantida com podas de formação.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Guapeva",
+    "nomeCientifico": "Pouteria torta",
+    "tipo": "Frutífera",
+    "sinopse": "A Guapeva é uma árvore frutífera com frutos amarelos de polpa doce e farinhenta. Suas folhas têm textura aveludada e suas flores são perfumadas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore rústica de pequeno porte. Ideal para quintais que buscam frutas diferentes e exóticas do Cerrado.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Curriola",
+    "nomeCientifico": "Pouteria ramiflora",
+    "tipo": "Frutífera",
+    "sinopse": "A Curriola é uma árvore frutífera com frutos amarelos de polpa doce e suculenta. Muito apreciada pela fauna do Cerrado e em doces caseiros regionais.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de porte médio para pomares e parques. Seus frutos amadurecem na estação chuvosa e atraem macacos e pássaros.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Pequiá",
+    "nomeCientifico": "Caryocar villosum",
+    "tipo": "Árvore",
+    "sinopse": "O Pequiá é parente do Pequi com frutos maiores e polpa igualmente saborosa. Sua madeira é nobre e suas flores grandes atraem morcegos polinizadores.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de grande porte para parques e reservas. Necessita de bastante espaço e solo profundo para se desenvolver plenamente.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Sapatinho-de-Judeu",
+    "nomeCientifico": "Bauhinia longifolia",
+    "tipo": "Arbusto",
+    "sinopse": "O Sapatinho-de-Judeu é um arbusto com flores brancas delicadas e folhas bilobadas características. Floresce abundantemente na estação chuvosa.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Arbusto ornamental para jardins tropicais. Pode ser conduzido como arvoreta com podas de formação e floresce profusamente.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Fedegoso",
+    "nomeCientifico": "Senna alata",
+    "tipo": "Arbusto",
+    "sinopse": "O Fedegoso é um arbusto medicinal com flores amarelas em espigas densas. Suas folhas têm propriedades antifúngicas e são usadas na medicina popular.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Arbusto de crescimento rápido para jardins medicinais. Atrai borboletas e pode ser usado como cerca-viva informal.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Hortelã-do-Campo",
+    "nomeCientifico": "Hyptis crenata",
+    "tipo": "Ornamental",
+    "sinopse": "A Hortelã-do-Campo é uma erva aromática nativa com folhas perfumadas usadas em chás e banhos medicinais. Suas flores brancas atraem abelhas nativas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Perfeita para hortas medicinais urbanas. Cultive em vasos com boa drenagem e colha as folhas regularmente para estimular o crescimento.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Erva-Baleeira",
+    "nomeCientifico": "Cordia verbenacea",
+    "tipo": "Ornamental",
+    "sinopse": "A Erva-Baleeira é um arbusto medicinal cujas folhas têm propriedades anti-inflamatórias potentes. Muito usada na fitoterapia para dores musculares e articulares.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Arbusto rústico ideal para jardins medicinais. Tolera solos arenosos e salinos, comum em áreas litorâneas e de Cerrado.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Alfavaca-do-Campo",
+    "nomeCientifico": "Ocimum selloi",
+    "tipo": "Ornamental",
+    "sinopse": "A Alfavaca-do-Campo é uma erva aromática nativa com sabor semelhante ao manjericão. Suas flores roxas são atrativas para abelhas e seu chá é digestivo.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Cultive em vasos ou canteiros de ervas aromáticas. Colha as folhas frescas para temperar pratos e fazer chás medicinais.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Arnica-do-Campo",
+    "nomeCientifico": "Lychnophora ericoides",
+    "tipo": "Ornamental",
+    "sinopse": "A Arnica-do-Campo é um arbusto medicinal com folhas aromáticas usadas em pomadas cicatrizantes. Suas flores são melíferas e sua essência é usada em perfumaria.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Planta típica de campos rupestres, ideal para jardins rochosos. Tolera sol intenso e seca, perfeita para xeropaisagismo.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Catuaba",
+    "nomeCientifico": "Trichilia catigua",
+    "tipo": "Arbusto",
+    "sinopse": "A Catuaba é um arbusto medicinal famoso por suas propriedades revigorantes. Suas cascas são usadas em tinturas e chás energéticos na medicina popular brasileira.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Prefere sombra parcial e solo rico em matéria orgânica. Ideal para cultivo sob árvores maiores em jardins medicinais.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Espinheira-Santa",
+    "nomeCientifico": "Maytenus ilicifolia",
+    "tipo": "Arbusto",
+    "sinopse": "A Espinheira-Santa é um arbusto medicinal com folhas em formato de azevinho, famosa no tratamento de úlceras gástricas. Reconhecida pela OMS como planta medicinal.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Cultive em locais sombreados com solo rico em matéria orgânica. Suas folhas medicinais devem ser colhidas pela manhã.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Sangra-d'Água",
+    "nomeCientifico": "Croton urucurana",
+    "tipo": "Árvore",
+    "sinopse": "O Sangra-d'Água é uma árvore que exsuda seiva avermelhada quando cortada, usada na medicina popular como cicatrizante. Muito encontrada em matas ciliares do Cerrado.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ideal para margens de rios e lagos urbanos. Tolera encharcamento temporário e ajuda a estabilizar barrancos.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Embaúba",
+    "nomeCientifico": "Cecropia pachystachya",
+    "tipo": "Árvore",
+    "sinopse": "A Embaúba é uma árvore pioneira de tronco oco onde vivem formigas protetoras. Seus frutos digitais alimentam uma enorme variedade de aves e mamíferos.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de crescimento rápido para recuperação ambiental. Sua relação com formigas a torna um exemplo fascinante de mutualismo ecológico.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Mutamba",
+    "nomeCientifico": "Guazuma ulmifolia",
+    "tipo": "Árvore",
+    "sinopse": "A Mutamba é uma árvore frutífera com frutos espiralados adocicados. Suas folhas são usadas em chás medicinais e seus frutos atraem macacos e pássaros.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de crescimento rápido, ideal para sombreamento. Seus frutos curiosos chamam atenção e geram interesse educativo.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Garapa",
+    "nomeCientifico": "Apuleia leiocarpa",
+    "tipo": "Árvore",
+    "sinopse": "A Garapa é uma árvore de madeira nobre e flores brancas perfumadas. Sua copa densa oferece excelente sombra e sua madeira é resistente ao cupim.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Excelente para arborização de longa duração em praças e avenidas. Madeira de alta qualidade para projetos paisagísticos permanentes.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Vinhático",
+    "nomeCientifico": "Plathymenia reticulata",
+    "tipo": "Árvore",
+    "sinopse": "O Vinhático é uma árvore ornamental com flores amarelo-creme e madeira de cor vinho muito apreciada. Sua copa ampla oferece excelente sombreamento.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore nobre para parques e grandes jardins. Sua madeira colorida e resistente é um investimento de longo prazo na paisagem.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Óleo-de-Copaíba",
+    "nomeCientifico": "Copaifera coriacea",
+    "tipo": "Árvore",
+    "sinopse": "Esta espécie de Copaíba produz óleo medicinal de excelente qualidade, usado como anti-inflamatório natural. Suas folhas coriáceas são adaptadas à seca intensa.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore medicinal de grande porte. O óleo pode ser extraído de forma sustentável sem danificar a árvore quando feito corretamente.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Amendoim-Bravo",
+    "nomeCientifico": "Pterogyne nitens",
+    "tipo": "Árvore",
+    "sinopse": "O Amendoim-Bravo é uma árvore de crescimento rápido com flores amarelas e frutos alados. Excelente para sombreamento e recuperação de áreas degradadas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore versátil para áreas urbanas. Cresce rápido e pode ser usada em calçadas com fiação, pois tem porte médio.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Maria-Mole",
+    "nomeCientifico": "Guapira opposita",
+    "tipo": "Árvore",
+    "sinopse": "A Maria-Mole é uma árvore com frutos alaranjados que atraem pássaros. Sua madeira é leve e seus frutos são consumidos por sabiás e sanhaços.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ótima para atrair avifauna urbana. Plante próximo a janelas para observar pássaros se alimentando dos frutos.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Grumixama",
+    "nomeCientifico": "Eugenia brasiliensis",
+    "tipo": "Frutífera",
+    "sinopse": "A Grumixama é uma árvore frutífera com frutos roxos que lembram cerejas escuras. Polpa doce e suculenta, rica em antioxidantes e vitamina C.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Perfeita para pomares urbanos e vasos grandes. Frutifica abundantemente e pode ser mantida com porte arbustivo por meio de podas.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Jerivá",
+    "nomeCientifico": "Syagrus romanzoffiana",
+    "tipo": "Palmeira",
+    "sinopse": "O Jerivá é uma palmeira elegante e esguia, com frutos amarelos adocicados consumidos por araras e tucanos. Muito ornamental e adaptada ao ambiente urbano.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Palmeira clássica do paisagismo brasileiro. Plante em grupos para criar alamedas tropicais ou como destaque isolado no jardim.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Pau-Ferro",
+    "nomeCientifico": "Libidibia ferrea",
+    "tipo": "Árvore",
+    "sinopse": "O Pau-Ferro é uma árvore ornamental com tronco marmorizado liso e flores amarelas. Sua copa proporciona sombra média e sua madeira é extremamente densa.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Excelente para arborização urbana. O tronco decorativo e a copa elegante fazem do Pau-Ferro uma escolha premium para calçadas.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Sibipiruna",
+    "nomeCientifico": "Cenostigma pluviosum",
+    "tipo": "Árvore",
+    "sinopse": "A Sibipiruna é uma árvore ornamental com flores amarelas em cachos e copa ampla. Muito usada na arborização urbana por sua beleza e sombra generosa.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore clássica do paisagismo urbano brasileiro. Ideal para praças, parques e avenidas largas com bastante espaço.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Aldrago",
+    "nomeCientifico": "Pterocarpus violaceus",
+    "tipo": "Árvore",
+    "sinopse": "O Aldrago é uma árvore ornamental com flores alaranjadas e madeira avermelhada. Suas flores melíferas atraem abelhas e sua copa é densa e arredondada.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Excelente para sombreamento em praças e jardins amplos. A floração alaranjada é um diferencial no paisagismo urbano.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Guabiroba",
+    "nomeCientifico": "Campomanesia xanthocarpa",
+    "tipo": "Frutífera",
+    "sinopse": "A Guabiroba é uma árvore frutífera com frutos amarelos e suculentos de sabor doce e refrescante. Muito consumida in natura e em sucos regionais.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore frutífera de pequeno porte ideal para quintais. Produz frutos saborosos no verão e atrai pássaros frugívoros.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Uvaia",
+    "nomeCientifico": "Eugenia pyriformis",
+    "tipo": "Frutífera",
+    "sinopse": "A Uvaia é uma árvore frutífera com frutos amarelo-ouro de aroma intenso e sabor ácido. Perfeita para sucos, geleias e sorvetes artesanais.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de pequeno porte para pomares urbanos. Seus frutos dourados são ornamentais e muito perfumados quando maduros.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Cabeludinha",
+    "nomeCientifico": "Myrciaria glazioviana",
+    "tipo": "Frutífera",
+    "sinopse": "A Cabeludinha é uma árvore frutífera com frutos amarelos cobertos de pelos finos. Polpa doce e suculenta, rica em vitamina C, consumida in natura.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Frutífera compacta ideal para pequenos jardins. Pode ser cultivada em vasos grandes com produção abundante de frutos.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Grumari",
+    "nomeCientifico": "Eugenia leptoclada",
+    "tipo": "Frutífera",
+    "sinopse": "O Grumari é um arbusto frutífero com pequenos frutos roxos adocicados. Muito apreciado pela fauna silvestre e em doces artesanais regionais.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Arbusto de sub-bosque, ideal para cultivo sob árvores maiores. Prefere sombra parcial e solo úmido para produzir frutos doces.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Maracujá-do-Cerrado",
+    "nomeCientifico": "Passiflora cincinnata",
+    "tipo": "Ornamental",
+    "sinopse": "O Maracujá-do-Cerrado é uma trepadeira nativa com flores roxas exuberantes e frutos aromáticos. As flores são polinizadas por abelhas grandes e beija-flores.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Trepadeira rústica para cercas e pérgolas. Muito resistente à seca, produz flores ornamentais e frutos comestíveis.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Maracujá-Nativo",
+    "nomeCientifico": "Passiflora edulis",
+    "tipo": "Ornamental",
+    "sinopse": "O Maracujá-Nativo é uma trepadeira vigorosa com flores complexas e frutos saborosos. Suas flores são consideradas obras de arte da natureza pela complexidade.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Cultive em cercas, caramanchões ou treliças. Produz flores o ano todo e frutos abundantes com rega regular.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Flor-de-Maio",
+    "nomeCientifico": "Schlumbergera truncata",
+    "tipo": "Ornamental",
+    "sinopse": "A Flor-de-Maio é uma cactácea epífita com flores pendentes em tons de rosa e vermelho. Floresce no outono, iluminando jardins com suas cores vibrantes.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Ideal para vasos suspensos em varandas sombreadas. Regas moderadas e luz indireta garantem floração exuberante.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Orquídea-Terrestre",
+    "nomeCientifico": "Epidendrum secundum",
+    "tipo": "Ornamental",
+    "sinopse": "A Orquídea-Terrestre é uma orquídea nativa que cresce no solo, com hastes florais rosadas. Extremamente resistente e de fácil cultivo em jardins tropicais.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Cultive em canteiros sombreados com substrato rico em matéria orgânica. Floresce várias vezes ao ano com cuidados mínimos.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Bromélia-Imperial",
+    "nomeCientifico": "Alcantarea imperialis",
+    "tipo": "Ornamental",
+    "sinopse": "A Bromélia-Imperial é uma bromélia gigante nativa, com folhas largas e inflorescência que atinge até 3 metros de altura. Um espetáculo escultural no jardim.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Plante como ponto focal em jardins tropicais. Após a floração, a planta-mãe morre e deixa brotos laterais que perpetuam a espécie.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Lírio-do-Cerrado",
+    "nomeCientifico": "Hippeastrum morelianum",
+    "tipo": "Ornamental",
+    "sinopse": "O Lírio-do-Cerrado é uma planta bulbosa com flores vermelhas intensas que despontam após as primeiras chuvas. Suas flores são grandes e muito vistosas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Plante os bulbos em vasos ou canteiros bem drenados. As flores surgem de forma espetacular após o período seco.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Helicônia",
+    "nomeCientifico": "Heliconia episcopalis",
+    "tipo": "Ornamental",
+    "sinopse": "A Helicônia é uma planta tropical com inflorescências exóticas em formato de garras coloridas. Suas flores atraem beija-flores de bico curvo.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ideal para jardins tropicais sombreados. Mantenha o solo sempre úmido para floração contínua e exuberante.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Costus",
+    "nomeCientifico": "Costus spiralis",
+    "tipo": "Ornamental",
+    "sinopse": "O Costus é uma planta herbácea com inflorescências cônicas vermelhas e flores amarelas que brotam em espiral. Nativa de áreas úmidas do Cerrado.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Planta ideal para bordas de lagos e áreas úmidas. Suas flores exóticas chamam atenção e atraem beija-flores.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Samanbaia-Americana",
+    "nomeCientifico": "Nephrolepis exaltata",
+    "tipo": "Ornamental",
+    "sinopse": "A Samambaia-Americana é uma samambaia clássica com frondes longas e elegantes. Purifica o ar e traz frescor para ambientes internos e externos sombreados.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Cultive em vasos suspensos ou xaxins em áreas sombreadas. Mantenha a umidade borrifando água nas folhas regularmente.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Avenca",
+    "nomeCientifico": "Adiantum raddianum",
+    "tipo": "Ornamental",
+    "sinopse": "A Avenca é uma samambaia delicada com folhas em forma de leque. Tradicional na cultura brasileira, usada em arranjos e considerada planta protetora.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Planta de interior e varandas sombreadas. Solo sempre úmido e ambiente protegido do vento garantem folhagem exuberante.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Singônio",
+    "nomeCientifico": "Syngonium podophyllum",
+    "tipo": "Ornamental",
+    "sinopse": "O Singônio é uma folhagem versátil com folhas em formato de flecha que mudam de forma conforme amadurecem. Pode ser cultivado como trepadeira ou forração.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Perfeito para vasos em interiores e jardins verticais sombreados. Tolera baixa luminosidade e é muito fácil de cultivar.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Trapoeraba-Roxa",
+    "nomeCientifico": "Tradescantia pallida",
+    "tipo": "Ornamental",
+    "sinopse": "A Trapoeraba-Roxa é uma forração de cor púrpura intensa com flores rosadas. Muito resistente, forma tapetes coloridos em bordaduras e jardineiras.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Ideal para forração em áreas de meia-sombra. Sua cor roxa fica mais intensa com mais luminosidade indireta.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Lambari",
+    "nomeCientifico": "Tradescantia zebrina",
+    "tipo": "Ornamental",
+    "sinopse": "O Lambari é uma planta pendente com folhas listradas em prata e roxo. Fácil de cultivar, ideal para vasos suspensos e jardins verticais.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Cultive em vasos pendentes em varandas cobertas. Suas folhas coloridas criam cascatas decorativas de baixa manutenção.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Clorofito",
+    "nomeCientifico": "Chlorophytum comosum",
+    "tipo": "Ornamental",
+    "sinopse": "O Clorofito é uma planta clássica de interior com folhas variegadas e mudinhas pendentes. Excelente purificador de ar, recomendado pela NASA.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Perfeito para vasos suspensos em áreas internas. Produz mudas nas pontas das hastes que podem ser replantadas facilmente.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Calatéia",
+    "nomeCientifico": "Calathea zebrina",
+    "tipo": "Ornamental",
+    "sinopse": "A Calatéia é uma folhagem exuberante com padrões listrados em verde-claro e escuro. Suas folhas se fecham à noite, criando movimento no jardim.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Planta de sombra para interiores e jardins tropicais. Mantenha o solo úmido e a umidade do ar alta para evitar bordas queimadas.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Maranta",
+    "nomeCientifico": "Maranta leuconeura",
+    "tipo": "Ornamental",
+    "sinopse": "A Maranta é uma planta de sombra com folhas pintadas em verde e vermelho, com nervuras que lembram espinhas de peixe. Conhecida como planta rezadeira.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Cultive em vasos em locais com luz indireta. Suas folhas se movimentam durante o dia, abaixando e levantando conforme a luz.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Peixinho-da-Horta",
+    "nomeCientifico": "Stachys byzantina",
+    "tipo": "Ornamental",
+    "sinopse": "O Peixinho-da-Horta é uma planta com folhas aveludadas e prateadas que lembram orelhas de coelho. Comestível, é usado empanado na culinária e como ornamental.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Plante em vasos ou bordaduras ensolaradas. Suas folhas prateadas e macias são um diferencial tátil e visual no jardim.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Rosa-do-Deserto",
+    "nomeCientifico": "Adenium obesum",
+    "tipo": "Ornamental",
+    "sinopse": "A Rosa-do-Deserto é uma planta suculenta com tronco escultural e flores exuberantes em tons de rosa, vermelho e branco. Floresce o ano todo em climas quentes.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Cultive em vasos rasos com excelente drenagem. Regas esparsas e muito sol garantem o tronco bojudo e floração intensa.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Agave",
+    "nomeCientifico": "Agave americana",
+    "tipo": "Ornamental",
+    "sinopse": "O Agave é uma planta suculenta escultural com folhas azuladas dispostas em roseta. Extremamente resistente à seca, ideal para jardins xerófitos.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Plante em jardins rochosos ou vasos grandes. Tolera seca extrema e sol pleno, mas cuidado com os espinhos nas pontas das folhas.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Pata-de-Elefante",
+    "nomeCientifico": "Beaucarnea recurvata",
+    "tipo": "Ornamental",
+    "sinopse": "A Pata-de-Elefante é uma planta escultural com base do tronco intumescida que armazena água. Suas folhas longas e recurvadas lembram uma cabeleira.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Cultive em vasos como planta de destaque. Regas muito esparsas, pois o excesso de água apodrece o tronco decorativo.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Yucca",
+    "nomeCientifico": "Yucca filamentosa",
+    "tipo": "Ornamental",
+    "sinopse": "A Yucca é uma planta arquitetônica com folhas rígidas em forma de espada. Sua inflorescência branca atinge até 2 metros de altura e é muito perfumada.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Ponto focal perfeito para jardins contemporâneos. Extremamente resistente e de baixíssima manutenção uma vez estabelecida.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Dracena",
+    "nomeCientifico": "Dracaena fragrans",
+    "tipo": "Ornamental",
+    "sinopse": "A Dracena é uma planta arbustiva versátil com folhas longas e variegadas. Muito usada em interiores por sua tolerância a baixa luz e capacidade de purificar o ar.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Ideal para salas e escritórios com luz indireta. Regas moderadas e folhas limpas mantêm a planta saudável e decorativa.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Espada-de-São-Jorge",
+    "nomeCientifico": "Dracaena trifasciata",
+    "tipo": "Ornamental",
+    "sinopse": "A Espada-de-São-Jorge é uma planta resistente com folhas eretas e variegadas. Considerada protetora na cultura popular e excelente purificadora de ar.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "A planta mais resistente para iniciantes. Sobrevive em qualquer condição de luz e precisa de regas apenas quando o solo estiver seco.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Zamioculca",
+    "nomeCientifico": "Zamioculcas zamiifolia",
+    "tipo": "Ornamental",
+    "sinopse": "A Zamioculca é uma planta de interior com folhas brilhantes verde-escuras. Extremamente resistente, sobrevive em locais com pouquíssima luz e regas esparsas.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Perfeita para cantos escuros de apartamentos. Regue apenas quando o solo estiver completamente seco para evitar apodrecimento.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Jiboia",
+    "nomeCientifico": "Epipremnum pinnatum",
+    "tipo": "Ornamental",
+    "sinopse": "A Jiboia é uma trepadeira versátil com folhas coração em verde e amarelo. Pode ser cultivada pendente ou subindo em tutores, adaptando-se a qualquer ambiente.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Planta perfeita para jardins verticais internos. Tolera baixa luminosidade e regas esparsas, sendo quase indestrutível.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Filodendro",
+    "nomeCientifico": "Philodendron hederaceum",
+    "tipo": "Ornamental",
+    "sinopse": "O Filodendro é uma planta trepadeira com folhas em formato de coração. Nativo de florestas tropicais, adapta-se perfeitamente a interiores com luz indireta.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Cultive em vasos com tutor ou como planta pendente. Mantenha o solo úmido e borrife água nas folhas para simular ambiente tropical.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Costela-de-Adão",
+    "nomeCientifico": "Monstera deliciosa",
+    "tipo": "Ornamental",
+    "sinopse": "A Costela-de-Adão é uma planta icônica com folhas gigantes recortadas. Seus frutos são comestíveis e sua folhagem exuberante decora qualquer ambiente tropical.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Plante em vasos grandes com tutor de fibra. As folhas desenvolvem mais recortes com boa luminosidade indireta e umidade.",
+    "imagemUrl": "/plantas/ornamental.jpg"
+  },
+  {
+    "nomePopular": "Bambu-Mossô",
+    "nomeCientifico": "Phyllostachys pubescens",
+    "tipo": "Arbusto",
+    "sinopse": "O Bambu-Mossô é um bambu ornamental com colmos grossos e folhagem densa. Ideal para cercas-vivas e barreiras acústicas em áreas urbanas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Plante com barreira de contenção para controlar o crescimento. Excelente para criar privacidade e bloquear ruídos urbanos.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Buxinho",
+    "nomeCientifico": "Buxus sempervirens",
+    "tipo": "Arbusto",
+    "sinopse": "O Buxinho é um arbusto clássico de jardins formais, com folhas pequenas e compactas. Perfeito para topiaria, bordaduras e cercas-vivas baixas.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ideal para jardins geométricos e vasos. Pode ser podado em formas variadas e mantém a folhagem densa o ano todo.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Azaleia",
+    "nomeCientifico": "Rhododendron simsii",
+    "tipo": "Arbusto",
+    "sinopse": "A Azaleia é um arbusto florífero que explode em cores no inverno, com flores em tons de rosa, branco e vermelho. Clássico do paisagismo brasileiro.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Cultive em solo ácido e bem drenado. A floração exuberante no inverno compensa os cuidados com rega e adubação.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Gardênia",
+    "nomeCientifico": "Gardenia jasminoides",
+    "tipo": "Arbusto",
+    "sinopse": "A Gardênia é um arbusto com flores brancas de perfume intenso e inebriante. Suas pétalas aveludadas e aroma doce fazem dela uma das flores mais românticas.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Plante próximo a janelas e áreas de convivência para aproveitar o perfume. Solo ácido e regas regulares são essenciais.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Camélia",
+    "nomeCientifico": "Camellia japonica",
+    "tipo": "Arbusto",
+    "sinopse": "A Camélia é um arbusto nobre com flores perfeitas em tons de rosa, vermelho e branco. Floresce no inverno, quando poucas plantas estão floridas.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Cultive em locais protegidos do sol forte da tarde. Suas flores de inverno trazem vida e cor para jardins na estação fria.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Hibisco",
+    "nomeCientifico": "Hibiscus rosa-sinensis",
+    "tipo": "Arbusto",
+    "sinopse": "O Hibisco é um arbusto tropical com flores grandes e coloridas que duram um dia. Suas flores são comestíveis e usadas em chás refrescantes.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Cultive a pleno sol para floração abundante. Pode ser podado em cerca-viva florida ou cultivado como arvoreta.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Ixora",
+    "nomeCientifico": "Ixora coccinea",
+    "tipo": "Arbusto",
+    "sinopse": "A Ixora é um arbusto compacto com inflorescências em cachos de flores vermelhas, laranjas ou amarelas. Floresce o ano todo e atrai beija-flores.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Ideal para bordaduras e cercas-vivas baixas. Pode ser podada em formato de bola e mantida sempre florida com sol pleno.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Murta",
+    "nomeCientifico": "Murraya paniculata",
+    "tipo": "Arbusto",
+    "sinopse": "A Murta é um arbusto com flores brancas perfumadas que lembram jasmim. Muito usada em cercas-vivas e topiaria por sua folhagem densa.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Excelente para cercas-vivas formais. Suas flores perfumam o jardim à noite e podem ser podadas em formas variadas.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Alamanda",
+    "nomeCientifico": "Allamanda cathartica",
+    "tipo": "Arbusto",
+    "sinopse": "A Alamanda é um arbusto escandente com flores amarelas em formato de trombeta. Suas flores brilhantes iluminam qualquer jardim tropical.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Pode ser conduzida como arbusto ou trepadeira em cercas. Floresce mais intensamente sob sol pleno e calor.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Manacá-da-Serra",
+    "nomeCientifico": "Tibouchina mutabilis",
+    "tipo": "Árvore",
+    "sinopse": "O Manacá-da-Serra é uma árvore com flores que mudam de cor, abrindo brancas, passando a rosa e terminando roxas. Espetáculo tricolor na mesma copa.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de pequeno porte perfeita para calçadas e jardins residenciais. Suas flores tricolores são um espetáculo único.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Resedá",
+    "nomeCientifico": "Lagerstroemia indica",
+    "tipo": "Árvore",
+    "sinopse": "O Resedá é uma árvore ornamental com flores crespas em tons de rosa, roxo e branco. Sua casca lisa marmorizada e floração prolongada o tornam muito ornamental.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Excelente para calçadas e jardins frontais. A casca decorativa agrega interesse mesmo quando a árvore está sem flores.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Magnólia",
+    "nomeCientifico": "Michelia champaca",
+    "tipo": "Árvore",
+    "sinopse": "A Magnólia é uma árvore com flores amarelas de perfume intenso e adocicado. Seu aroma é usado na perfumaria fina e encanta jardins tropicais.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Plante em local protegido e com espaço, pois atinge grande porte. O perfume de suas flores invade o jardim e a vizinhança.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Pinha",
+    "nomeCientifico": "Annona squamosa",
+    "tipo": "Frutífera",
+    "sinopse": "A Pinha ou Fruta-do-Conde é uma árvore frutífera com frutos doces de polpa branca e cremosa. Muito apreciada in natura e em sucos e sobremesas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore frutífera compacta ideal para quintais. Produz frutos saborosos no verão e pode ser cultivada em vasos grandes.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Graviola",
+    "nomeCientifico": "Annona muricata",
+    "tipo": "Frutífera",
+    "sinopse": "A Graviola é uma árvore frutífera com frutos verdes espinhosos de polpa branca e sabor agridoce. Rica em vitaminas e usada em sucos e sorvetes.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de pequeno porte para pomares tropicais. Gosta de calor, umidade e solo rico em matéria orgânica.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Jabuticabeira",
+    "nomeCientifico": "Plinia cauliflora",
+    "tipo": "Frutífera",
+    "sinopse": "A Jabuticabeira é uma árvore frutífera icônica com frutos negros que brotam diretamente no tronco. Doce e suculenta, é consumida in natura ou em geleias e licores.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Frutífera ornamental de crescimento lento. A frutificação no tronco encanta crianças e adultos, sendo uma experiência única no pomar.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Acerola",
+    "nomeCientifico": "Malpighia emarginata",
+    "tipo": "Frutífera",
+    "sinopse": "A Acerola é um arbusto frutífero com pequenos frutos vermelhos riquíssimos em vitamina C. Produz frutos o ano todo e é muito produtiva.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Perfeita para pomares urbanos e vasos grandes. Produz frutos em abundância e pode ser podada para manter porte baixo.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Romã",
+    "nomeCientifico": "Punica granatum",
+    "tipo": "Frutífera",
+    "sinopse": "A Romã é um arbusto frutífero com flores alaranjadas e frutos vermelhos cheios de sementes suculentas. Símbolo de prosperidade em várias culturas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Arbusto rústico que tolera seca e solos pobres. Pode ser cultivado em vasos e suas flores são tão ornamentais quanto os frutos.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Amora",
+    "nomeCientifico": "Morus nigra",
+    "tipo": "Frutífera",
+    "sinopse": "A Amora é uma árvore frutífera de crescimento rápido com frutos negros e adocicados. Suas folhas alimentam bichos-da-seda e os frutos atraem pássaros.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore versátil para pomares urbanos. Produz frutos saborosos e pode ser podada anualmente para manter o porte adequado.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Carambola",
+    "nomeCientifico": "Averrhoa carambola",
+    "tipo": "Frutífera",
+    "sinopse": "A Carambola é uma árvore frutífera com frutos em formato de estrela, sabor agridoce e refrescante. Rica em vitamina C e muito ornamental.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de pequeno porte ideal para quintais. Seus frutos em estrela são um diferencial decorativo em saladas e sucos.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Siriguela",
+    "nomeCientifico": "Spondias purpurea",
+    "tipo": "Frutífera",
+    "sinopse": "A Siriguela é uma árvore frutífera com pequenos frutos vermelhos ou amarelos de polpa suculenta e agridoce. Muito consumida in natura no Norte e Nordeste.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore rústica de pequeno porte. Tolera seca e produz frutos em abundância no verão, mesmo com poucos cuidados.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Cajá-Manga",
+    "nomeCientifico": "Spondias dulcis",
+    "tipo": "Frutífera",
+    "sinopse": "O Cajá-Manga é uma árvore frutífera com frutos grandes e suculentos de sabor agridoce. Muito usado em sucos, picolés e doces regionais.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de porte médio para pomares amplos. Produz frutos em abundância e sua copa proporciona excelente sombra.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Jambo",
+    "nomeCientifico": "Syzygium jambos",
+    "tipo": "Frutífera",
+    "sinopse": "O Jambo é uma árvore frutífera com frutos rosados em formato de pera, de polpa crocante e aroma de rosas. Muito ornamental e saboroso.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore frutífera ornamental de copa densa. Ideal para pomares e jardins amplos, pois atinge grande porte.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Grumixameira",
+    "nomeCientifico": "Eugenia brasiliensis",
+    "tipo": "Frutífera",
+    "sinopse": "A Grumixameira é uma árvore frutífera com frutos roxos que lembram cerejas. Polpa doce e suculenta, muito apreciada in natura e em geleias artesanais.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de sub-bosque que prefere sombra parcial. Ideal para pomares sob árvores maiores, produzindo frutos doces e aromáticos.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Cambuci",
+    "nomeCientifico": "Campomanesia phaea",
+    "tipo": "Frutífera",
+    "sinopse": "O Cambuci é uma árvore frutífera com frutos verdes em formato de disco voador. Sabor ácido e refrescante, tradicional em sucos e cachaças aromatizadas.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de Mata Atlântica que se adapta ao Cerrado em áreas sombreadas. Seus frutos exóticos são um tesouro da biodiversidade.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Jamelão",
+    "nomeCientifico": "Syzygium cumini",
+    "tipo": "Frutífera",
+    "sinopse": "O Jamelão é uma árvore frutífera com frutos roxos que mancham a boca de roxo. Sabor adocicado e levemente adstringente, rico em antioxidantes.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de grande porte para parques e pomares amplos. Seus frutos atraem morcegos e pássaros, enriquecendo a fauna urbana.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Jenipapo",
+    "nomeCientifico": "Genipa americana",
+    "tipo": "Frutífera",
+    "sinopse": "O Jenipapo é uma árvore frutífera com frutos marrons usados em licores e doces. Seu suco é usado como tinta corporal azul-escura por povos indígenas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de porte médio para áreas úmidas. Além dos frutos, sua madeira é nobre e sua casca tem propriedades medicinais.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Cupuí",
+    "nomeCientifico": "Theobroma subincanum",
+    "tipo": "Frutífera",
+    "sinopse": "O Cupuí é parente silvestre do cupuaçu, com frutos de polpa cremosa e aromática. Suas sementes podem ser usadas para fazer chocolate artesanal.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de sub-bosque que prefere sombra e umidade. Ideal para pomares agroflorestais urbanos com outras árvores.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Figueira-Branca",
+    "nomeCientifico": "Ficus gomelleira",
+    "tipo": "Árvore",
+    "sinopse": "A Figueira-Branca é uma árvore majestosa com raízes tabulares e copa imensa. Seus figos alimentam uma enorme variedade de aves e mamíferos.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore monumental para grandes parques e praças. Precisa de muito espaço, pois suas raízes se expandem e a copa cobre áreas enormes.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Gameleira",
+    "nomeCientifico": "Ficus clusiifolia",
+    "tipo": "Árvore",
+    "sinopse": "A Gameleira é uma figueira nativa com raízes aéreas que formam cortinas naturais. Árvore sagrada em muitas culturas, seus frutos sustentam a fauna silvestre.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore monumental para parques históricos e praças centenárias. Um patrimônio vivo que abriga diversidade de vida.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Sombreiro",
+    "nomeCientifico": "Clitoria fairchildiana",
+    "tipo": "Árvore",
+    "sinopse": "O Sombreiro é uma árvore de copa larga e flores roxas que lembram borboletas. Excelente para sombreamento em estacionamentos e áreas de descanso.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de crescimento rápido para sombra urgente. Ideal para áreas que precisam de cobertura vegetal imediata.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Oiti",
+    "nomeCientifico": "Licania tomentosa",
+    "tipo": "Árvore",
+    "sinopse": "O Oiti é uma árvore frutífera ornamental com frutos amarelos adocicados. Sua copa densa e perene oferece sombra o ano todo, ideal para arborização urbana.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Excelente para calçadas e avenidas. Seus frutos são comestíveis e a folhagem perene garante sombra constante.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Sete-Copas",
+    "nomeCientifico": "Terminalia catappa",
+    "tipo": "Árvore",
+    "sinopse": "O Sete-Copas é uma árvore com galhos em camadas horizontais que lembram andares. Suas folhas ficam vermelhas no outono antes de cair.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore ornamental de grande porte para parques litorâneos e praças. A arquitetura dos galhos é escultural.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Chichá",
+    "nomeCientifico": "Sterculia striata",
+    "tipo": "Árvore",
+    "sinopse": "O Chichá é uma árvore com frutos que se abrem revelando sementes comestíveis similares ao amendoim. As castanhas são nutritivas e saborosas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore frutífera nativa para pomares amplos. Suas castanhas são um superalimento do Cerrado que pode ser consumido torrado.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Sapucaia",
+    "nomeCientifico": "Lecythis pisonis",
+    "tipo": "Árvore",
+    "sinopse": "A Sapucaia é uma árvore majestosa cujos frutos são pixídios que se abrem liberando castanhas saborosas. Suas flores roxas são polinizadas por abelhas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore monumental para parques e reservas. Suas castanhas são muito apreciadas e os frutos lenhosos são usados em artesanato.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Castanheira-do-Cerrado",
+    "nomeCientifico": "Sterculia apetala",
+    "tipo": "Árvore",
+    "sinopse": "A Castanheira-do-Cerrado é uma árvore imponente com tronco liso e copa alta. Produz frutos lenhosos com sementes oleaginosas comestíveis.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de grande porte para áreas amplas. Suas castanhas são apreciadas pela fauna e podem ser consumidas por humanos.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Jequitibá",
+    "nomeCientifico": "Cariniana estrellensis",
+    "tipo": "Árvore",
+    "sinopse": "O Jequitibá é uma árvore gigante e longeva, podendo viver mais de mil anos. Seu tronco colossal é um monumento natural de respeito e admiração.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore patrimonial para parques centenários. Plante pensando nas gerações futuras, pois este gigante transcende o tempo.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Pau-Brasil",
+    "nomeCientifico": "Paubrasilia echinata",
+    "tipo": "Árvore",
+    "sinopse": "O Pau-Brasil é a árvore que deu nome ao país, com madeira avermelhada e flores amarelas perfumadas. Símbolo nacional de valor histórico incalculável.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Plante como árvore histórica e educativa. Suas flores amarelas e o significado cultural a tornam especial em qualquer paisagem.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Cedro-Rosa",
+    "nomeCientifico": "Cedrela fissilis",
+    "tipo": "Árvore",
+    "sinopse": "O Cedro-Rosa é uma árvore nobre de madeira perfumada e flores creme. Sua madeira é resistente a insetos e muito usada em marcenaria fina.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de grande porte para parques e reservas. O aroma de sua madeira e a beleza da copa a tornam inesquecível.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Araucária",
+    "nomeCientifico": "Araucaria angustifolia",
+    "tipo": "Árvore",
+    "sinopse": "A Araucária é o pinheiro brasileiro com copa em formato de candelabro. Produz pinhões nutritivos, alimento tradicional das festas juninas do sul.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore símbolo do sul do Brasil que se adapta a regiões altas do Cerrado. Produz pinhões saborosos e tem silhueta inconfundível.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Açoita-Cavalo",
+    "nomeCientifico": "Luehea divaricata",
+    "tipo": "Árvore",
+    "sinopse": "O Açoita-Cavalo é uma árvore com flores rosadas e folhas aveludadas. Sua casca fibrosa era usada para fazer cordas e suas flores são melíferas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de porte médio para calçadas e jardins. Suas flores rosadas atraem abelhas nativas e embelezam a paisagem.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Timbó",
+    "nomeCientifico": "Lonchocarpus cultratus",
+    "tipo": "Árvore",
+    "sinopse": "O Timbó é uma árvore cujas raízes contêm substâncias ictiotóxicas usadas tradicionalmente na pesca indígena. Suas flores roxas são ornamentais.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de pequeno porte com floração ornamental. Cultive com cuidado em áreas com crianças devido à toxicidade das raízes.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Pau-Pereira",
+    "nomeCientifico": "Platycyamus regnellii",
+    "tipo": "Árvore",
+    "sinopse": "O Pau-Pereira é uma árvore ornamental com flores roxas em cachos densos. Sua casca é medicinal e suas flores lembram as glicínias asiáticas.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de floração espetacular para jardins. Os cachos de flores roxas são um dos mais belos espetáculos da flora brasileira.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Unha-de-Vaca",
+    "nomeCientifico": "Bauhinia variegata",
+    "tipo": "Árvore",
+    "sinopse": "A Unha-de-Vaca é uma árvore ornamental com flores rosadas e folhas bilobadas características. Floresce abundantemente no inverno e início da primavera.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Excelente para calçadas e jardins pequenos. Suas flores rosadas colorem a paisagem urbana no final do inverno.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Canafístula",
+    "nomeCientifico": "Cassia fistula",
+    "tipo": "Árvore",
+    "sinopse": "A Canafístula é uma árvore com cachos pendentes de flores amarelas douradas que formam cortinas florais. Um dos mais belos espetáculos da flora tropical.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore ornamental de pequeno porte para jardins. A floração dourada em cascata é um espetáculo que valoriza qualquer paisagem.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Coração-de-Negro",
+    "nomeCientifico": "Swartzia langsdorffii",
+    "tipo": "Árvore",
+    "sinopse": "O Coração-de-Negro é uma árvore com madeira de cerne escuro e flores brancas. Sua madeira é nobre e seus frutos são dispersos por macacos.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de grande porte para parques e reservas. A madeira escura e a copa ampla a tornam valiosa para projetos paisagísticos de longo prazo.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Mamica-de-Porca",
+    "nomeCientifico": "Zanthoxylum rhoifolium",
+    "tipo": "Árvore",
+    "sinopse": "A Mamica-de-Porca é uma árvore aromática com casca espinhosa e folhas que exalam perfume cítrico. Usada na medicina popular e na culinária como condimento.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de pequeno porte para jardins sensoriais. Suas folhas aromáticas podem ser usadas como tempero e seus espinhos exigem cuidado no manejo.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Pau-Jacinto",
+    "nomeCientifico": "Machaerium brasiliense",
+    "tipo": "Árvore",
+    "sinopse": "O Pau-Jacinto é uma árvore ornamental com flores roxas perfumadas que lembram jacintos. Sua madeira é usada em marcenaria e instrumentos musicais.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de pequeno porte com floração aromática. Ideal para jardins sensoriais e próximo a áreas de convivência.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Guarantã",
+    "nomeCientifico": "Esenbeckia leiocarpa",
+    "tipo": "Árvore",
+    "sinopse": "O Guarantã é uma árvore de madeira duríssima e flores brancas perfumadas. Seu nome significa madeira dura em tupi e sua madeira é resistente ao cupim.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de crescimento lento mas extremamente durável. Ideal para projetos paisagísticos permanentes e arborização de longo prazo.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Louro-Pardo",
+    "nomeCientifico": "Cordia trichotoma",
+    "tipo": "Árvore",
+    "sinopse": "O Louro-Pardo é uma árvore de madeira nobre com flores brancas e folhas ásperas. Sua madeira é muito valorizada na marcenaria de luxo.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de grande porte para parques e reservas. Sua madeira clara e de alta qualidade é um investimento de longo prazo.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Caviúna",
+    "nomeCientifico": "Machaerium villosum",
+    "tipo": "Árvore",
+    "sinopse": "A Caviúna é uma árvore com madeira escura e flores roxas. Sua madeira é usada em instrumentos musicais e móveis finos.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de grande porte para parques e projetos de reflorestamento. A madeira valiosa a torna um ativo ambiental e econômico.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Sucupira-Preta",
+    "nomeCientifico": "Bowdichia virgilioides",
+    "tipo": "Árvore",
+    "sinopse": "A Sucupira-Preta é uma árvore ornamental com flores roxas e madeira escura. Suas sementes são usadas na medicina popular como anti-inflamatório.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de floração exuberante para grandes jardins. As flores roxas e a copa ampla a tornam destaque na paisagem.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Pau-D'Óleo",
+    "nomeCientifico": "Copaifera langsdorffii",
+    "tipo": "Árvore",
+    "sinopse": "O Pau-D'Óleo é uma copaíba que produz óleo medicinal de excelente qualidade. Sua copa densa e floração branca a tornam ornamental e funcional.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore medicinal e ornamental para grandes espaços. O óleo-resina pode ser extraído de forma sustentável por profissionais experientes.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  },
+  {
+    "nomePopular": "Marinheiro",
+    "nomeCientifico": "Guarea guidonia",
+    "tipo": "Árvore",
+    "sinopse": "O Marinheiro é uma árvore com frutos que se abrem revelando sementes alaranjadas. Suas flores perfumadas atraem abelhas e sua madeira é usada em marcenaria.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de sub-bosque para jardins sombreados. Os frutos coloridos e a floração perfumada a tornam especial para jardins sensoriais.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Mamãozinho-do-Mato",
+    "nomeCientifico": "Carica quercifolia",
+    "tipo": "Frutífera",
+    "sinopse": "O Mamãozinho-do-Mato é um arbusto frutífero com pequenos frutos que lembram mamão. Seus frutos são comestíveis e suas folhas têm propriedades medicinais.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Arbusto frutífero compacto para jardins tropicais. Produz frutos o ano todo e pode ser cultivado em vasos grandes.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Coco-de-Bode",
+    "nomeCientifico": "Attalea speciosa",
+    "tipo": "Palmeira",
+    "sinopse": "O Coco-de-Bode é uma palmeira com frutos agrupados de polpa comestível. Suas folhas enormes são usadas em coberturas e artesanato regional.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Palmeira imponente para áreas amplas e úmidas. Valorize seu potencial paisagístico e utilize as folhas caídas como cobertura morta.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Tucum",
+    "nomeCientifico": "Bactris glaucescens",
+    "tipo": "Palmeira",
+    "sinopse": "O Tucum é uma palmeira espinhosa que forma touceiras em áreas alagáveis. Seus frutos roxos são comestíveis e suas fibras são usadas em artesanato.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Palmeira de sub-bosque para áreas úmidas e sombreadas. Ideal para margens de lagos e jardins tropicais com bastante água.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Airí",
+    "nomeCientifico": "Astrocaryum aculeatissimum",
+    "tipo": "Palmeira",
+    "sinopse": "O Airí é uma palmeira espinhosa de tronco anelado e folhas plumosas. Seus frutos são consumidos pela fauna e suas fibras são artesanais.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Palmeira para jardins tropicais sombreados. Atenção aos espinhos, plante em áreas de baixa circulação de pessoas.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Brejaúva",
+    "nomeCientifico": "Astrocaryum aculeatissimum",
+    "tipo": "Palmeira",
+    "sinopse": "A Brejaúva é uma palmeira elegante com folhas prateadas na face inferior. Nativa de matas úmidas, adapta-se bem a jardins tropicais irrigados.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Palmeira ornamental para áreas sombreadas e úmidas. O contraste prateado das folhas cria belos efeitos visuais no jardim.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Jussara",
+    "nomeCientifico": "Euterpe edulis",
+    "tipo": "Palmeira",
+    "sinopse": "A Jussara é a palmeira do palmito verdadeiro, com frutos roxos similares ao açaí. Espécie ameaçada, seu cultivo sustentável é incentivado.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Palmeira de sub-bosque para jardins sombreados. Cultive como planta ornamental e ecológica, ajudando na conservação da espécie.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Açaí-do-Cerrado",
+    "nomeCientifico": "Euterpe edulis",
+    "tipo": "Palmeira",
+    "sinopse": "O Açaí-do-Cerrado é uma palmeira de estipe único com frutos roxos que produzem polpa energética. Parente do açaí amazônico, adaptado ao Cerrado.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Palmeira para cultivo em áreas sombreadas e úmidas. A polpa dos frutos é rica em antioxidantes e muito nutritiva.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Pupunha",
+    "nomeCientifico": "Bactris gasipaes",
+    "tipo": "Palmeira",
+    "sinopse": "A Pupunha é uma palmeira produtora de palmito de alta qualidade e frutos comestíveis. Seu palmito é macio e saboroso, muito apreciado na culinária.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Palmeira produtiva para pomares e jardins. Produz palmito e frutos, sendo uma excelente opção para cultivo sustentável.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Rafis",
+    "nomeCientifico": "Rhapis excelsa",
+    "tipo": "Palmeira",
+    "sinopse": "A Rafis é uma palmeira entouceirada com folhas em formato de leque. Muito usada em interiores por sua tolerância a sombra e elegância oriental.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Palmeira perfeita para vasos em interiores e varandas cobertas. Tolera baixa luminosidade e confere elegância tropical aos ambientes.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Palmeira-Areca",
+    "nomeCientifico": "Dypsis lutescens",
+    "tipo": "Palmeira",
+    "sinopse": "A Palmeira-Areca é uma palmeira entouceirada com colmos dourados e folhas plumosas. Muito ornamental e excelente para interiores bem iluminados.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Cultive em vasos grandes em ambientes internos iluminados. Suas folhas plumosas criam uma atmosfera tropical relaxante.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Palmeira-Fênix",
+    "nomeCientifico": "Phoenix roebelenii",
+    "tipo": "Palmeira",
+    "sinopse": "A Palmeira-Fênix é uma palmeira de pequeno porte com folhas finas e elegantes. Muito usada em paisagismo por sua silhueta delicada e exótica.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Palmeira versátil para vasos e jardins. Tolera meia-sombra e é resistente a pragas, sendo de fácil manutenção.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Palmeira-Imperial",
+    "nomeCientifico": "Roystonea oleracea",
+    "tipo": "Palmeira",
+    "sinopse": "A Palmeira-Imperial é a rainha das palmeiras, com estipe colunar e copa majestosa. Símbolo de imponência e elegância no paisagismo clássico brasileiro.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Palmeira monumental para alamedas e grandes jardins. Plante em fileiras para criar avenidas imponentes dignas de jardins botânicos.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Carandá",
+    "nomeCientifico": "Copernicia alba",
+    "tipo": "Palmeira",
+    "sinopse": "O Carandá é uma palmeira com folhas em leque prateadas e tronco liso. Extremamente resistente à seca e ao frio, sendo versátil para várias regiões.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Palmeira rústica para jardins de baixa manutenção. Suas folhas prateadas criam contraste interessante com plantas verdes.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Babaçu",
+    "nomeCientifico": "Attalea speciosa",
+    "tipo": "Palmeira",
+    "sinopse": "O Babaçu é uma palmeira imponente cujos cocos produzem óleo e farinha. Conhecida como a palmeira da vida por seus múltiplos usos alimentícios e artesanais.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Palmeira monumental para áreas amplas. Seus cocos são quebrados artesanalmente para extrair amêndoas ricas em óleo vegetal.",
+    "imagemUrl": "/plantas/palmeira.jpg"
+  },
+  {
+    "nomePopular": "Araçá-Boi",
+    "nomeCientifico": "Eugenia stipitata",
+    "tipo": "Frutífera",
+    "sinopse": "O Araçá-Boi é um arbusto frutífero com frutos amarelos grandes e muito aromáticos. Polpa ácida rica em vitamina C, excelente para sucos e sorvetes.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Arbusto frutífero para quintais e vasos grandes. Produz frutos aromáticos e pode ser podado para manter porte compacto.",
+    "imagemUrl": "/plantas/arbusto.jpg"
+  },
+  {
+    "nomePopular": "Bacupari",
+    "nomeCientifico": "Garcinia brasiliensis",
+    "tipo": "Frutífera",
+    "sinopse": "O Bacupari é uma árvore frutífera com frutos amarelos de polpa branca e adocicada. Parente do mangostão, é rico em propriedades medicinais.",
+    "condicoesIdeais": {
+      "sol": "Sombra",
+      "espaco": "Pouco Espaço",
+      "rega": "Regamento Frequente"
+    },
+    "dicasCuidado": "Árvore de sub-bosque para pomares sombreados. Seus frutos têm sabor delicado e propriedades anti-inflamatórias.",
+    "imagemUrl": "/plantas/arvore_pequena.jpg"
+  },
+  {
+    "nomePopular": "Cajá",
+    "nomeCientifico": "Spondias mombin",
+    "tipo": "Frutífera",
+    "sinopse": "O Cajá é uma árvore frutífera com pequenos frutos amarelos de sabor ácido e refrescante. Muito usado em sucos, picolés e sorvetes regionais.",
+    "condicoesIdeais": {
+      "sol": "Muito Sol",
+      "espaco": "Mais Espaço",
+      "rega": "Baixo Regamento"
+    },
+    "dicasCuidado": "Árvore de grande porte para pomares amplos. Tolera seca e produz frutos em abundância na estação chuvosa.",
+    "imagemUrl": "/plantas/arvore_grande.jpg"
+  }
+]
