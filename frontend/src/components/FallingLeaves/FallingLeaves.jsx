@@ -84,8 +84,8 @@ const FallingLeaves = ({ quantidade = 80 }) => {
 
       // Dados de animação individuais de cada folha
       mesh.userData = {
-        velocidadeQueda: 0.02 + Math.random() * 0.03,
-        velocidadeDiagonal: 0.01 + Math.random() * 0.05, // algumas folhas bem mais rápidas para a esquerda
+        velocidadeQueda: 0.003 + Math.random() * 0.004, // queda bem lenta e suave
+        velocidadeDiagonal: 0.001 + Math.random() * 0.003, // deriva lateral mínima
         velocidadeRotX: (Math.random() - 0.5) * 0.02,
         velocidadeRotY: (Math.random() - 0.5) * 0.02,
         velocidadeRotZ: (Math.random() - 0.5) * 0.03,
